@@ -1,0 +1,63 @@
+﻿@model IEnumerable<WebSite.Models.User>
+
+@{
+    ViewBag.Title = "ListarAlunos";
+}
+
+<h2 class="mt-5 text-center">ALUNOS CADASTRADOS</h2>
+<br/>
+<table class="table">
+    <tr>
+        <th class="text-left">
+            <b>ID</b>
+            @*@Html.DisplayNameFor(model => model.ID)*@
+        </th>
+        <th class="text-center">
+            <b>Nome</b>
+            @*@Html.DisplayNameFor(model => model.Name)*@
+        </th>
+        <th class="text-center">
+            <b>Usuario</b>
+            @*@Html.DisplayNameFor(model => model.Login)*@
+        </th>
+        @*<th>
+            <b>Senha</b>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>*@
+
+        <th class="text-center">
+           <b>Opções</b>
+        </th>
+
+        <th class="text-center">
+            <b>Tipo de usuário</b>
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td class="text-left">
+            @Html.DisplayFor(modelItem => item.ID)
+        </td>
+        <td class="text-center">
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td class="text-center">
+            @Html.DisplayFor(modelItem => item.Login)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.Password)
+        </td>*@
+
+        <td class="text-center">
+            @Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Detalhes", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Remover", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+        <td class="text-center">
+            @Html.DisplayFor(modelItem => item.UserType)
+        </td>
+    </tr>
+}
+
+</table>

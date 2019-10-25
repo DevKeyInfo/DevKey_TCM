@@ -1,0 +1,201 @@
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\ApplicationInsights.config
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\csc.exe
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\csc.exe.config
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\csc.rsp
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\csi.exe
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\csi.rsp
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\System.AppContext.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\System.Collections.Immutable.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\System.IO.FileSystem.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\System.Reflection.Metadata.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\vbc.exe
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\vbc.exe.config
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\vbc.rsp
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\VBCSCompiler.exe
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\roslyn\VBCSCompiler.exe.config
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\CadastroLogin.dll.config
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\CadastroLogin.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\CadastroLogin.pdb
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\Antlr3.Runtime.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\Microsoft.AI.Agent.Intercept.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\Microsoft.AI.DependencyCollector.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\Microsoft.AI.Web.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\Microsoft.AI.WindowsServer.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\Microsoft.ApplicationInsights.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\Microsoft.Web.Infrastructure.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\Newtonsoft.Json.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\System.Web.Helpers.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\System.Web.Mvc.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\System.Web.Optimization.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\System.Web.Razor.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\System.Web.WebPages.Deployment.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\System.Web.WebPages.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\System.Web.WebPages.Razor.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\WebGrease.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\System.Web.Helpers.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\System.Web.Mvc.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\System.Web.Optimization.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\System.Web.Razor.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\System.Web.WebPages.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\System.Web.WebPages.Deployment.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\System.Web.WebPages.Razor.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\Antlr3.Runtime.pdb
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\Newtonsoft.Json.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\Microsoft.ApplicationInsights.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\Microsoft.AI.DependencyCollector.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\Microsoft.AI.WindowsServer.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\bin\Microsoft.AI.Web.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\obj\Debug\CadastroLogin.csprojResolveAssemblyReference.cache
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\obj\Debug\CadastroLogin.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\CadastroLogin\CadastroLogin\obj\Debug\CadastroLogin.pdb
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\ApplicationInsights.config
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\csc.exe
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\csc.exe.config
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\csc.rsp
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\csi.exe
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\csi.rsp
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\System.AppContext.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\System.Collections.Immutable.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\System.IO.FileSystem.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\System.Reflection.Metadata.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\vbc.exe
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\vbc.exe.config
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\vbc.rsp
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\VBCSCompiler.exe
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\roslyn\VBCSCompiler.exe.config
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\CadastroLogin.dll.config
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\CadastroLogin.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\CadastroLogin.pdb
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\Antlr3.Runtime.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\Microsoft.AI.Agent.Intercept.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\Microsoft.AI.DependencyCollector.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\Microsoft.AI.Web.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\Microsoft.AI.WindowsServer.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\Microsoft.ApplicationInsights.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\Microsoft.Web.Infrastructure.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\Newtonsoft.Json.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\System.Web.Helpers.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\System.Web.Mvc.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\System.Web.Optimization.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\System.Web.Razor.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\System.Web.WebPages.Deployment.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\System.Web.WebPages.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\System.Web.WebPages.Razor.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\WebGrease.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\System.Web.Helpers.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\System.Web.Mvc.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\System.Web.Optimization.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\System.Web.Razor.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\System.Web.WebPages.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\System.Web.WebPages.Deployment.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\System.Web.WebPages.Razor.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\Antlr3.Runtime.pdb
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\Newtonsoft.Json.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\Microsoft.ApplicationInsights.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\Microsoft.AI.DependencyCollector.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\Microsoft.AI.WindowsServer.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\bin\Microsoft.AI.Web.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\obj\Debug\CadastroLogin.csprojResolveAssemblyReference.cache
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\obj\Debug\CadastroLogin.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\Projetos\CadastroLogin\CadastroLogin\obj\Debug\CadastroLogin.pdb
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\ApplicationInsights.config
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\csc.exe
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\csc.exe.config
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\csc.rsp
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\csi.exe
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\csi.rsp
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\System.AppContext.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\System.Collections.Immutable.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\System.IO.FileSystem.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\System.Reflection.Metadata.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\vbc.exe
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\vbc.exe.config
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\vbc.rsp
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\VBCSCompiler.exe
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\roslyn\VBCSCompiler.exe.config
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\CadastroLogin.dll.config
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\CadastroLogin.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\CadastroLogin.pdb
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\Antlr3.Runtime.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\Microsoft.AI.Agent.Intercept.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\Microsoft.AI.DependencyCollector.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\Microsoft.AI.Web.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\Microsoft.AI.WindowsServer.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\Microsoft.ApplicationInsights.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\Microsoft.Web.Infrastructure.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\Newtonsoft.Json.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\System.Web.Helpers.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\System.Web.Mvc.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\System.Web.Optimization.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\System.Web.Razor.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\System.Web.WebPages.Deployment.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\System.Web.WebPages.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\System.Web.WebPages.Razor.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\WebGrease.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\System.Web.Helpers.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\System.Web.Mvc.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\System.Web.Optimization.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\System.Web.Razor.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\System.Web.WebPages.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\System.Web.WebPages.Deployment.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\System.Web.WebPages.Razor.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\Antlr3.Runtime.pdb
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\Newtonsoft.Json.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\Microsoft.ApplicationInsights.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\Microsoft.AI.DependencyCollector.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\Microsoft.AI.WindowsServer.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\bin\Microsoft.AI.Web.xml
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\obj\Debug\CadastroLogin.csprojResolveAssemblyReference.cache
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\obj\Debug\CadastroLogin.dll
+C:\WORK_GSILVA\Arquivos_GSILVA\GitHub CadastroLogin\CadastroLogin\CadastroLogin\obj\Debug\CadastroLogin.pdb
