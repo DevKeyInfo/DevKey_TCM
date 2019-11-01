@@ -53,7 +53,16 @@ namespace WebSite.Database
             retorno.Close();
             return usuarios;
         }
+        public User ValidarLogin(string Login, string Password)
+        {
+            using (db = new DBConnection())
+            {
+                var strQuery = string.Format("SELECT * FROM tb_User WHERE Login_user = '{0}' AND Password_user = '{1}';", Login, Password);
+                var retorno = db.RetornaComando(strQuery);
+                return ListaDeUsuario(retorno).FirstOrDefault();
+            }
 
+        }
 
 
     }

@@ -48,18 +48,26 @@ namespace WebSite.Controllers
             
         }
 
-        public ActionResult Login()
+        public ActionResult Login(string login, string password)
         {
-            return View();
+            var MetodoLogin = new CommandsSQL();
+            var user = MetodoLogin.ValidarLogin(login, password);
+
+            if (user == null)
+            {
+                //return HttpNotFound();
+            }
+            return View(user);
         }
 
         [HttpPost]
-        public ActionResult Login(Login loginUser)
+        public ActionResult Login(User user)
         {
-            if (!ModelState.IsValid)
-            {
-                return View(loginUser);
-            }
+            //if (ModelState.IsValid)
+            //{
+
+            //}
+
 
             return RedirectToAction("Index", "Home");
         }
