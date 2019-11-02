@@ -12,6 +12,7 @@ namespace WebSite.Database
     {
         private DBConnection db;
 
+        //Metodo para inserir usuários
         public void Insert(User user)
         {
             var StrQuery = "";
@@ -25,6 +26,7 @@ namespace WebSite.Database
         }
 
 
+        //Listar usuarios ja registrados no sistema
         public List<User> Listar()
         {
             var db = new DBConnection();
@@ -36,7 +38,7 @@ namespace WebSite.Database
         public List<User> ListaDeUsuario(SqlDataReader retorno)
         {
             var usuarios = new List<User>();
-
+            
             while (retorno.Read())
             {
                 var TempUsuario = new User()
@@ -53,17 +55,67 @@ namespace WebSite.Database
             retorno.Close();
             return usuarios;
         }
-        public User ValidarLogin(string Login, string Password)
+
+
+
+        //Validação de login no banco de dados
+        public Login ValidarLogin(Login login)
         {
             using (db = new DBConnection())
             {
-                var strQuery = string.Format("SELECT * FROM tb_User WHERE Login_user = '{0}' AND Password_user = '{1}';", Login, Password);
+                var strQuery = string.Format("SELECT * FROM tb_User WHERE Login_user = '{0}' AND Password_user = '{1}';", login.User, Hash.GerarHash(login.Password));
                 var retorno = db.RetornaComando(strQuery);
-                return ListaDeUsuario(retorno).FirstOrDefault();
+                return VerificarLogin(retorno).FirstOrDefault();
+            }
+
+        }
+        public List<Login> VerificarLogin(SqlDataReader retorno)
+        {
+            var usuarios = new List<Login>();
+
+            while (retorno.Read())
+            {
+                var TempUsuario = new Login()
+                {
+                    User = retorno["Login_user"].ToString(),
+                    Password = retorno["Password_user"].ToString()
+                };
+                usuarios.Add(TempUsuario);
+            }
+            retorno.Close();
+            return usuarios;
+        }
+
+
+
+        //Verifica se o usuario ja existe no banco de dados
+        public User ValidarCadastro(User user)
+        {
+            using (db = new DBConnection())
+            {
+                var strQuery = string.Format("SELECT * FROM tb_User WHERE Login_user = '{0}';", user.Login);
+                var retorno = db.RetornaComando(strQuery);
+                return VerificarCadastro(retorno).FirstOrDefault();
             }
 
         }
 
+        public List<User> VerificarCadastro(SqlDataReader retorno)
+        {
+            var usuarios = new List<User>();
+
+            while (retorno.Read())
+            {
+                var TempUsuario = new User()
+                {
+                    Login = retorno["Login_user"].ToString()
+                };
+                usuarios.Add(TempUsuario);
+            }
+            retorno.Close();
+            return usuarios;
+        }
+ 
 
     }
 }

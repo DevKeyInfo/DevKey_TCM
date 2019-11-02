@@ -15,7 +15,8 @@ namespace WebSite.Controllers
         CommandsSQL CommandsSQL = new CommandsSQL();
         DBConnection DBConnection = new DBConnection();
         User user = new User();
-        
+        Login login = new Login();
+
 
         // GET: Authentication
         public ActionResult Cadastro()
@@ -30,47 +31,59 @@ namespace WebSite.Controllers
             {
                 return View(user);
             }
-            
-            //Criar tratamento para usuarios que ja existem
 
-            User usuario = new User
+            //var MetodoCadastro = new CommandsSQL();
+            //user = MetodoCadastro.ValidarCadastro(user);
+
+
+            //if (user.Login != null)
+            //{
+            //    ModelState.AddModelError("Login", "O usuário não está disponível");
+            //    return View(user);
+            //}
+
+            User NewUser = new User
             {
-
                 Name = user.Name,
                 Email = user.Email,
                 Login = user.Login,
-                Password = Hash.GerarHash(user.Password)
+                Password = Hash.GerarHash(user.Password),
             };
 
-            CommandsSQL.Insert(user);
+            CommandsSQL.Insert(NewUser);
 
             return RedirectToAction("Index", "Home");
-            
+
         }
 
-        public ActionResult Login(string login, string password)
+        public ActionResult Login()
         {
-            var MetodoLogin = new CommandsSQL();
-            var user = MetodoLogin.ValidarLogin(login, password);
-
-            if (user == null)
-            {
-                //return HttpNotFound();
-            }
-            return View(user);
+            return View();
         }
 
         [HttpPost]
-        public ActionResult Login(User user)
+        public ActionResult Login(Login login)
         {
-            //if (ModelState.IsValid)
-            //{
+         
+            var MetodoLogin = new CommandsSQL();
+            login = MetodoLogin.ValidarLogin(login);
+            
 
-            //}
-
+            if (login == null)
+            {
+                ModelState.AddModelError("User","Usuário incorreto!");
+                ModelState.AddModelError("Password","Senha incorreta!");
+                return View(login);
+            }
+            //Session["Login_user"].ToString();
+            //Session["Password_user"].ToString();
+            
 
             return RedirectToAction("Index", "Home");
+
         }
+
+
 
     }
 }

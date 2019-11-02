@@ -11,42 +11,20 @@
     <nav class="navbar fixed-top mr-5 ml-5" style="background-color: rebeccapurple;">
         <div class="navbar-collapse d-inline p-1 text-white">
             <ul class="nav navbar-nav float-left text-left p-1">
-                <li class="nav-item">@Html.ActionLink("INÍCIO", "Index", "Home")</li>
+                <li class="nav-item">@Html.ActionLink("Início", "Index", "Home")</li>
             </ul>
             <ul class="nav navbar-nav float-left text-left p-1">
-                <li class="nav-item">@Html.ActionLink("LISTA DE ALUNOS", "ListarAlunos", "Home")</li>
+                <li class="nav-item">@Html.ActionLink("Lista de alunos", "ListarAlunos", "Home")</li>
             </ul>
             <ul class="nav navbar-nav float-right text-right p-1">
-                <li class="nav-item">@Html.ActionLink("LOGIN", "Login", "Authentication")</li>
+                <li class="nav-item">@Html.ActionLink("Login", "Login", "Authentication")</li>
             </ul>
             <ul class="nav navbar-nav float-right text-right p-1 mr-3">
-                <li class="nav-item">@Html.ActionLink("CADASTRE-SE", "Cadastro", "Authentication")</li>
+                <li class="nav-item">@Html.ActionLink("Cadastre-se", "Cadastro", "Authentication")</li>
             </ul>
         </div>
     </nav>
 
-    @*<div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("DEVKEY", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>*@
-            @*<div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Início", "Index", "Home")</li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">  
-                    <li>@Html.ActionLink("Cadastre-se", "Cadastro", "Authentication")</li>
-                    <li>@Html.ActionLink("Login", "Login", "Authentication")</li>
-                </ul>
-
-            </div>
-        </div>
-    </div>*@
     <div class="container body-content">
         @RenderBody()
         <hr />
