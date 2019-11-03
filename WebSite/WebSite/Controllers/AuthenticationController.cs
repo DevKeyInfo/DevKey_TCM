@@ -75,9 +75,6 @@ namespace WebSite.Controllers
                 ModelState.AddModelError("Password","Senha incorreta!");
                 return View(login);
             }
-            //Session["Login_user"].ToString();
-            //Session["Password_user"].ToString();
-            
 
             return RedirectToAction("Index", "Home");
 

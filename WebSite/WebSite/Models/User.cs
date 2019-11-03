@@ -9,19 +9,20 @@ namespace WebSite.Models
 {
     public class User
     {
+        [DisplayName("Tipo de usuário")]
         public string UserType { get; set; } 
 
         public string ID { get; set; }
 
-        //[DisplayName("Nome")]
+        [DisplayName("Nome")]
         [Required(ErrorMessage = "Este campo é obrigatório")]
         public string Name { get; set; }
 
-        //[DisplayName("E-mail")]
+        [DisplayName("E-mail")]
         [Required(ErrorMessage = "Este campo é obrigatório")]
         public string Email { get; set; }
 
-        //[DisplayName("Usuário")]
+        [DisplayName("Usuário")]
         [Required(ErrorMessage = "Este campo é obrigatório")]
         [MinLength(6, ErrorMessage = "Seu login deve conter no mínimo 6 caracteres")]
         public string Login { get; set; }

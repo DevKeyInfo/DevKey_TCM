@@ -1,0 +1,52 @@
+﻿@model IEnumerable<CadastroLogin.Models.Cursos>
+
+@{
+    ViewBag.Title = "Lista de Cursos";
+}
+<br/>
+<h2 class="text-center">Lista de Cursos</h2>
+<br/>
+
+<table class="table">
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Desc_cur)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Id_Categoria)
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Desc_cur)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id_Categoria)
+        </td>
+        
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { item.Nome }) |
+            @Html.ActionLink("Detalhes", "Detalhes", new { item.Nome}) |
+            @Html.ActionLink("Deletar", "Deletar", new { item.Nome })
+        </td>
+    </tr>
+}
+
+</table>
+
+<br/>
+<p>
+    @Html.ActionLink("Adicionar novo curso", "CadastrarCurso")
+</p>

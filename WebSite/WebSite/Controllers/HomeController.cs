@@ -16,12 +16,12 @@ namespace WebSite.Controllers
         }
         //Terminar de configurar Authorize
         //[Authorize(Roles = "Adminstrador")]
-        public ActionResult ListarAlunos(User user)
+        public ActionResult ListarUsuarios(User user)
         {
             //if(Session["Login_user"] == null && Session["Password_user"] == null)
-            {
-                RedirectToAction("Login", "Authentication");
-            }
+            //{
+            //    RedirectToAction("Login", "Authentication");
+            //}
             var RetornarAlunos = new CommandsSQL();
             var TodosUsuarios = RetornarAlunos.Listar();
             return View(TodosUsuarios);
