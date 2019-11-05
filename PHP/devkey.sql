@@ -50,15 +50,7 @@ INSERT INTO `dev_tarefa` (`trf_id`, `trf_nome`, `trf_descricao`, `trf_usu`, `trf
 (1, 'Documentação', NULL, 1, '2019-10-01', '2019-10-31', 'exe', 3),
 (2, 'Banner', NULL, 2, '2019-10-01', '2019-10-24', 'exe', 2),
 (3, 'Diagrama de Classe', NULL, 3, '2019-10-02', '2019-10-30', 'fin', 3),
-(4, 'Caso de Uso', 'Sistema ASP NET', 5, '2019-09-01', '2019-11-29', 'fin', 4),
-(5, 'oio', 'oio', 1, NULL, NULL, 'pen', 2),
-(6, 'tarefa', 'tarefa tarefada', 1, NULL, NULL, 'fin', 1),
-(7, 'eee', '        eee', 3, NULL, NULL, 'exe', 1),
-(8, 'aaaa', '        aaaaa', 4, NULL, NULL, 'pen', 3),
-(9, 'aaaa', '        aaaaa', 4, NULL, NULL, 'pen', 4),
-(10, 'qqqq', '        qqqq', 1, NULL, NULL, 'pen', 5),
-(11, 'oioioi', '        oioioioio', 7, NULL, NULL, 'pen', 1),
-(12, 'testeteste', '       hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh ', 8, NULL, NULL, 'fin', 2);
+(4, 'Caso de Uso', 'Sistema ASP NET', 5, '2019-09-01', '2019-11-29', 'fin', 4);
 
 -- --------------------------------------------------------
 
@@ -79,15 +71,7 @@ CREATE TABLE IF NOT EXISTS `dev_usuario` (
 --
 
 INSERT INTO `dev_usuario` (`usu_id`, `usu_nome`, `usu_email`) VALUES
-(1, 'andy', 'andy@teste.com'),
-(2, 'andy2', 'andy2@teste.com'),
-(3, 'andy3', 'andy3@teste.com'),
-(4, 'andy4', 'andy4@teste.com'),
-(5, 'andy5', 'andy5@teste.com'),
-(6, 'hdhd', 'teste@teste.com'),
-(7, 'qqqqqqqqqqqqqq', 'qqqqqqqqqqqqqqq@ddd.com'),
-(8, 'teste', 'teste@nn.com');
-
+(1, 'andy', 'andy@teste.com');
 --
 -- Constraints for dumped tables
 --
