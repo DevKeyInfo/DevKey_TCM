@@ -28,7 +28,7 @@ include_once(dirname(__FILE__) . '/conexao.php');
 
 	?>
 
-	<div class="container">		
+	<div class="container" id="conteudo">		
 
 		<?php
 
@@ -159,8 +159,10 @@ include_once(dirname(__FILE__) . '/conexao.php');
 				var trf_id_list = $(this).sortable('toArray').toString();
 				var receivesort = "[" + this.id + "]";
 				//console.log("[" + this.id + "]");
+				
 				//nome -> ui.item.html
 				//sortable id -> "[" + this.id + "]"
+				
 				//alert("[" + this.id + "] received [" + ui.item.html() + "]");
 				
 				$.ajax({
@@ -172,6 +174,9 @@ include_once(dirname(__FILE__) . '/conexao.php');
 					},
 					success: function(data) {
 
+						$(document).ready(function(){
+							location.reload();
+						});
 					}
 				});
 			},
@@ -182,6 +187,7 @@ include_once(dirname(__FILE__) . '/conexao.php');
 
 		});
 	}); 
+
 
 </script>
 </html>

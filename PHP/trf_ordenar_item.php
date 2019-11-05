@@ -36,17 +36,6 @@ $trf_status = explode("]", $trf_status[1]);
 //die("oi" .  $trf_status[0]);
 
 //die("morreu");
-/*
-
- switch ($trf_status[0]) {
-	case 'sortable2':
-		echo "oi";
-		break;
-	
-	default:
-		echo "tchau";
-		break;
-}*/
 
 //($trf_status[0]);
 /*if ($trf_status[0] == "sortable2") {
@@ -58,14 +47,16 @@ $trf_status = explode("]", $trf_status[1]);
 die();*/
 
 	
-	
 	 switch ($trf_status[0]) {
 		case 'sortable1':
 
 		$sql_sort = "UPDATE " . Config::BD_PREFIX . "tarefa 
 		SET trf_status = 'pen' 
 		WHERE trf_id in (". $trf_id . ")";
+
 		$execute = $con->query($sql_sort) or die(mysqli_error($con));
+
+		//header("Location:index.php")
 
 		break;
 
@@ -76,6 +67,7 @@ die();*/
 		WHERE trf_id in (". $trf_id . ")";
 
 		$execute = $con->query($sql_sort) or die(mysqli_error($con));
+		//header("Location:index.php")
 
 		break;
 
@@ -87,12 +79,13 @@ die();*/
 
 //die($sql_sort);
 		$execute = $con->query($sql_sort) or die(mysqli_error($con));
+		//header("Location:index.php")
 
 		break;
 	}
 	
 
-/////////////// fim STATUS
+/////////////// FIM STATUS
 
 
 ?>
