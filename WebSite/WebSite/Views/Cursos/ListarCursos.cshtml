@@ -12,6 +12,7 @@
 
         <th>
             @Html.DisplayNameFor(model => model.Nome)
+
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Desc_cur)
@@ -19,10 +20,10 @@
         <th>
             @Html.DisplayNameFor(model => model.Id_Categoria)
         </th>
-
+        
         <th></th>
     </tr>
-
+    
 @foreach (var item in Model) {
     <tr>
 
@@ -35,7 +36,13 @@
         <td>
             @Html.DisplayFor(modelItem => item.Id_Categoria)
         </td>
-        
+        <td>
+            <!--UTILIZAR ESSE CODIGO PARA INSERIR VIDEOS DIRETO DO BANCO DE DADOS-->
+            <iframe width="1000" height="600" src="@item.Aula1"></iframe>
+        </td>
+        <td>
+            <iframe width="1000" height="500" src="@item.Aula2"></iframe>
+        </td>
         <td>
             @Html.ActionLink("Editar", "Editar", new { item.Nome }) |
             @Html.ActionLink("Detalhes", "Detalhes", new { item.Nome}) |

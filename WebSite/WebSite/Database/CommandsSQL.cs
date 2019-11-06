@@ -72,7 +72,7 @@ namespace WebSite.Database
         public List<Cursos> ListarCursos()
         {
             var db = new DBConnection();
-            var strQuery = "SELECT * FROM vw_Cursos;";
+            var strQuery = "SELECT * FROM Curso;";
             var retorno = db.RetornaComando(strQuery);
             return ListaDeCursos(retorno);
         }
@@ -87,10 +87,10 @@ namespace WebSite.Database
                 var TempCurso = new Cursos()
                 {
                     Nome = retorno["Nome"].ToString(),
-                    Desc_cur = retorno["Descrição do curso"].ToString(),
-                    Id_Categoria = retorno["Categoria"].ToString(),
-                    //Aula1 = retorno["Aula 01"].ToString(),
-                    //Aula2 = retorno["Aula 02"].ToString(),
+                    Desc_cur = retorno["Desc_cur"].ToString(),
+                    Id_Categoria = retorno["Id_Categoria"].ToString(),
+                    Aula1 = retorno["Aula1"].ToString(),
+                    Aula2 = retorno["Aula2"].ToString(),
                     //Aula3 = retorno["Aula 03"].ToString(),
                     //Aula4 = retorno["Aula 04"].ToString(),
                     //Aula5 = retorno["Aula 05"].ToString(),
