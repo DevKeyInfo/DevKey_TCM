@@ -1,4 +1,10 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
+<br/>
+@if (TempData["Boas-vindas"] != null)
+{
+    <div class="text-success">
+        @TempData["Boas-vindas"]
+    </div>
+}

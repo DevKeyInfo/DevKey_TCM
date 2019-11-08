@@ -7,6 +7,8 @@ using WebSite.Models;
 using System.Data.SqlClient;
 using WebSite.Database;
 using WebSite.Utils;
+using System.Security;
+using System.Web.Security;
 
 namespace WebSite.Controllers
 {
@@ -76,8 +78,20 @@ namespace WebSite.Controllers
                 return View(login);
             }
 
+            FormsAuthentication.SetAuthCookie(login.User, false);
+            Session["NormalUser"] = login.User;
+            TempData["Boas-Vindas"] = "Seja bem-vindo(a), " + login.Name + "!";
+
+
             return RedirectToAction("Index", "Home");
 
+        }
+
+        public ActionResult Logout(Login login)
+        {
+            Session.Abandon();
+
+            return RedirectToAction("Index", "Home");
         }
 
 

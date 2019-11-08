@@ -9,6 +9,10 @@ namespace WebSite.Models
 {
     public class Login
     {
+        public string Name { get; set; }
+        public int Id { get; set; }
+
+        public string User_Type { get; set; }
         //[DisplayName("Usuário")]
         [Required(ErrorMessage = "O Login é obrigatório")]
         public string User { get; set; }

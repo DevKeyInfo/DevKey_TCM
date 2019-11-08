@@ -113,9 +113,12 @@ namespace WebSite.Database
         {
             using (db = new DBConnection())
             {
-                var strQuery = string.Format("SELECT * FROM tb_User WHERE Login_user = '{0}' AND Password_user = '{1}';", login.User, Hash.GerarHash(login.Password));
-                var retorno = db.RetornaComando(strQuery);
-                return VerificarLogin(retorno).FirstOrDefault();
+                var strQuery = string.Format("SELECT * FROM tb_User WHERE login_user = '{0}' AND Password_user = '{1}';",
+                login.User, Hash.GerarHash(login.Password));
+
+            var retorno = db.RetornaComando(strQuery);
+
+            return VerificarLogin(retorno).FirstOrDefault();
             }
 
         }
@@ -127,8 +130,11 @@ namespace WebSite.Database
             {
                 var TempUsuario = new Login()
                 {
+                    Id = int.Parse(retorno["id_user"].ToString()),
+                    User_Type = retorno["user_type"].ToString(),
+                    Name = retorno["name_user"].ToString(),
                     User = retorno["Login_user"].ToString(),
-                    Password = retorno["Password_user"].ToString()
+                    Password = retorno["Password_user"].ToString(),
                 };
                 usuarios.Add(TempUsuario);
             }

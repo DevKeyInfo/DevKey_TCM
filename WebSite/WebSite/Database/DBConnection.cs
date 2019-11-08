@@ -26,6 +26,7 @@ namespace WebSite.Database
                 CommandText = StrQuery,
                 CommandType = CommandType.Text,
                 Connection = connection
+                
             };
 
             Command.ExecuteNonQuery();
