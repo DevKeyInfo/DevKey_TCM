@@ -61,5 +61,19 @@ namespace WebSite.Controllers
             var TodosCursos = RetornarCursos.ListarCursos();
             return View(TodosCursos);
         }
+
+        //Terminar o metodo
+        public ActionResult Categorias(Cursos cursos)
+        {
+            //------------------------------Usar uma das query's------------------------------ 
+            //      SELECT c.id_curso, c.Nome, c.desc_cur, cc.desc_cat
+            //      FROM curso c, categoria cc
+            //      WHERE c.Id_Categoria = cc.Id_Categoria
+
+            //      SELECT* FROM
+            //      Curso, Categoria
+            //      Where Curso.Id_Categoria = Categoria.Id_Categoria
+
+        }
     }
 }

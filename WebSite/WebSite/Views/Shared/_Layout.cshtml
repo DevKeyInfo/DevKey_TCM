@@ -15,6 +15,13 @@
                 <ul class="nav navbar-nav float-left text-left p-1">
                     <li class="nav-item">@Html.ActionLink("Início", "Index", "Home")</li>
                 </ul>
+                <ul class="nav navbar-nav float-right text-right p-1">
+                    <li class="nav-item">@Html.ActionLink("Sair", "Logout", "Authentication")</li>
+                </ul>
+            }
+
+            @if (Session["AdmUser"] != null)
+            {
                 <ul class="nav navbar-nav float-left text-left p-1">
                     <li class="nav-item">@Html.ActionLink("Lista de usuários", "ListarUsuarios", "Home")</li>
                 </ul>
@@ -22,6 +29,7 @@
                     <li class="nav-item">@Html.ActionLink("Sair", "Logout", "Authentication")</li>
                 </ul>
             }
+
             else
             {
                 <ul class="nav navbar-nav float-right text-right p-1">

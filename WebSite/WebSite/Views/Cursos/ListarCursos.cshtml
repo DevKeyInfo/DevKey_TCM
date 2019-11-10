@@ -3,9 +3,9 @@
 @{
     ViewBag.Title = "Lista de Cursos";
 }
-<br/>
+<br />
 <h2 class="text-center">Lista de Cursos</h2>
-<br/>
+<br />
 
 <table class="table">
     <tr>
@@ -20,40 +20,52 @@
         <th>
             @Html.DisplayNameFor(model => model.Id_Categoria)
         </th>
-        
+
         <th></th>
     </tr>
-    
-@foreach (var item in Model) {
-    <tr>
 
-        <td>
-            @Html.DisplayFor(modelItem => item.Nome)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Desc_cur)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Id_Categoria)
-        </td>
-        <td>
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Desc_cur)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id_Categoria)
+            </td>
+            @*  <td>*@
             <!--UTILIZAR ESSE CODIGO PARA INSERIR VIDEOS DIRETO DO BANCO DE DADOS-->
-            <iframe width="1000" height="600" src="@item.Aula1"></iframe>
-        </td>
-        <td>
-            <iframe width="1000" height="500" src="@item.Aula2"></iframe>
-        </td>
-        <td>
-            @Html.ActionLink("Editar", "Editar", new { item.Nome }) |
-            @Html.ActionLink("Detalhes", "Detalhes", new { item.Nome}) |
-            @Html.ActionLink("Deletar", "Deletar", new { item.Nome })
-        </td>
-    </tr>
-}
+            @*      <iframe width="1000" height="600" src="@item.Aula1"></iframe>*@
+            @*</td>*@
+            @*<td>*@
+            @*  <iframe width="1000" height="500" src="@item.Aula2"></iframe>*@
+            @*</td>*@
+            <td>
+                @if (Session["NormalUser"] != null)
+                {
+                    @Html.ActionLink("Detalhes", "Detalhes", new { item.Id_Curso });
+                }
+
+                @if (Session["AdmUser"] != null)
+                {
+                    @Html.ActionLink("Editar |", "Editar", new { item.Id_Curso });
+                    @Html.ActionLink(" Deletar", "Deletar", new { item.Id_Curso });
+                }
+            </td>
+        </tr>
+    }
 
 </table>
 
 <br/>
-<p>
-    @Html.ActionLink("Adicionar novo curso", "CadastrarCurso")
-</p>
+<hr/>
+@if (Session["AdmUser"] != null)
+{
+    <p>
+        @Html.ActionLink("Adicionar novo curso", "CadastrarCurso")
+    </p>
+}

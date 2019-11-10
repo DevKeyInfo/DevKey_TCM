@@ -34,15 +34,15 @@ namespace WebSite.Controllers
                 return View(user);
             }
 
-            //var MetodoCadastro = new CommandsSQL();
-            //user = MetodoCadastro.ValidarCadastro(user);
+            var MetodoCadastro = new CommandsSQL();
+            user = MetodoCadastro.ValidarCadastro(user);
 
 
-            //if (user.Login != null)
-            //{
-            //    ModelState.AddModelError("Login", "O usuário não está disponível");
-            //    return View(user);
-            //}
+            if (user.Login != null)
+            {
+                ModelState.AddModelError("Login", "O usuário não está disponível");
+                return View(user);
+            }
 
             User NewUser = new User
             {
@@ -78,10 +78,20 @@ namespace WebSite.Controllers
                 return View(login);
             }
 
-            FormsAuthentication.SetAuthCookie(login.User, false);
-            Session["NormalUser"] = login.User;
-            TempData["Boas-Vindas"] = "Seja bem-vindo(a), " + login.Name + "!";
+            if (login.UserType == "ALUNO")
+            {
+                FormsAuthentication.SetAuthCookie(login.User, false);
+                Session["NormalUser"] = login.User;
+                TempData["Boas-Vindas"] = "Seja bem-vindo(a), " + login.Name + "!";
 
+            }
+
+            if (login.UserType == "ADM")
+            {
+                FormsAuthentication.SetAuthCookie(login.User, false);
+                Session["AdmUser"] = login.User;
+                TempData["Boas-Vindas"] = "Seja bem-vindo(a), " + login.Name + "!";
+            }
 
             return RedirectToAction("Index", "Home");
 

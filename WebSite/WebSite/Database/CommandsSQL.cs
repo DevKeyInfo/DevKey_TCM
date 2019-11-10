@@ -91,14 +91,14 @@ namespace WebSite.Database
                     Id_Categoria = retorno["Id_Categoria"].ToString(),
                     Aula1 = retorno["Aula1"].ToString(),
                     Aula2 = retorno["Aula2"].ToString(),
-                    //Aula3 = retorno["Aula 03"].ToString(),
-                    //Aula4 = retorno["Aula 04"].ToString(),
-                    //Aula5 = retorno["Aula 05"].ToString(),
-                    //Aula6 = retorno["Aula 06"].ToString(),
-                    //Aula7 = retorno["Aula 07"].ToString(),
-                    //Aula8 = retorno["Aula 08"].ToString(),
-                    //Aula9 = retorno["Aula 09"].ToString(),
-                    //Aula10 = retorno["Aula 10"].ToString(),
+                    Aula3 = retorno["Aula3"].ToString(),
+                    Aula4 = retorno["Aula4"].ToString(),
+                    Aula5 = retorno["Aula5"].ToString(),
+                    Aula6 = retorno["Aula6"].ToString(),
+                    Aula7 = retorno["Aula7"].ToString(),
+                    Aula8 = retorno["Aula8"].ToString(),
+                    Aula9 = retorno["Aula9"].ToString(),
+                    Aula10 = retorno["Aula10"].ToString(),
                 };
                 cursos.Add(TempCurso);
             }
@@ -113,12 +113,11 @@ namespace WebSite.Database
         {
             using (db = new DBConnection())
             {
-                var strQuery = string.Format("SELECT * FROM tb_User WHERE login_user = '{0}' AND Password_user = '{1}';",
+                var strQuery = string.Format("SELECT id_user, name_user, login_user, password_user, RTRIM(User_Type) [user_type] FROM tb_User WHERE login_user = '{0}' AND Password_user = '{1}';",
                 login.User, Hash.GerarHash(login.Password));
+                var retorno = db.RetornaComando(strQuery);
 
-            var retorno = db.RetornaComando(strQuery);
-
-            return VerificarLogin(retorno).FirstOrDefault();
+                return VerificarLogin(retorno).FirstOrDefault();
             }
 
         }
@@ -131,10 +130,10 @@ namespace WebSite.Database
                 var TempUsuario = new Login()
                 {
                     Id = int.Parse(retorno["id_user"].ToString()),
-                    User_Type = retorno["user_type"].ToString(),
                     Name = retorno["name_user"].ToString(),
                     User = retorno["Login_user"].ToString(),
                     Password = retorno["Password_user"].ToString(),
+                    UserType = retorno["User_Type"].ToString(),
                 };
                 usuarios.Add(TempUsuario);
             }
@@ -145,33 +144,33 @@ namespace WebSite.Database
 
 
         //Verifica se o usuario ja existe no banco de dados
-        //public User ValidarCadastro(User user)
-        //{
-        //    using (db = new DBConnection())
-        //    {
-        //        var strQuery = string.Format("SELECT * FROM tb_User WHERE Login_user = '{0}';", user.Login);
-        //        var retorno = db.RetornaComando(strQuery);
-        //        return VerificarCadastro(retorno).FirstOrDefault();
-        //    }
+        public User ValidarCadastro(User user)
+        {
+            using (db = new DBConnection())
+            {
+                var strQuery = string.Format("SELECT * FROM tb_User WHERE Login_user = '{0}';", user.Login);
+                var retorno = db.RetornaComando(strQuery);
+                return VerificarCadastro(retorno).FirstOrDefault();
+            }
 
-        //}
+        }
 
-        //public List<User> VerificarCadastro(SqlDataReader retorno)
-        //{
-        //    var usuarios = new List<User>();
+        public List<User> VerificarCadastro(SqlDataReader retorno)
+        {
+            var usuarios = new List<User>();
 
-        //    while (retorno.Read())
-        //    {
-        //        var TempUsuario = new User()
-        //        {
-        //            Login = retorno["Login_user"].ToString()
-        //        };
-        //        usuarios.Add(TempUsuario);
-        //    }
-        //    retorno.Close();
-        //    return usuarios;
-        //}
- 
+            while (retorno.Read())
+            {
+                var TempUsuario = new User()
+                {
+                    Login = retorno["Login_user"].ToString()
+                };
+                usuarios.Add(TempUsuario);
+            }
+            retorno.Close();
+            return usuarios;
+        }
+
 
     }
 }
