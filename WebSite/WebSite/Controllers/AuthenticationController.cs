@@ -35,28 +35,29 @@ namespace WebSite.Controllers
             }
 
             var MetodoCadastro = new CommandsSQL();
-            user = MetodoCadastro.ValidarCadastro(user);
+            var ValidaUsuario = MetodoCadastro.ValidarCadastro(user);
 
 
-            if (user.Login != null)
+            if (ValidaUsuario == null)
             {
-                ModelState.AddModelError("Login", "O usuário não está disponível");
-                return View(user);
+                User NewUser = new User
+                {
+                    Name = user.Name,
+                    //Email = user.Email,
+                    Login = user.Login,
+                    Password = Hash.GerarHash(user.Password),
+                };
+
+                CommandsSQL.Insert(NewUser);
+                return RedirectToAction("Index", "Home");
             }
+            else { 
+                    ModelState.AddModelError("Login", "O usuário não está disponível");
+                    return View(user);
 
-            User NewUser = new User
-            {
-                Name = user.Name,
-                Email = user.Email,
-                Login = user.Login,
-                Password = Hash.GerarHash(user.Password),
-            };
-
-            CommandsSQL.Insert(NewUser);
-
-            return RedirectToAction("Index", "Home");
-
+                }
         }
+
 
         public ActionResult Login()
         {

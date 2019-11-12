@@ -30,7 +30,7 @@
                 </ul>
             }
 
-            else
+            @if (Session["NormalUser"] == null && Session["AdmUser"] == null)
             {
                 <ul class="nav navbar-nav float-right text-right p-1">
                     <li class="nav-item">@Html.ActionLink("Login", "Login", "Authentication")</li>

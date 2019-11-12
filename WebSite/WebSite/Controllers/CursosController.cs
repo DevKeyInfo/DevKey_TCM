@@ -63,8 +63,8 @@ namespace WebSite.Controllers
         }
 
         //Terminar o metodo
-        public ActionResult Categorias(Cursos cursos)
-        {
+        //public ActionResult Categorias(Cursos cursos)
+       // {
             //------------------------------Usar uma das query's------------------------------ 
             //      SELECT c.id_curso, c.Nome, c.desc_cur, cc.desc_cat
             //      FROM curso c, categoria cc
@@ -74,6 +74,6 @@ namespace WebSite.Controllers
             //      Curso, Categoria
             //      Where Curso.Id_Categoria = Categoria.Id_Categoria
 
-        }
+       // }
     }
 }
