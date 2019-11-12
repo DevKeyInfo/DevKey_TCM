@@ -9,7 +9,7 @@ include_once(dirname(__FILE__) . '/conexao.php');
 <html>
 <head>
 
-	<title>DEVKEY - ORGANOGRAMA</title>
+	<title>DEVKEY - CRONOGRAMA</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script type="text/javascript" src="JS/jquery-2.1.0.min.js"></script>
@@ -177,6 +177,7 @@ include_once(dirname(__FILE__) . '/conexao.php');
 						$(document).ready(function(){
 							location.reload();
 						});
+						
 					}
 				});
 			},
