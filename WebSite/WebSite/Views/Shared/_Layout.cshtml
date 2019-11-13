@@ -8,7 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <nav class="navbar fixed-top mr-5 ml-5" style="background-color: rebeccapurple;">
+    <nav class="navbar fixed-top" style="background-color: rebeccapurple;">
         <div class="navbar-collapse d-inline p-1 text-white">
             @if (Session["NormalUser"] != null)
             {
@@ -33,10 +33,13 @@
             @if (Session["NormalUser"] == null && Session["AdmUser"] == null)
             {
                 <ul class="nav navbar-nav float-right text-right p-1">
-                    <li class="nav-item">@Html.ActionLink("Login", "Login", "Authentication")</li>
+                    <li class="nav-item">@Html.ActionLink(CadastroLogin.Resources.GlobalResource.Entrar, "Login", "Authentication")</li>
                 </ul>
                 <ul class="nav navbar-nav float-right text-right p-1 mr-3">
-                    <li class="nav-item">@Html.ActionLink("Cadastre-se", "Cadastro", "Authentication")</li>
+                    <li class="nav-item">@Html.ActionLink(CadastroLogin.Resources.GlobalResource.Cadastrese, "Cadastro", "Authentication")</li>
+                </ul>
+                <ul class="nav navbar-nav float-right text-right p-1 mr-3">
+                    <li class="nav-item">@Html.ActionLink(CadastroLogin.Resources.GlobalResource.Linguagem, "Index", "Linguagem")</li>
                 </ul>
             }
         </div>

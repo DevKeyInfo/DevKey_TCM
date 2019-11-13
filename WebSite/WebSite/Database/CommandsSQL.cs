@@ -129,6 +129,47 @@ namespace WebSite.Database
             return cursos;
         }
 
+        //Valida Aluno_Curso
+        public Login ValidaCadastroCurso(Login login, Cursos cursos)
+        {
+            using (db = new DBConnection())
+            {
+                var strQuery = string.Format("SELECT id_user, id_curso WHERE id_user = '{0}' AND id_curso = '{1}';",login.Id, cursos.Id_Curso);
+                var retorno = db.RetornaComando(strQuery);
+
+                return VerificarLogin(retorno).FirstOrDefault();
+            }
+
+        }
+        public List<Login> RetornaCadastroCurso(SqlDataReader RetornoAluno, SqlDataReader RetornoCurso)
+        {
+            var usuarios = new List<Login>();
+
+            while (RetornoAluno.Read())
+            {
+                var TempUsuario = new Login()
+                {
+                    Id = int.Parse(RetornoAluno["id_user"].ToString()),
+                };
+                usuarios.Add(TempUsuario);
+            }
+            RetornoAluno.Close();
+
+            var cursos = new List<Cursos>();
+
+            while (RetornoCurso.Read())
+            {
+                var TempCurso = new Cursos()
+                {
+                    Id_Curso = int.Parse(RetornoCurso["id_curso"].ToString()),
+                };
+                cursos.Add(TempCurso);
+            }
+            RetornoCurso.Close();
+
+            //RETORNO INCOMPLETO
+            return;
+        }
 
 
         //Validação de login no banco de dados
@@ -195,6 +236,90 @@ namespace WebSite.Database
             retorno.Close();
             return usuarios;
         }
+
+        //SEPARAR POR CATEGORIA
+
+        public List<Cursos> Categoria1()
+        {
+            using (db = new DBConnection())
+            {
+                var strQuery = string.Format("SELECT * FROM Curso WHERE Id_Categoria = 1;");
+                var retorno = db.RetornaComando(strQuery);
+                return BuscaCategoria1(retorno);
+            }
+
+        }
+
+        public List<Cursos> BuscaCategoria1(SqlDataReader retorno)
+        {
+            var cursos= new List<Cursos>();
+
+            while (retorno.Read())
+            {
+                var TempCurso = new Cursos()
+                {
+                    Nome = retorno["Nome"].ToString(),
+                    Desc_cur = retorno["Desc_cur"].ToString(),
+                    Id_Categoria = int.Parse(retorno["Id_Categoria"].ToString()),
+                    Id_Curso = int.Parse(retorno["Id_Curso"].ToString()),
+                    Aula1 = retorno["Aula1"].ToString(),
+                    Aula2 = retorno["Aula2"].ToString(),
+                    Aula3 = retorno["Aula3"].ToString(),
+                    Aula4 = retorno["Aula4"].ToString(),
+                    Aula5 = retorno["Aula5"].ToString(),
+                    Aula6 = retorno["Aula6"].ToString(),
+                    Aula7 = retorno["Aula7"].ToString(),
+                    Aula8 = retorno["Aula8"].ToString(),
+                    Aula9 = retorno["Aula9"].ToString(),
+                    Aula10 = retorno["Aula10"].ToString(),
+                };
+                cursos.Add(TempCurso);
+            }
+            retorno.Close();
+            return cursos;
+        }
+
+        public List<Cursos> Categoria2()
+        {
+            using (db = new DBConnection())
+            {
+                var strQuery = string.Format("SELECT * FROM Curso WHERE Id_Categoria = 2;");
+                var retorno = db.RetornaComando(strQuery);
+                return BuscaCategoria2(retorno);
+            }
+
+        }
+
+        public List<Cursos> BuscaCategoria2(SqlDataReader retorno)
+        {
+            var cursos = new List<Cursos>();
+
+            while (retorno.Read())
+            {
+                var TempCurso = new Cursos()
+                {
+                    Nome = retorno["Nome"].ToString(),
+                    Desc_cur = retorno["Desc_cur"].ToString(),
+                    Id_Categoria = int.Parse(retorno["Id_Categoria"].ToString()),
+                    Id_Curso = int.Parse(retorno["Id_Curso"].ToString()),
+                    Aula1 = retorno["Aula1"].ToString(),
+                    Aula2 = retorno["Aula2"].ToString(),
+                    Aula3 = retorno["Aula3"].ToString(),
+                    Aula4 = retorno["Aula4"].ToString(),
+                    Aula5 = retorno["Aula5"].ToString(),
+                    Aula6 = retorno["Aula6"].ToString(),
+                    Aula7 = retorno["Aula7"].ToString(),
+                    Aula8 = retorno["Aula8"].ToString(),
+                    Aula9 = retorno["Aula9"].ToString(),
+                    Aula10 = retorno["Aula10"].ToString(),
+                };
+                cursos.Add(TempCurso);
+            }
+            retorno.Close();
+            return cursos;
+        }
+
+
 
 
     }
