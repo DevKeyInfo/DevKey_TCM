@@ -13,9 +13,10 @@ namespace WebSite.Database
     {
         private DBConnection db;
 
-        public void CursoAluno(Login login, Cursos cursos)
+        //INSERE ALUNO_CURSO
+        public void CursoAluno(AlunoCurso alunoCurso)
         {
-            var StrQuery = string.Format("INSERT INTO Aluno_Curso (Id_User, Id_Curso) VALUES ({0}, {1})", login.Id, cursos.Id_Curso);
+            var StrQuery = string.Format("INSERT INTO Aluno_Curso (Id_User, Id_Curso) VALUES ({0}, {1})", alunoCurso.id_user, alunoCurso.id_curso);
 
             using (db = new DBConnection())
             {
@@ -130,45 +131,34 @@ namespace WebSite.Database
         }
 
         //Valida Aluno_Curso
-        public Login ValidaCadastroCurso(Login login, Cursos cursos)
+        public AlunoCurso ValidaCadastroCurso(AlunoCurso alunoCurso)
         {
             using (db = new DBConnection())
             {
-                var strQuery = string.Format("SELECT id_user, id_curso WHERE id_user = '{0}' AND id_curso = '{1}';",login.Id, cursos.Id_Curso);
+                var strQuery = string.Format("SELECT id_user, id_curso WHERE id_user = '{0}' AND id_curso = '{1}';",alunoCurso.id_user, alunoCurso.id_curso);
                 var retorno = db.RetornaComando(strQuery);
 
-                return VerificarLogin(retorno).FirstOrDefault();
+                return RetornaCadastroCurso(retorno).FirstOrDefault();
             }
 
         }
-        public List<Login> RetornaCadastroCurso(SqlDataReader RetornoAluno, SqlDataReader RetornoCurso)
+        public List<AlunoCurso> RetornaCadastroCurso(SqlDataReader retorno)
         {
-            var usuarios = new List<Login>();
+            var usuarios = new List<AlunoCurso>();
 
-            while (RetornoAluno.Read())
+            while (retorno.Read())
             {
-                var TempUsuario = new Login()
+                var TempUsuario = new AlunoCurso()
                 {
-                    Id = int.Parse(RetornoAluno["id_user"].ToString()),
+                    id_curso = int.Parse(retorno["id_user"].ToString()),
+                    id_user = int.Parse(retorno["id_curso"].ToString()),                    
                 };
                 usuarios.Add(TempUsuario);
             }
-            RetornoAluno.Close();
+            retorno.Close();
 
-            var cursos = new List<Cursos>();
 
-            while (RetornoCurso.Read())
-            {
-                var TempCurso = new Cursos()
-                {
-                    Id_Curso = int.Parse(RetornoCurso["id_curso"].ToString()),
-                };
-                cursos.Add(TempCurso);
-            }
-            RetornoCurso.Close();
-
-            //RETORNO INCOMPLETO
-            return;
+            return usuarios;
         }
 
 

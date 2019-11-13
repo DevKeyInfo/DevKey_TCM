@@ -63,18 +63,30 @@ namespace WebSite.Controllers
         }
 
 
-        public ActionResult Detalhes(Login login, int Id)
+        public ActionResult Detalhes(AlunoCurso alunoCurso, int Id)
         {
             var metodoCurso = new CommandsSQL();
             var cursoId = metodoCurso.ListadId(Id);
 
-            Login IdentificacaoLogin = new Login
+            AlunoCurso alunoCurso2 = new AlunoCurso
             {
-                Id = login.Id = int.Parse(Session["NormalUser"].ToString()),
+                id_user = int.Parse(Session["NormalUser"].ToString()),
+                id_curso = int.Parse(cursoId.ToString()),
             };
 
-            CommandsSQL.CursoAluno(IdentificacaoLogin, cursoId);
+                CommandsSQL.ValidaCadastroCurso(alunoCurso2);
 
+            if (alunoCurso2 == null)
+            {
+                AlunoCurso IdentificacaoLogin = new AlunoCurso
+            {
+                id_user = int.Parse(Session["NormalUser"].ToString()),
+                id_curso = int.Parse(cursoId.ToString()),
+            };
+
+                CommandsSQL.CursoAluno(IdentificacaoLogin);
+
+            }
             //Funciona porem nao e o ideal, ja que aqui ele retorna todos os cursos
             //Criar metodo para retornar as aulas de um curso!
             var RetornarCursos = new CommandsSQL();
