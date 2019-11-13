@@ -81,16 +81,16 @@ namespace WebSite.Controllers
 
             if (login.UserType == "ALUNO")
             {
-                FormsAuthentication.SetAuthCookie(login.User, false);
-                Session["NormalUser"] = login.User;
+                FormsAuthentication.SetAuthCookie(login.Id.ToString(), false);
+                Session["NormalUser"] = login.Id;
                 TempData["Boas-Vindas"] = "Seja bem-vindo(a), " + login.Name + "!";
 
             }
 
             if (login.UserType == "ADM")
             {
-                FormsAuthentication.SetAuthCookie(login.User, false);
-                Session["AdmUser"] = login.User;
+                FormsAuthentication.SetAuthCookie(login.Id.ToString(), false);
+                Session["AdmUser"] = login.Id;
                 TempData["Boas-Vindas"] = "Seja bem-vindo(a), " + login.Name + "!";
             }
 

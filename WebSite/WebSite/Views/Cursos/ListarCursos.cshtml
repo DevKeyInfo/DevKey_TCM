@@ -44,18 +44,19 @@
             @*<td>*@
             @*  <iframe width="1000" height="500" src="@item.Aula2"></iframe>*@
             @*</td>*@
-            <td>
-                @if (Session["NormalUser"] != null)
-                {
-                    @Html.ActionLink("Detalhes", "Detalhes", new { item.Id_Curso });
-                }
+        <td>
+            @if (Session["NormalUser"] != null)
+            {
+                @Html.ActionLink("Assistir curso", "Detalhes", new { id = item.Id_Curso });
+            }
 
-                @if (Session["AdmUser"] != null)
-                {
-                    @Html.ActionLink("Editar |", "Editar", new { item.Id_Curso });
-                    @Html.ActionLink(" Deletar", "Deletar", new { item.Id_Curso });
-                }
-            </td>
+            @if (Session["AdmUser"] != null)
+            {
+                @Html.ActionLink("Assistir curso", "Detalhes", new { id = item.Id_Curso });
+                @Html.ActionLink("Editar |", "Editar", new { id = item.Id_Curso });
+                @Html.ActionLink(" Deletar", "Deletar", new { id = item.Id_Curso });
+            }
+        </td>
         </tr>
     }
 

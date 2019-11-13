@@ -12,7 +12,7 @@ namespace WebSite.Models
         [DisplayName("Tipo de usuário")]
         public string UserType { get; set; } 
 
-        public string ID { get; set; }
+        public int ID { get; set; }
 
         [DisplayName("Nome")]
         [Required(ErrorMessage = "Este campo é obrigatório")]

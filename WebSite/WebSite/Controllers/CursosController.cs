@@ -62,6 +62,26 @@ namespace WebSite.Controllers
             return View(TodosCursos);
         }
 
+
+        public ActionResult Detalhes(Login login, int Id)
+        {
+            var metodoCurso = new CommandsSQL();
+            var cursoId = metodoCurso.ListadId(Id);
+
+            Login IdentificacaoLogin = new Login
+            {
+                Id = login.Id = int.Parse(Session["NormalUser"].ToString()),
+            };
+
+            CommandsSQL.CursoAluno(IdentificacaoLogin, cursoId);
+
+            //Funciona porem nao e o ideal, ja que aqui ele retorna todos os cursos
+            //Criar metodo para retornar as aulas de um curso!
+            var RetornarCursos = new CommandsSQL();
+            var TodosCursos = RetornarCursos.ListarCursos();
+            return View(TodosCursos);
+        }
+
         //Terminar o metodo
         //public ActionResult Categorias(Cursos cursos)
        // {

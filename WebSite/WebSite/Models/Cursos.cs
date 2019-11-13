@@ -14,7 +14,7 @@ namespace CadastroLogin.Models
 
         [DisplayName("Categoria")]
         [Required]
-        public string Id_Categoria { get; set; }
+        public int Id_Categoria { get; set; }
 
         [DisplayName("Nome do Curso")]
         [MinLength(5)]

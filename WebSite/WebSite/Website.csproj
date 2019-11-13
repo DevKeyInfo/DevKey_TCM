@@ -242,6 +242,7 @@
     <Content Include="Views\Home\ListarUsuarios.cshtml" />
     <Content Include="Views\Cursos\CadastrarCurso.cshtml" />
     <Content Include="Views\Cursos\ListarCursos.cshtml" />
+    <Content Include="Views\Cursos\Detalhes.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

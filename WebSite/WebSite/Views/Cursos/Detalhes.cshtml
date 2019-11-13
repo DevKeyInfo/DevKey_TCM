@@ -1,0 +1,97 @@
+﻿@model IEnumerable<CadastroLogin.Models.Cursos>
+
+@{
+    ViewBag.Title = "Detalhes";
+}
+
+<h2>Detalhes</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Desc_cur)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aula1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aula2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aula3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aula4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aula5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aula6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aula7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aula8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aula9)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aula10)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Desc_cur)
+        </td>
+        <td>
+            <iframe width="1000" height="600" src="@item.Aula1"></iframe>
+        </td>
+        <td>
+            <iframe width="1000" height="600" src="@item.Aula2"></iframe>
+        </td>
+        <td>
+            <iframe width="1000" height="600" src="@item.Aula3"></iframe>
+        </td>
+        <td>
+            <iframe width="1000" height="600" src="@item.Aula4"></iframe>
+        </td>
+        <td>
+            <iframe width="1000" height="600" src="@item.Aula5"></iframe>
+        </td>
+        <td>
+            <iframe width="1000" height="600" src="@item.Aula6"></iframe>
+        </td>
+        <td>
+            <iframe width="1000" height="600" src="@item.Aula7"></iframe>
+        </td>
+        <td>
+            <iframe width="1000" height="600" src="@item.Aula8"></iframe>
+        </td>
+        <td>
+            <iframe width="1000" height="600" src="@item.Aula9"></iframe>
+        </td>
+        <td>
+            <iframe width="1000" height="600" src="@item.Aula10"></iframe>
+        </td>
+        @*<td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>*@
+    </tr>
+}
+
+</table>

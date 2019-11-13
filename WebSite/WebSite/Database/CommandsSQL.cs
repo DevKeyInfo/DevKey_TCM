@@ -13,6 +13,16 @@ namespace WebSite.Database
     {
         private DBConnection db;
 
+        public void CursoAluno(Login login, Cursos cursos)
+        {
+            var StrQuery = string.Format("INSERT INTO Aluno_Curso (Id_User, Id_Curso) VALUES ({0}, {1})", login.Id, cursos.Id_Curso);
+
+            using (db = new DBConnection())
+            {
+                db.ExecuteCommand(StrQuery);
+            }
+        }
+
         public void InserirCurso(Cursos curso)
         {
             var StrQuery = "";
@@ -56,7 +66,7 @@ namespace WebSite.Database
             {
                 var TempUsuario = new User()
                 {
-                    ID = retorno["Id_User"].ToString(),
+                    ID = int.Parse(retorno["Id_User"].ToString()),
                     Name = retorno["Name_User"].ToString(),
                     Login = retorno["Login_user"].ToString(),
                     Password = retorno["Password_user"].ToString(),
@@ -68,6 +78,18 @@ namespace WebSite.Database
             retorno.Close();
             return usuarios;
         }
+
+        public Cursos ListadId(int Id)
+        {
+            using (db = new DBConnection())
+            {
+                var strQuery = string.Format("SELECT * FROM Curso WHERE Id_Curso = {0};", Id);
+                var retorno = db.RetornaComando(strQuery);
+                return ListaDeCursos(retorno).FirstOrDefault();
+            }
+        }
+
+
         //Retorna lista de cursos cadastrados
         public List<Cursos> ListarCursos()
         {
@@ -88,7 +110,8 @@ namespace WebSite.Database
                 {
                     Nome = retorno["Nome"].ToString(),
                     Desc_cur = retorno["Desc_cur"].ToString(),
-                    Id_Categoria = retorno["Id_Categoria"].ToString(),
+                    Id_Categoria = int.Parse(retorno["Id_Categoria"].ToString()),
+                    Id_Curso = int.Parse(retorno["Id_Curso"].ToString()),
                     Aula1 = retorno["Aula1"].ToString(),
                     Aula2 = retorno["Aula2"].ToString(),
                     Aula3 = retorno["Aula3"].ToString(),
