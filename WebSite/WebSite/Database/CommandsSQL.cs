@@ -135,7 +135,7 @@ namespace WebSite.Database
         {
             using (db = new DBConnection())
             {
-                var strQuery = string.Format("SELECT id_user, id_curso WHERE id_user = '{0}' AND id_curso = '{1}';",alunoCurso.id_user, alunoCurso.id_curso);
+                var strQuery = string.Format("SELECT id_user, id_curso FROM Aluno_Curso WHERE id_user = '{0}' AND id_curso = '{1}';",alunoCurso.id_user, alunoCurso.id_curso);
                 var retorno = db.RetornaComando(strQuery);
 
                 return RetornaCadastroCurso(retorno).FirstOrDefault();
@@ -156,7 +156,6 @@ namespace WebSite.Database
                 usuarios.Add(TempUsuario);
             }
             retorno.Close();
-
 
             return usuarios;
         }
@@ -309,6 +308,43 @@ namespace WebSite.Database
             return cursos;
         }
 
+        public List<Cursos> DetalheCurso(int Id)
+        {
+            var db = new DBConnection();
+            var strQuery = string.Format("SELECT * FROM Curso WHERE Id_curso = {0};", Id);
+            var retorno = db.RetornaComando(strQuery);
+            return RetornaDetalheCurso(retorno);
+        }
+
+        //Retorna lista de cursos cadastrados
+        public List<Cursos> RetornaDetalheCurso(SqlDataReader retorno)
+        {
+            var cursos = new List<Cursos>();
+
+            while (retorno.Read())
+            {
+                var TempCurso = new Cursos()
+                {
+                    Nome = retorno["Nome"].ToString(),
+                    Desc_cur = retorno["Desc_cur"].ToString(),
+                    Id_Categoria = int.Parse(retorno["Id_Categoria"].ToString()),
+                    Id_Curso = int.Parse(retorno["Id_Curso"].ToString()),
+                    Aula1 = retorno["Aula1"].ToString(),
+                    Aula2 = retorno["Aula2"].ToString(),
+                    Aula3 = retorno["Aula3"].ToString(),
+                    Aula4 = retorno["Aula4"].ToString(),
+                    Aula5 = retorno["Aula5"].ToString(),
+                    Aula6 = retorno["Aula6"].ToString(),
+                    Aula7 = retorno["Aula7"].ToString(),
+                    Aula8 = retorno["Aula8"].ToString(),
+                    Aula9 = retorno["Aula9"].ToString(),
+                    Aula10 = retorno["Aula10"].ToString(),
+                };
+                cursos.Add(TempCurso);
+            }
+            retorno.Close();
+            return cursos;
+        }
 
 
 

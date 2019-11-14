@@ -79,7 +79,7 @@ namespace WebSite.Controllers
                 return View(login);
             }
 
-            if (login.UserType == "ALUNO")
+            else if (login.UserType == "ALUNO")
             {
                 FormsAuthentication.SetAuthCookie(login.Id.ToString(), false);
                 Session["NormalUser"] = login.Id;
@@ -87,7 +87,7 @@ namespace WebSite.Controllers
 
             }
 
-            if (login.UserType == "ADM")
+            else //(login.UserType == "ADM")
             {
                 FormsAuthentication.SetAuthCookie(login.Id.ToString(), false);
                 Session["AdmUser"] = login.Id;
