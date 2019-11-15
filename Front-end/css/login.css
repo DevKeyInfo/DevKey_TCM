@@ -1,0 +1,149 @@
+section{
+    background-image: linear-gradient(to left, #4f2393, #551f8e, #5a1b89, #5e1784, #62137f, #6c1287, #771190, #820f98, #9810b0, #ae10c9, #c50fe2, #dc0cfc); 
+    height: 100vh;
+}
+.box{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+    margin-top: 13%;
+    border-radius: 10px;
+}
+.box-image{
+    background: url(../image/banner-sigin.jpg);
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+}
+
+.box-image::before{
+    content: "";
+    width: 100%;
+    height: 70vh;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+    display: block;
+
+}
+.box-image{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    float: left;
+}
+
+.box-image{
+    width: 100%;
+    height: 70vh;
+    margin-left: -1.9rem;
+    border-radius: 10px;
+}
+
+.box-form{
+    float: left;
+}
+.form-group{
+    margin-left: 10%;
+}
+.form-control{
+    border-radius: 1.2rem;
+    width: 85%;
+  
+}
+
+.box-login{
+    
+    height: 100px;
+}
+
+.box-login button{
+    margin-left: 30%;
+    padding: .5rem 5rem;
+    
+
+}
+/* < JUMBOTRON TEXTO DA IMAGEM BACKGROUND>*/
+.jumbotron {
+    text-align: center;
+    color: var(--white);
+    z-index: 2;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+}
+.jumbotron-heading {
+    font-size: 2rem;
+    margin: 0;
+    color: #fff;
+    font-weight: 600px;
+}
+.jumbotron-text {
+    font-size: 1rem;
+    margin: 0;
+    color: #fff;
+  
+}
+
+.btn-purple-form{
+    color: #fff;
+    background-color:  #8e24aa;
+    border:none;
+    border-radius: 2rem;
+    padding: .5rem 9rem;
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    font-weight: 600;
+    cursor: pointer;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    margin-left: 15%;
+  }
+  
+  .btn-purple-form:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, #7300b5, #9500c6, #b800d7, #ff00f4);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    
+  }
+
+  .form-group span{
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    margin-left: 0.4rem;
+    background-color: transparent;
+    position: absolute;
+}
+
+.form-control{
+    padding: .375rem 2.7rem;
+}
+
+  .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color:rgba(116, 79, 168, 0.274);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(116, 79, 168, 0.274);
+    transition: all 400ms ease-in-out;
+  }

@@ -1,0 +1,34 @@
+.img-curso{
+    width: 362px;
+    height:250px ;
+    background-size:cover;
+    background-position: center;
+}
+
+
+
+/*#nav-bar{
+    background: url(../image/banner-roxo.jpg);
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-position: 110% 25%;
+    width: 100%;
+    height: 90vh;
+}
+
+#nav-bar::before{
+    content: "";
+    width: 100%;
+    height: 70vh;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    display: block;
+
+}*/
