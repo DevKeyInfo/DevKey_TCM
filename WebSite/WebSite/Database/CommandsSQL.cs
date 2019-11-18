@@ -113,7 +113,7 @@ namespace WebSite.Database
                     Desc_cur = retorno["Desc_cur"].ToString(),
                     Id_Categoria = int.Parse(retorno["Id_Categoria"].ToString()),
                     Id_Curso = int.Parse(retorno["Id_Curso"].ToString()),
-                    Aula1 = retorno["Aula1"].ToString(),
+                    Aula1 = retorno["Aula1"].ToString(),                  
                     Aula2 = retorno["Aula2"].ToString(),
                     Aula3 = retorno["Aula3"].ToString(),
                     Aula4 = retorno["Aula4"].ToString(),
@@ -340,6 +340,44 @@ namespace WebSite.Database
                     Aula9 = retorno["Aula9"].ToString(),
                     Aula10 = retorno["Aula10"].ToString(),
                 };
+                if(TempCurso.Aula2 == "")
+                {
+                    TempCurso.Aula2 = null;
+                }
+                if (TempCurso.Aula3 == "")
+                {
+                    TempCurso.Aula3 = null;
+                }
+                if (TempCurso.Aula4 == "")
+                {
+                    TempCurso.Aula4 = null;
+                }
+                if (TempCurso.Aula5 == "")
+                {
+                    TempCurso.Aula5 = null;
+                }
+                if (TempCurso.Aula6 == "")
+                {
+                    TempCurso.Aula6 = null;
+                }
+                if (TempCurso.Aula7 == "")
+                {
+                    TempCurso.Aula7 = null;
+                }
+                if (TempCurso.Aula8 == "")
+                {
+                    TempCurso.Aula8 = null;
+                }
+                if (TempCurso.Aula9 == "")
+                {
+                    TempCurso.Aula9 = null;
+                }
+                if (TempCurso.Aula10 == "")
+                {
+                    TempCurso.Aula10 = null;
+                }
+
+
                 cursos.Add(TempCurso);
             }
             retorno.Close();

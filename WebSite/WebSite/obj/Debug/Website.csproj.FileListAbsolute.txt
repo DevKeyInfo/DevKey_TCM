@@ -198,7 +198,6 @@ C:\Users\Gabriel\Desktop\Projetos\DevKey_TCM\WebSite\WebSite\bin\Microsoft.AI.De
 C:\Users\Gabriel\Desktop\Projetos\DevKey_TCM\WebSite\WebSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\Gabriel\Desktop\Projetos\DevKey_TCM\WebSite\WebSite\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Gabriel\Desktop\Projetos\DevKey_TCM\WebSite\WebSite\bin\Microsoft.AI.Web.xml
-C:\Users\Gabriel\Desktop\Projetos\DevKey_TCM\WebSite\WebSite\obj\Debug\Website.csprojAssemblyReference.cache
 C:\Users\Gabriel\Desktop\Projetos\DevKey_TCM\WebSite\WebSite\obj\Debug\Website.csproj.CopyComplete
 C:\Users\Gabriel\Desktop\Projetos\DevKey_TCM\WebSite\WebSite\obj\Debug\CadastroLogin.dll
 C:\Users\Gabriel\Desktop\Projetos\DevKey_TCM\WebSite\WebSite\obj\Debug\CadastroLogin.pdb
@@ -355,76 +354,155 @@ C:\Users\2binfo\Documents\Gabriel Ap\DevKey_TCM\WebSite\WebSite\obj\Debug\en\Cad
 C:\Users\2binfo\Documents\Gabriel Ap\DevKey_TCM\WebSite\WebSite\obj\Debug\Website.csproj.CopyComplete
 C:\Users\2binfo\Documents\Gabriel Ap\DevKey_TCM\WebSite\WebSite\obj\Debug\CadastroLogin.dll
 C:\Users\2binfo\Documents\Gabriel Ap\DevKey_TCM\WebSite\WebSite\obj\Debug\CadastroLogin.pdb
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\ApplicationInsights.config
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\csc.exe
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\csc.exe.config
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\csc.rsp
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\csi.exe
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\csi.rsp
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\System.AppContext.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\vbc.exe
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\vbc.exe.config
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\vbc.rsp
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\VBCSCompiler.exe
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\CadastroLogin.dll.config
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\CadastroLogin.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\CadastroLogin.pdb
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\en\CadastroLogin.resources.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\Antlr3.Runtime.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\Microsoft.AI.Agent.Intercept.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\Microsoft.AI.DependencyCollector.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\Microsoft.AI.Web.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\Microsoft.AI.WindowsServer.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\Microsoft.ApplicationInsights.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\Newtonsoft.Json.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\System.Web.Helpers.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\System.Web.Mvc.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\System.Web.Optimization.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\System.Web.Razor.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\System.Web.WebPages.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\System.Web.WebPages.Razor.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\WebGrease.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\System.Web.Helpers.xml
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\System.Web.Mvc.xml
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\System.Web.Optimization.xml
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\System.Web.Razor.xml
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\System.Web.WebPages.xml
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\System.Web.WebPages.Razor.xml
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\Antlr3.Runtime.pdb
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\Newtonsoft.Json.xml
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\Microsoft.ApplicationInsights.xml
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\Microsoft.AI.DependencyCollector.xml
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\Microsoft.AI.WindowsServer.xml
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\bin\Microsoft.AI.Web.xml
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\obj\Debug\Website.csprojAssemblyReference.cache
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\obj\Debug\CadastroLogin.Resources.GlobalResource.resources
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\obj\Debug\CadastroLogin.Resources.GlobalResource.en.resources
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\obj\Debug\Website.csproj.GenerateResource.cache
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\obj\Debug\en\CadastroLogin.resources.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\obj\Debug\Website.csproj.CopyComplete
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\obj\Debug\CadastroLogin.dll
-C:\Users\Gabrielle\Documents\DevKey_TCM\WebSite\WebSite\obj\Debug\CadastroLogin.pdb
+C:\Users\Gabriel\Desktop\Projetos\DevKey_TCM\WebSite\WebSite\bin\en\CadastroLogin.resources.dll
+C:\Users\Gabriel\Desktop\Projetos\DevKey_TCM\WebSite\WebSite\obj\Debug\CadastroLogin.Resources.GlobalResource.resources
+C:\Users\Gabriel\Desktop\Projetos\DevKey_TCM\WebSite\WebSite\obj\Debug\CadastroLogin.Resources.GlobalResource.en.resources
+C:\Users\Gabriel\Desktop\Projetos\DevKey_TCM\WebSite\WebSite\obj\Debug\Website.csproj.GenerateResource.cache
+C:\Users\Gabriel\Desktop\Projetos\DevKey_TCM\WebSite\WebSite\obj\Debug\en\CadastroLogin.resources.dll
+C:\Users\Gabriel\Desktop\Projetos\DevKey_TCM\WebSite\WebSite\obj\Debug\Website.csprojAssemblyReference.cache
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\ApplicationInsights.config
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\csc.exe
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\csc.exe.config
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\csc.rsp
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\csi.exe
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\csi.rsp
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\System.AppContext.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\vbc.exe
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\vbc.exe.config
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\vbc.rsp
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\VBCSCompiler.exe
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\CadastroLogin.dll.config
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\CadastroLogin.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\CadastroLogin.pdb
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\en\CadastroLogin.resources.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\Antlr3.Runtime.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\Microsoft.AI.Web.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\Newtonsoft.Json.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\System.Web.Helpers.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\System.Web.Mvc.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\System.Web.Optimization.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\System.Web.Razor.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\System.Web.WebPages.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\System.Web.WebPages.Razor.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\WebGrease.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\System.Web.Helpers.xml
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\System.Web.Mvc.xml
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\System.Web.Optimization.xml
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\System.Web.Razor.xml
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\System.Web.WebPages.xml
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\System.Web.WebPages.Razor.xml
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\Antlr3.Runtime.pdb
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\Newtonsoft.Json.xml
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\bin\Microsoft.AI.Web.xml
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\obj\Debug\Website.csprojAssemblyReference.cache
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\obj\Debug\CadastroLogin.Resources.GlobalResource.resources
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\obj\Debug\CadastroLogin.Resources.GlobalResource.en.resources
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\obj\Debug\Website.csproj.GenerateResource.cache
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\obj\Debug\en\CadastroLogin.resources.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\obj\Debug\Website.csproj.CopyComplete
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\obj\Debug\CadastroLogin.dll
+C:\Users\Gabriel\Desktop\USAR LAYOUTS DEVKEY\WebSite\WebSite\obj\Debug\CadastroLogin.pdb
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\ApplicationInsights.config
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\csc.exe
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\csc.exe.config
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\csc.rsp
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\csi.exe
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\csi.rsp
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\System.AppContext.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\vbc.exe
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\vbc.exe.config
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\vbc.rsp
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\VBCSCompiler.exe
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\CadastroLogin.dll.config
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\CadastroLogin.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\CadastroLogin.pdb
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\en\CadastroLogin.resources.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\Antlr3.Runtime.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\Microsoft.AI.Web.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\Newtonsoft.Json.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\System.Web.Helpers.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\System.Web.Mvc.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\System.Web.Optimization.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\System.Web.Razor.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\System.Web.WebPages.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\System.Web.WebPages.Razor.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\WebGrease.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\System.Web.Helpers.xml
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\System.Web.Mvc.xml
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\System.Web.Optimization.xml
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\System.Web.Razor.xml
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\System.Web.WebPages.xml
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\System.Web.WebPages.Razor.xml
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\Antlr3.Runtime.pdb
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\Newtonsoft.Json.xml
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\bin\Microsoft.AI.Web.xml
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\obj\Debug\Website.csprojAssemblyReference.cache
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\obj\Debug\CadastroLogin.Resources.GlobalResource.resources
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\obj\Debug\CadastroLogin.Resources.GlobalResource.en.resources
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\obj\Debug\Website.csproj.GenerateResource.cache
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\obj\Debug\en\CadastroLogin.resources.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\obj\Debug\Website.csproj.CopyComplete
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\obj\Debug\CadastroLogin.dll
+C:\Users\Gabriel\Desktop\DEKVEY EXEMPLO\WebSite\WebSite\obj\Debug\CadastroLogin.pdb

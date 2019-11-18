@@ -117,8 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CadastrarCurso" xml:space="preserve">
+    <value>Cadastrar Curso</value>
+  </data>
   <data name="Cadastrese" xml:space="preserve">
     <value>Cadastre-se</value>
+  </data>
+  <data name="CarrosselCursos" xml:space="preserve">
+    <value>Confira nossos cursos!</value>
+  </data>
+  <data name="CatDestaque" xml:space="preserve">
+    <value>Aqui você encontrar nossas principais categorias em destaque!</value>
+  </data>
+  <data name="Categorias" xml:space="preserve">
+    <value>Categorias</value>
   </data>
   <data name="Entrar" xml:space="preserve">
     <value>Entrar</value>
@@ -129,11 +141,42 @@
   <data name="FormularioLogin" xml:space="preserve">
     <value>Formulário de Acesso</value>
   </data>
+  <data name="Front-End" xml:space="preserve">
+    <value>Aprenda tudo sobre Front-End!</value>
+  </data>
+  <data name="IndexCat1" xml:space="preserve">
+    <value>Todos os cursos relacionados a front-end estão aqui!</value>
+  </data>
+  <data name="IndexCat2" xml:space="preserve">
+    <value>Se torne um profssional capacitado a trabalha com Back-End!</value>
+  </data>
+  <data name="Ingles" xml:space="preserve">
+    <value>Inglês</value>
+  </data>
+  <data name="Inicio" xml:space="preserve">
+    <value>Início</value>
+  </data>
   <data name="Linguagem" xml:space="preserve">
     <value>Linguagem</value>
   </data>
+  <data name="ListaCat1" xml:space="preserve">
+    <value>Lista de cursos</value>
+  </data>
   <data name="ListaUsuarios" xml:space="preserve">
     <value>Lista de Usuários</value>
+  </data>
+  <data name="Perfil" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="Plataforma" xml:space="preserve">
+    <value>A DevKey surgiu da necessidade de uma plataforma de ensino com qualidade e com preço acessível para todos, nosso objetivo é formar cada vez mais
+                        desenvolvedores aptos a entrarem no mercado de trabalho após finalizarem nossos cursos, já que a DevKey vem ganhando cada vez mais espaço dentro do mercado profissional.</value>
+  </data>
+  <data name="Portugues" xml:space="preserve">
+    <value>Português</value>
+  </data>
+  <data name="Principais" xml:space="preserve">
+    <value>Principais</value>
   </data>
   <data name="Sair" xml:space="preserve">
     <value>Sair</value>

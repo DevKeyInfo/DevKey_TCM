@@ -27,9 +27,9 @@ namespace WebSite.Controllers
         }
 
         [HttpPost]
-        public ActionResult Cadastro(User user)
+        public ActionResult Cadastro(User user, Login login)
         {
-            if (!ModelState.IsValid)
+            if (ModelState == null)
             {
                 return View(user);
             }
@@ -49,13 +49,15 @@ namespace WebSite.Controllers
                 };
 
                 CommandsSQL.Insert(NewUser);
+                TempData["Cadastro"] = "Usuário cadastrado com sucesso!";
                 return RedirectToAction("Index", "Home");
             }
             else { 
-                    ModelState.AddModelError("Login", "O usuário não está disponível");
+                    ModelState.AddModelError("Login", "Usuário não disponível");
                     return View(user);
 
                 }
+
         }
 
 
@@ -67,7 +69,12 @@ namespace WebSite.Controllers
         [HttpPost]
         public ActionResult Login(Login login)
         {
-         
+
+            if (!ModelState.IsValid)
+            {
+                return View(login);
+            }
+
             var MetodoLogin = new CommandsSQL();
             login = MetodoLogin.ValidarLogin(login);
             

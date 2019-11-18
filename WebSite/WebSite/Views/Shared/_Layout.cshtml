@@ -1,60 +1,159 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <meta charset="utf-8">
+    <title>Cursos online, matricule-se já!</title>
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/global.css">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+          crossorigin="anonymous">
+    <link rel="icon" href="~/image/logo-devkey.png">
+
 </head>
+
 <body>
-    <nav class="navbar fixed-top" style="background-color: rebeccapurple;">
-        <div class="navbar-collapse d-inline p-1 text-white">
-            @if (Session["NormalUser"] != null)
-            {
-                <ul class="nav navbar-nav float-left text-left p-1">
-                    <li class="nav-item">@Html.ActionLink("Início", "Index", "Home")</li>
-                </ul>
-                <ul class="nav navbar-nav float-right text-right p-1">
-                    <li class="nav-item">@Html.ActionLink("Sair", "Logout", "Authentication")</li>
-                </ul>
-            }
+    <script src="~/js/bootstrap.min.js"></script>
 
-            @if (Session["AdmUser"] != null)
-            {
-                <ul class="nav navbar-nav float-left text-left p-1">
-                    <li class="nav-item">@Html.ActionLink("Lista de usuários", "ListarUsuarios", "Home")</li>
-                </ul>
-                <ul class="nav navbar-nav float-right text-right p-1">
-                    <li class="nav-item">@Html.ActionLink("Sair", "Logout", "Authentication")</li>
-                </ul>
-            }
 
-            @if (Session["NormalUser"] == null && Session["AdmUser"] == null)
-            {
-                <ul class="nav navbar-nav float-right text-right p-1">
-                    <li class="nav-item">@Html.ActionLink(CadastroLogin.Resources.GlobalResource.Entrar, "Login", "Authentication")</li>
-                </ul>
-                <ul class="nav navbar-nav float-right text-right p-1 mr-3">
-                    <li class="nav-item">@Html.ActionLink(CadastroLogin.Resources.GlobalResource.Cadastrese, "Cadastro", "Authentication")</li>
-                </ul>
-                <ul class="nav navbar-nav float-right text-right p-1 mr-3">
-                    <li class="nav-item">@Html.ActionLink(CadastroLogin.Resources.GlobalResource.Linguagem, "Index", "Linguagem")</li>
-                </ul>
-            }
+    <nav class="navbar navbar-expand-lg navbar-light bg-purpk nav-pills">
+        <div class="d-flex flex-grow-1">
+            <span class="w-100 d-lg-none d-block"></span>
+            <a class="navbar-brand d-none d-lg-inline-block h1 mb-0" href="#">
+                <img src="~/image/logo-devkey.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            </a>
+            <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+                <img src="~/image/logo-devkey.png" alt="logo">
+            </a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                @if (Session["NormalUser"] != null)
+                {
+                    <li class="nav-item">
+                        <a href="~/Home/Perfil" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Authentication/Logout" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Sair</a>
+                    </li>
+
+                    <li class="nav-item nav-link m-3 active-1">
+                        @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Portugues, "Change", "Linguagem", new { LanguageAbbreviation = "pt" }, null)
+                    </li>
+                    <li class="nav-item nav-link m-3 active-1">
+                        @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Ingles, "Change", "Linguagem", new { LanguageAbbreviation = "en" }, null)
+                    </li>
+
+                }
+                @if (Session["AdmUser"] != null)
+                {
+                    <li class="nav-item">
+                        <a href="~/Home/ListarUsuarios" class="nav-link m-2 active">@CadastroLogin.Resources.GlobalResource.ListaUsuarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Authentication/CadastrarCurso" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.CadastrarCurso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Authentication/Logout" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Sair</a>
+                    </li>
+                    <li class="nav-item nav-link m-3 active-1">
+                        @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Portugues, "Change", "Linguagem", new { LanguageAbbreviation = "pt" }, null)
+                    </li>
+                    <li class="nav-item nav-link m-3 active-1">
+                        @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Ingles, "Change", "Linguagem", new { LanguageAbbreviation = "en" }, null)
+                    </li>
+                }
+
+                @if (Session["NormalUser"] == null && Session["AdmUser"] == null)
+                {
+
+                    <li class="nav-item">
+                        <a href="~/Authentication/Cadastro" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Cadastrese</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Authentication/Login" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Entrar</a>
+                    </li>
+                    <li class="nav-item nav-link m-3 active-1">
+                        @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Portugues, "Change", "Linguagem", new { LanguageAbbreviation = "pt" }, null)
+                    </li>
+                    <li class="nav-item nav-link m-3 active-1">
+                        @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Ingles, "Change", "Linguagem", new { LanguageAbbreviation = "en" }, null)
+                    </li>
+
+                }
+            </ul>
+</div>
     </nav>
-
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Todos os direitos reservados</p>
-        </footer>
-    </div>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    @RenderBody()
     @RenderSection("scripts", required: false)
 </body>
 </html>
+
+
+
+    @*<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>@ViewBag.Title</title>
+            @Styles.Render("~/Content/css")
+            @Scripts.Render("~/bundles/modernizr")
+        </head>
+        <body>
+            <nav class="navbar fixed-top" style="background-color: rebeccapurple;">
+                <div class="navbar-collapse d-inline p-1 text-white">
+                    @if (Session["NormalUser"] != null)
+                    {
+                        <ul class="nav navbar-nav float-left text-left p-1">
+                            <li class="nav-item">@Html.ActionLink("Início", "Index", "Home")</li>
+                        </ul>
+                        <ul class="nav navbar-nav float-right text-right p-1">
+                            <li class="nav-item">@Html.ActionLink("Sair", "Logout", "Authentication")</li>
+                        </ul>
+                    }
+
+                    @if (Session["AdmUser"] != null)
+                    {
+                        <ul class="nav navbar-nav float-left text-left p-1">
+                            <li class="nav-item">@Html.ActionLink("Lista de usuários", "ListarUsuarios", "Home")</li>
+                        </ul>
+                        <ul class="nav navbar-nav float-right text-right p-1">
+                            <li class="nav-item">@Html.ActionLink("Sair", "Logout", "Authentication")</li>
+                        </ul>
+                    }
+
+                    @if (Session["NormalUser"] == null && Session["AdmUser"] == null)
+                    {
+                        <ul class="nav navbar-nav float-right text-right p-1">
+                            <li class="nav-item">@Html.ActionLink(CadastroLogin.Resources.GlobalResource.Entrar, "Login", "Authentication")</li>
+                        </ul>
+                        <ul class="nav navbar-nav float-right text-right p-1 mr-3">
+                            <li class="nav-item">@Html.ActionLink(CadastroLogin.Resources.GlobalResource.Cadastrese, "Cadastro", "Authentication")</li>
+                        </ul>
+                        <ul class="nav navbar-nav float-right text-right p-1 mr-3">
+                            <li class="nav-item">@Html.ActionLink(CadastroLogin.Resources.GlobalResource.Linguagem, "Index", "Linguagem")</li>
+                        </ul>
+                    }
+                </div>
+            </nav>
+
+            <div class="container body-content">
+                @RenderBody()
+                <hr />
+                <footer>
+                    <p>&copy; @DateTime.Now.Year - Todos os direitos reservados</p>
+                </footer>
+            </div>
+
+            @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/bootstrap")
+            @RenderSection("scripts", required: false)
+        </body>
+        </html>*@

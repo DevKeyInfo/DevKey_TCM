@@ -55,7 +55,7 @@ namespace WebSite.Controllers
 
 
         }
-        public ActionResult ListarCursos(Cursos curso)
+        public ActionResult ListarCursos()
         {
             var RetornarCursos = new CommandsSQL();
             var TodosCursos = RetornarCursos.ListarCursos();
@@ -63,53 +63,50 @@ namespace WebSite.Controllers
         }
 
 
-        public ActionResult Detalhes(AlunoCurso alunoCurso, int Id)
+        public ActionResult Detalhes(int Id)
         {
+            if(Session["NormalUser"] == null)
+            {
+                return RedirectToAction("Login", "Authentication");
+            }
+
             var metodoCurso = new CommandsSQL();
             metodoCurso.ListadId(Id);
 
             AlunoCurso alunoCurso2 = new AlunoCurso
-            {
-                id_user = Convert.ToInt32(Session["NormalUser"].ToString()),
-                id_curso = Id,
-            };
-                //Verifica se o usuário já é inscrito no curso
-                var retorno = metodoCurso.ValidaCadastroCurso(alunoCurso2);
-                //Retorna tela do curso
-                var curso = metodoCurso.DetalheCurso(Id);
-
+               {
+                 id_user = Convert.ToInt32(Session["NormalUser"].ToString()),
+                 id_curso = Id,
+               };
+            //Verifica se o usuário já é inscrito no curso
+            var retorno = metodoCurso.ValidaCadastroCurso(alunoCurso2);
+            //Retorna tela do curso
+            var curso = metodoCurso.DetalheCurso(Id);
             if (retorno == null)
             {
                 AlunoCurso IdentificacaoLogin = new AlunoCurso
                 {
-                    id_user = int.Parse(Session["NormalUser"].ToString()),
+                    id_user = Convert.ToInt32(Session["NormalUser"].ToString()),
                     id_curso = Id,
                 };
 
                 metodoCurso.CursoAluno(IdentificacaoLogin);
-                //COMO RETORNAR O CURSO?
                 return View(curso);
             }
             else
             {
-
                 return View(curso);
             }
+            
+        }
+
+        public ActionResult Categoria1()
+        {
+            var Categoria1 = new CommandsSQL();
+            var RetornoCategoria1 = Categoria1.Categoria1();
+            return View(RetornoCategoria1);
 
         }
 
-        //Terminar o metodo
-        //public ActionResult Categorias(Cursos cursos)
-       // {
-            //------------------------------Usar uma das query's------------------------------ 
-            //      SELECT c.id_curso, c.Nome, c.desc_cur, cc.desc_cat
-            //      FROM curso c, categoria cc
-            //      WHERE c.Id_Categoria = cc.Id_Categoria
-
-            //      SELECT* FROM
-            //      Curso, Categoria
-            //      Where Curso.Id_Categoria = Categoria.Id_Categoria
-
-       // }
     }
 }

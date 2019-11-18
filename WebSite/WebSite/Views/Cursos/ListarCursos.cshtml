@@ -1,72 +1,118 @@
 ﻿@model IEnumerable<CadastroLogin.Models.Cursos>
 
-@{
-    ViewBag.Title = "Lista de Cursos";
-}
-<br />
-<h2 class="text-center">Lista de Cursos</h2>
-<br />
+@{Layout = null;
+ }
 
-<table class="table">
-    <tr>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/global.css">
+    <link rel="stylesheet" href="~/css/course.css">
+    <title>Cursos online</title>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+          crossorigin="anonymous">
 
-        <th>
-            @Html.DisplayNameFor(model => model.Nome)
+</head>
 
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Desc_cur)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Id_Categoria)
-        </th>
+<body>
 
-        <th></th>
-    </tr>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-purpk nav-pills">
+            <div class="d-flex flex-grow-1">
+                <span class="w-100 d-lg-none d-block"></span>
+                <a class="navbar-brand d-none d-lg-inline-block h1 mb-0" href="#">
+                    <img src="~/image/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">LOGO
+                </a>
+                <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+                    <img src="~/image/logo.png" alt="logo">
+                </a>
+                <div class="w-100 text-right">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+                <ul class="navbar-nav ml-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link m-2">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="course.html" class="nav-link m-2">CURSOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link m-2 active-1">ENTRE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link m-2 active">CADASTRE-SE</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
 
+
+    <!--------------------------BANNER-SECTION---------------------------->
+
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="promo-title" style="color: #FFF;">ALGUMA COISA SOBRE A PLATAFORMA</p>
+                    <p style="color: #FFF;">
+                        Breve descrição sobre nossos serviços, sobre o que fazemos, cursos e etc, não sei mais o que escrever e só estou escrevendo pra encher linguiça
+                        , porque estou com preguiça de ir pegar no Lorem Ipsum.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="~/image/grafico.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------COURSES-SECTION---------------------------->
     @foreach (var item in Model)
     {
-        <tr>
+        <section id="section-cursos">
+            <div class="container">
+                <div class="row mt-5">
+                       <div class="col-lg-12 mb-5 text-center">
+                        <h2>Cursos de <span class="color-purple"> JavaScript</span></h2>
+                        <p class="mt-3">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry,Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                        </p>
+                    </div>
+                    <div class="col-md-">
+                        <div class="card-deck">
+                            <div class="card">
+                                <a href="@Url.Action("Detalhes", "Cursos", new { id=item.Id_Curso })" title="List View" class="links">
+                                    <img alt="List View" src="@Url.Content("~/image/grafico.png")">
+                                </a>
+                                @*<a href=@Html.ActionLink("Assistir", "Detalhes", new { id=item.Id_Curso })>*@
 
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Desc_cur)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id_Categoria)
-            </td>
-            @*  <td>*@
-            <!--UTILIZAR ESSE CODIGO PARA INSERIR VIDEOS DIRETO DO BANCO DE DADOS-->
-            @*      <iframe width="1000" height="600" src="@item.Aula1"></iframe>*@
-            @*</td>*@
-            @*<td>*@
-            @*  <iframe width="1000" height="500" src="@item.Aula2"></iframe>*@
-            @*</td>*@
-        <td>
-            @if (Session["NormalUser"] != null)
-            {
-                @Html.ActionLink("Assistir curso", "Detalhes", new { id = item.Id_Curso });
-            }
-
-            @if (Session["AdmUser"] != null)
-            {
-                @Html.ActionLink("Assistir curso", "Detalhes", new { id = item.Id_Curso });
-                @Html.ActionLink("Editar |", "Editar", new { id = item.Id_Curso });
-                @Html.ActionLink(" Deletar", "Deletar", new { id = item.Id_Curso });
-            }
-        </td>
-        </tr>
+                                 @*   <img class="card-img-top img-curso" src="~/image/grafico.png" alt="Imagem de capa do card">*@
+                               @* </a>*@
+                                <div class="card-body">
+                                    <h5 class="card-title">@Html.DisplayFor(modelItem => item.Nome)</h5>
+                                    <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Atualizados 3 minutos atrás</small>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     }
+    <script src="~/js/bootstrap.min.js"></script>
 
-</table>
-
-<br/>
-<hr/>
-@if (Session["AdmUser"] != null)
-{
-    <p>
-        @Html.ActionLink("Adicionar novo curso", "CadastrarCurso")
-    </p>
-}
+</body>
+</html>

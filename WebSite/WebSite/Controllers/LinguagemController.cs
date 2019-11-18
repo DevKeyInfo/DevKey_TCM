@@ -28,7 +28,7 @@ namespace CadastroLogin.Controllers
             cookie.Value = LanguageAbbreviation;
             Response.Cookies.Add(cookie);
 
-            return View("Index");
+            return RedirectToAction("Index", "Home");
         }
     }
 }

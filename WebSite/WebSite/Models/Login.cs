@@ -13,11 +13,11 @@ namespace WebSite.Models
         public int Id { get; set; }
 
         //[DisplayName("Usuário")]
-        [Required(ErrorMessage = "O Login é obrigatório")]
+        [Required(ErrorMessage = "O Usuário é obrigatório")]
         public string User { get; set; }
 
         //[DisplayName("Senha")]
-        [Required(ErrorMessage = "A senha é obrigatória")]
+        [Required(ErrorMessage = "A Senha é obrigatória")]
         public string Password { get; set; }
 
         public string UserType { get; set; }
