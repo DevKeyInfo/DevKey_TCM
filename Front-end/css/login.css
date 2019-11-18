@@ -54,7 +54,7 @@ section{
 }
 .form-control{
     border-radius: 1.2rem;
-    width: 85%;
+    width: 100%;
   
 }
 
@@ -108,7 +108,7 @@ section{
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-    margin-left: 15%;
+    margin-left: 5%;
   }
   
   .btn-purple-form:hover {
@@ -136,7 +136,8 @@ section{
 }
 
 .form-control{
-    padding: .375rem 2.7rem;
+    width: 100%;
+    padding: .3rem 2.7rem;
 }
 
   .form-control:focus {
@@ -147,3 +148,211 @@ section{
     box-shadow: 0 0 0 0.2rem rgba(116, 79, 168, 0.274);
     transition: all 400ms ease-in-out;
   }
+
+/* < BUTTON_STYLES > */
+
+
+
+.btn-back {
+    margin-left: 8%;
+    border-radius: 2rem;
+    padding: .5rem 9rem;
+    color: #8e24aa;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: transparent;
+    background-image: none;
+    border-color: #8e24aa;
+    font-weight: 600;
+    cursor: pointer;
+    text-align:center;
+    background-size: 300% 100%;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-back:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, #7300b5, #9500c6, #b800d7, #db00e6, #ff00f4);
+    border: none;
+    transition: all 500ms ease-in-out;
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+
+/* < TEXT_HELPERS >*/
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+
+/* END:GLOBAL_ELEMENTS */
+
+
+/* BEGIN:MODAL_STYLES */
+
+
+
+.login-form {
+    position: absolute;
+    
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    left: 0;
+}
+
+.register-form {
+    position: absolute;
+    top: 20%;
+    margin-top: -50px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    left: 0;
+    height: 490px;
+}
+
+.lost-form {
+    position: absolute;
+    top: 20%;
+    margin-top: -50px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    left: 0;
+}
+
+.ga {
+    margin-top: 1.4rem;
+}
+
+.lost-form h2 {
+    
+    margin-bottom: 4rem;
+    
+    color: #7665cf; 
+   
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.lost-password {
+    width: 100%;
+}
+
+.lost-password a {
+    text-decoration: none;
+    color: rgb(132, 0, 255);
+}
+
+.tabs-page {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms ease-in-out;
+}
+
+.tabs-select {
+    transition: all 600ms ease-in-out;
+}
+
+.tabs-page.tab-active {
+    visibility: visible;
+    margin-left: 0;
+    display: flex;
+    opacity: 1;
+}
+
+.tabs-select {
+    position: absolute;
+    top: 15%;
+    margin-top: -50px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    left: 0;
+    opacity: 1;
+    transition: all 500ms ease-in-out;
+}
+
+.tabs-select .tab {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    margin: 0 15px 10px 0;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+    color: #4b4b4b;
+}
+
+.tabs-select .tab.tab-selected {
+    border-bottom: 2px solid rgb(132, 0, 255);
+    color: rgb(17, 3, 100);
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+ 
+
+
+/* < LOGIN-REGISTER-LPASSWORD_STYLES > */
+
+.user-profile {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.user-profile img {
+    width: 150px;
+    border-radius: 100%;
+}
+
+
+
+/* END:MODAL_STYLES */
+
+
+/* BEGIN:HEADER_STYLES */
