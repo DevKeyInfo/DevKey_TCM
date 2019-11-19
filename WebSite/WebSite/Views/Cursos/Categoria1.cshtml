@@ -1,63 +1,16 @@
 ﻿@model IEnumerable<CadastroLogin.Models.Cursos>
-
-@{Layout = null;
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="~/css/bootstrap.min.css">
-    <link rel="stylesheet" href="~/css/global.css">
-    <link rel="stylesheet" href="~/css/course.css">
-    <title>Cursos online</title>
-    <link rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-          crossorigin="anonymous">
-    <link rel="icon" href="~/image/logo-devkey.png">
-
-</head>
-
-<body>
-
-    <section id="nav-bar">
-        <nav class="navbar navbar-expand-lg navbar-light bg-purpk nav-pills">
-            <div class="d-flex flex-grow-1">
-                <span class="w-100 d-lg-none d-block"></span>
-                <a class="navbar-brand d-none d-lg-inline-block h1 mb-0" href="#">
-                    <img src="~/image/logo-devkey.png" width="30" height="30" class="d-inline-block align-top" alt="">DEVKEY
-                </a>
-                <div class="w-100 text-right">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-            </div>
-            <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-                <ul class="navbar-nav ml-auto flex-nowrap">
-                    <li class="nav-item">
-                        <a href="~/Home/Index" class="nav-link m-2">@CadastroLogin.Resources.GlobalResource.Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="~/Authentication/Login" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Entrar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="~/Authentication/Cadastro" class="nav-link m-2 active">@CadastroLogin.Resources.GlobalResource.Cadastrese</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </section>
-
-
+<header>
     <!--------------------------BANNER-SECTION---------------------------->
 
     <section id="banner">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p class="promo-title" style="color: #FFF;">@CadastroLogin.Resources.GlobalResource.Front_End</p>
+                    <p class="promo-title" style="color: #FFF;">@CadastroLogin.Resources.GlobalResource.FrontEnd</p>
                     <p style="color: #FFF;">
                         Breve descrição sobre nossos serviços, sobre o que fazemos, cursos e etc, não sei mais o que escrever e só estou escrevendo pra encher linguiça
                         , porque estou com preguiça de ir pegar no Lorem Ipsum.
@@ -69,37 +22,37 @@
             </div>
         </div>
     </section>
-
-    <!--------------------------COURSES-SECTION---------------------------->
-    @foreach (var item in Model)
-    {
-        <section id="section-cursos">
-            <div class="container">
-                <div class="row mt-5">
-                    <div class="col-lg-12 mb-5 text-center">
-                        <h2><span class="color-purple"> Lista de cursos</span></h2>
-                    </div>
-                    <div class="col-md-">
-                        <div class="card-deck">
-                            <div class="card">
-                                <a href="@Url.Action("Detalhes", "Cursos", new { id=item.Id_Curso })" title="List View" class="links">
-                                    <img alt="List View" src="@Url.Content("~/image/grafico.png")">
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title">@Html.DisplayFor(modelItem => item.Nome)</h5>
-                                    <p class="card-text">@Html.DisplayFor(modelItem  => item.Desc_cur)</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">Atualizados 3 minutos atrás</small>
-                                </div>
+</header>
+<!--------------------------COURSES-SECTION---------------------------->
+<div class="col-lg-12 mb-5 text-center">
+    <h2><span class="color-purple"> Lista de cursos</span></h2>
+</div>
+@foreach (var item in Model)
+{
+    <section id="section-cursos">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-">
+                    <div class="card-deck">
+                        <div class="card">
+                            <a href="@Url.Action("Detalhes", "Cursos", new { id=item.Id_Curso })" title="List View" class="links">
+                                <img alt="List View" src="@Url.Content("~/image/grafico.png")">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">@Html.DisplayFor(modelItem => item.Nome)</h5>
+                                <p class="card-text">@Html.DisplayFor(modelItem => item.Desc_cur)</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Atualizados 2 dias atrás</small>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    }
-    <script src="~/js/bootstrap.min.js"></script>
+        </div>
+    </section>
+}
+<script src="~/js/bootstrap.min.js"></script>
 
-</body>
-</html>
+@*</body>*@
+@*</html>*@

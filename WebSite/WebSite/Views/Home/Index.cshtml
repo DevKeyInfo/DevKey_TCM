@@ -63,12 +63,6 @@
                         </ul>
                     </div>
                 </nav>*@
-                @if (TempData["Boas-vindas"] != null)
-                {
-                    <h6 class="text-light pt-1">
-                        @TempData["Boas-vindas"]
-                    </h6>
-                }
 
                 <!--------------------------BANNER-SECTION---------------------------->
 
@@ -91,7 +85,12 @@
 
                     <!-- <img src="~/image/banner.jpg">-->
             </header>
-
+                @if (TempData["Boas-vindas"] != null)
+                {
+                    <h6 class="text-success pt-1">
+                        @TempData["Boas-vindas"]
+                    </h6>
+                }
             <main>
                 <section class="features-icons bg-light text-center">
                     <div class="container">
@@ -192,7 +191,7 @@
 
 
                             <div class="col-sm-3 mt-4 card-categ">
-                                <a href="#" class="a">
+                                <a href="~/Cursos/Categoria1" class="a">
                                     <div class="card card-categoria">
                                         <div class="card-header media">
                                             <div class="box-icon">
@@ -213,7 +212,7 @@
                             </div>
 
                             <div class="col-sm-3 mt-4">
-                                <a href="#" class="a">
+                                <a href="~/Cursos/Categoria2" class="a">
                                     <div class="card card-categoria">
                                         <div class="card-header media">
                                             <div class="box-icon">

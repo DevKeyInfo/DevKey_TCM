@@ -108,5 +108,13 @@ namespace WebSite.Controllers
 
         }
 
+        public ActionResult Categoria2()
+        {
+            var Categoria2 = new CommandsSQL();
+            var RetornoCategoria2 = Categoria2.Categoria2();
+            return View(RetornoCategoria2);
+
+        }
+
     }
 }

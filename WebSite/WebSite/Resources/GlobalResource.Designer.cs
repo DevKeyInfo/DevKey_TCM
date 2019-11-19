@@ -19,7 +19,7 @@ namespace CadastroLogin.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class GlobalResource {
@@ -135,9 +135,9 @@ namespace CadastroLogin.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Aprenda tudo sobre Front-End!.
         /// </summary>
-        public static string Front_End {
+        public static string FrontEnd {
             get {
-                return ResourceManager.GetString("Front-End", resourceCulture);
+                return ResourceManager.GetString("FrontEnd", resourceCulture);
             }
         }
         
@@ -247,14 +247,6 @@ namespace CadastroLogin.Resources {
         public static string Sair {
             get {
                 return ResourceManager.GetString("Sair", resourceCulture);
-            }
-        }
-
-        public static string Usuario
-        {
-            get
-            {
-                return ResourceManager.GetString("Usuário", resourceCulture);
             }
         }
     }

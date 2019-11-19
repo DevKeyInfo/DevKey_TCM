@@ -306,6 +306,7 @@
     <Content Include="Views\Linguagem\Index.cshtml" />
     <Content Include="Views\Authentication\Logout.cshtml" />
     <Content Include="Views\Cursos\Categoria1.cshtml" />
+    <Content Include="Views\Cursos\Categoria2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
