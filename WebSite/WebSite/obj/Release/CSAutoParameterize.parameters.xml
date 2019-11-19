@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="connection-Web.config Connection String" description="connection Connection String used in web.config by the application to access the database." defaultValue="Data Source=LAB2PC015; Initial Catalog=WebSite; User ID=sa; Password=1234567" tags="SqlConnectionString">
+  <parameter name="connection-Web.config Connection String" description="connection Connection String used in web.config by the application to access the database." defaultValue="Data Source=SQL5046.site4now.net;Initial Catalog=DB_A5037A_WebSite;User Id=DB_A5037A_WebSite_admin;Password=YOUR_DB_PASSWORD;" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="C:\\Users\\2binfo\\Documents\\DevKey_TCM\\WebSite\\WebSite\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='connection']/@connectionString" />
   </parameter>
 </parameters>

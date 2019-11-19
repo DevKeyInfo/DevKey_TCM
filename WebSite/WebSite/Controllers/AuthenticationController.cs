@@ -105,10 +105,12 @@ namespace WebSite.Controllers
 
         }
 
-        //public ActionResult Perfil()
-        //{
 
-        //}
+        //Terminar metodo
+        public ActionResult Perfil(User user)
+        {
+            return View();
+        }
 
         public ActionResult Logout(Login login)
         {

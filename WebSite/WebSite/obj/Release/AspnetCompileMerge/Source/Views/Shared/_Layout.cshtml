@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cursos online, matricule-se já!</title>
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/global.css">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+          crossorigin="anonymous">
+    <link rel="icon" href="~/image/logo-devkey.png">
+
+</head>
+
+<body>
+    <script src="~/js/bootstrap.min.js"></script>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-purple nav-pills">
+        <div class="d-flex flex-grow-1">
+            <span class="w-100 d-lg-none d-block"></span>
+            <a class="navbar-brand d-none d-lg-inline-block h1 mb-0" href="~/Home/Index">
+                <img src="~/image/logo-devkey.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            </a>
+            <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="~/Home/Index">
+                <img src="~/image/logo-devkey.png" alt="logo">
+            </a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                @if (Session["NormalUser"] != null)
+                {
+                    <li class="nav-item nav-link m-3 active-1">
+                        @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Portugues, "Change", "Linguagem", new { LanguageAbbreviation = "pt" }, null)
+                    </li>
+                    <li class="nav-item nav-link m-3 active-1">
+                        @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Ingles, "Change", "Linguagem", new { LanguageAbbreviation = "en" }, null)
+                    </li>
+                    @*<li class="nav-item">
+                        <a href="~/Home/Perfil" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Perfil</a>
+                    </li>*@
+                    <li class="nav-item">
+                        <a href="~/Authentication/Logout" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Sair</a>
+                    </li>
+                    @*<li>
+                        <a href="@Url.Action("Change", "Linguagem", new { LanguageAbbreviation = "pt" }, null)">
+                            <img src="@Url.Content("~/image/BR-icon.png")">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Change", "Linguagem", new { LanguageAbbreviation = "en" })" title="List View" class="links">
+                            <img alt="List View" src="@Url.Content("~/image/USA-Icon.png")">
+                        </a>
+                    </li>*@
+
+                    }
+                    @if (Session["AdmUser"] != null)
+                    {
+                        <li class="nav-item nav-link m-3 active-1">
+                            @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Portugues, "Change", "Linguagem", new { LanguageAbbreviation = "pt" }, null)
+                        </li>
+                        <li class="nav-item nav-link m-3 active-1">
+                            @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Ingles, "Change", "Linguagem", new { LanguageAbbreviation = "en" }, null)
+                        </li>
+                        <li class="nav-item">
+                            <a href="~/Home/ListarUsuarios" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.ListaUsuarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="~/Cursos/CadastrarCurso" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.CadastrarCurso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="~/Authentication/Logout" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Sair</a>
+                        </li>
+                    }
+
+                    @if (Session["NormalUser"] == null && Session["AdmUser"] == null)
+                    {
+
+                        <li class="nav-item nav-link m-3 active-1">
+                            @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Portugues, "Change", "Linguagem", new { LanguageAbbreviation = "pt" }, null)
+                        </li>
+                        <li class="nav-item nav-link m-3 active-1">
+                            @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Ingles, "Change", "Linguagem", new { LanguageAbbreviation = "en" }, null)
+                        </li>
+                        <li class="nav-item">
+                            <a href="~/Authentication/Cadastro" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Cadastrese</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="~/Authentication/Login" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Entrar</a>
+                        </li>
+
+                    }
+                </ul>
+</div>
+    </nav>
+    @RenderBody()
+    @RenderSection("scripts", required: false)
+</body>
+</html>

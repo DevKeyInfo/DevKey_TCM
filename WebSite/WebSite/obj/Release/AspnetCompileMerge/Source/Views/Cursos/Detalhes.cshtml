@@ -1,0 +1,136 @@
+﻿@model IEnumerable<CadastroLogin.Models.Cursos>
+
+@{
+    ViewBag.Title = "Detalhes";
+}
+
+
+<form class="form-group">
+    @foreach (var item in Model)
+    {
+
+
+        <div class="text-center">
+            <br />
+            <h1>@Html.DisplayFor(modelItem => item.Nome)</h1>
+        </div>
+        <div>
+            <h3>@Html.DisplayNameFor(model => model.Aula1)</h3>
+            <hr />
+            <div class="container">
+                <iframe width="1000" height="600" src="@item.Aula1"></iframe>
+            </div>
+        </div>
+
+        if (item.Aula2 != null)
+        {
+            <br />
+            <div class="ml-3">
+                <h3>@Html.DisplayNameFor(model => model.Aula2)</h3>
+            </div>
+            <hr />
+            <div class="container">
+                <iframe style="border:none" width="1000" height="600" src="@item.Aula2"></iframe>
+            </div>
+
+        }
+
+        if (item.Aula3 != null)
+        {
+            <br />
+            <div class="ml-3">
+                <h3>@Html.DisplayNameFor(model => model.Aula3)</h3>
+            </div>
+            <hr />
+            <div class="container">
+                <iframe style="border:none" width="1000" height="600" src="@item.Aula3"></iframe>
+            </div>
+        }
+
+        if (item.Aula4 != null)
+        {
+            <br />
+            <div class="ml-3">
+                <h3>@Html.DisplayNameFor(model => model.Aula4)</h3>
+            </div>
+            <hr />
+            <div class="container">
+                <iframe style="border:none" width="1000" height="600" src="@item.Aula4"></iframe>
+            </div>
+        }
+
+        if (item.Aula5 != null)
+        {
+            <br />
+            <div class="ml-3">
+                <h3>@Html.DisplayNameFor(model => model.Aula5)</h3>
+            </div>
+            <hr />
+            <div class="container">
+                <iframe style="border:none" width="1000" height="600" src="@item.Aula5"></iframe>
+            </div>
+        }
+
+        if (item.Aula6 != null)
+        {
+            <br />
+            <div class="ml-3">
+                <h3>@Html.DisplayNameFor(model => model.Aula6)</h3>
+            </div>
+            <hr />
+            <div class="container">
+                <iframe style="border:none" width="1000" height="600" src="@item.Aula6"></iframe>
+            </div>
+        }
+
+        if (item.Aula7 != null)
+        {
+            <br />
+            <div class="ml-3">
+                <h3>@Html.DisplayNameFor(model => model.Aula7)</h3>
+            </div>
+            <hr />
+            <div class="container">
+                <iframe style="border:none" width="1000" height="600" src="@item.Aula7"></iframe>
+            </div>
+        }
+
+        if (item.Aula8 != null)
+        {
+            <br />
+            <div class="ml-3">
+                <h3>@Html.DisplayNameFor(model => model.Aula8)</h3>
+            </div>
+            <hr />
+            <div class="container">
+                <iframe style="border:none" width="1000" height="600" src="@item.Aula8"></iframe>
+            </div>
+        }
+
+        if (item.Aula9 != null)
+        {
+            <br />
+            <div class="ml-3">
+                <h3>@Html.DisplayNameFor(model => model.Aula9)</h3>
+            </div>
+            <hr />
+            <div class="container">
+                <iframe style="border:none" width="1000" height="600" src="@item.Aula9"></iframe>
+            </div>
+        }
+
+        if (item.Aula10 != null)
+        {
+            <br />
+            <div class="ml-3">
+                <h3>@Html.DisplayNameFor(model => model.Aula10)</h3>
+            </div>
+            <hr />
+            <div class="container">
+                <iframe style="border:none" width="1000" height="600" src="@item.Aula10"></iframe>
+            </div>
+        }
+
+    }
+
+</form>

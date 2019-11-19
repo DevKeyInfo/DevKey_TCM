@@ -256,6 +256,7 @@
     <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
     <None Include="Properties\PublishProfiles\Default Settings1.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
@@ -310,6 +311,7 @@
     <Content Include="Views\Authentication\Logout.cshtml" />
     <Content Include="Views\Cursos\Categoria1.cshtml" />
     <Content Include="Views\Cursos\Categoria2.cshtml" />
+    <Content Include="Views\Authentication\Perfil.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
