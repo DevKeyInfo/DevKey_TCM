@@ -28,6 +28,11 @@ namespace WebSite.Controllers
         [HttpPost]
         public ActionResult CadastrarCurso(Cursos curso)
         {
+            if(Session["AdmUser"] == null)
+            {
+                return RedirectToAction("Login", "Authentication");
+            }
+
             if (!ModelState.IsValid)     
             {
                 return View(curso);
@@ -57,6 +62,11 @@ namespace WebSite.Controllers
         }
         public ActionResult ListarCursos()
         {
+            if (Session["AdmUser"] == null)
+            {
+                return RedirectToAction("Login", "Authentication");
+            }
+
             var RetornarCursos = new CommandsSQL();
             var TodosCursos = RetornarCursos.ListarCursos();
             return View(TodosCursos);

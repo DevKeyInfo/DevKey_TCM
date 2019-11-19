@@ -25,8 +25,8 @@ namespace WebSite.Models
         public string Email { get; set; }
 
         [DisplayName("Usuário")]
-        [Required(ErrorMessage = "O nome de usuário é obrigatório")]
-        [MinLength(6, ErrorMessage = "Seu login deve conter no mínimo 6 caracteres")]
+        [Required(ErrorMessage = "Campo obrigatório")]
+        //[MinLength(6, ErrorMessage = "Seu login deve conter no mínimo 6 caracteres")]
         public string Login { get; set; }
 
         [DisplayName("Senha")]

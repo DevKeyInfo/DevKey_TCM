@@ -1,0 +1,53 @@
+﻿@model IEnumerable<WebSite.Models.User>
+
+@{
+    ViewBag.Title = "Lista de Usuários";
+}
+
+<h2 class="mt-5 text-center">Usuarios cadastrados</h2>
+<br/>
+<table class="table">
+    <tr>
+        <th class="text-left">
+            @Html.DisplayNameFor(model => model.ID)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Login)
+        </th>
+
+        <th class="text-center">
+            <label>Opções</label>
+        </th>
+
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.UserType)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td class="text-left">
+        @Html.DisplayFor(modelItem => item.ID)
+    </td>
+    <td class="text-center">
+        @Html.DisplayFor(modelItem => item.Name)
+    </td>
+    <td class="text-center">
+        @Html.DisplayFor(modelItem => item.Login)
+    </td>
+    
+    <td class="text-center">
+        @Html.ActionLink("Editar", "Editar", new { item.ID }) |
+        @Html.ActionLink("Detalhes", "Detalhes", new { item.ID }) |
+        @Html.ActionLink("Remover", "Deletar", new { item.ID })
+    </td>
+    <td class="text-center">
+        @Html.DisplayFor(modelItem => item.UserType)
+    </td>
+</tr>
+}
+
+</table>
