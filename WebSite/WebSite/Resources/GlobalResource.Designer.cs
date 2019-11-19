@@ -249,5 +249,13 @@ namespace CadastroLogin.Resources {
                 return ResourceManager.GetString("Sair", resourceCulture);
             }
         }
+
+        public static string Usuario
+        {
+            get
+            {
+                return ResourceManager.GetString("Usuário", resourceCulture);
+            }
+        }
     }
 }
