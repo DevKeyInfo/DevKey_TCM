@@ -2,8 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\WebSite",
-    "\\WebSite\\WebSite"
+    "\\WebSite\\WebSite",
+    "\\WebSite\\WebSite\\Views",
+    "\\WebSite\\WebSite\\Views\\Authentication",
+    "\\WebSite\\WebSite\\Views\\Cursos",
+    "\\WebSite\\WebSite\\Views\\Home",
+    "\\WebSite\\WebSite\\Views\\Linguagem",
+    "\\WebSite\\WebSite\\Views\\Shared"
   ],
-  "SelectedNode": "\\WebSite\\WebSite.sln",
+  "SelectedNode": "\\WebSite\\WebSite\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
