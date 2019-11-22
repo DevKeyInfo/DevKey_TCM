@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Bem-vindo" xml:space="preserve">
+    <value>Bem vindo à DevKey</value>
+  </data>
   <data name="CadastrarCurso" xml:space="preserve">
     <value>Cadastrar Curso</value>
   </data>
@@ -132,11 +135,29 @@
   <data name="CategoriaBack" xml:space="preserve">
     <value>Aprenda a programar Back-End e entre no mercado de trabalho!</value>
   </data>
+  <data name="CategoriaDB" xml:space="preserve">
+    <value>O Banco de dados é uma ferramente indispensável e utilizada em qualquer aplicação atualmente, seja SQL Server, MySql, entre outras.</value>
+  </data>
   <data name="CategoriaFront" xml:space="preserve">
     <value>Tudo o que você precisa saber para dominar o Front-end!</value>
   </data>
+  <data name="CategoriaJava" xml:space="preserve">
+    <value>Uma das linguagens de programação mais utilizada de todos os tempos, devido a sua escalabilidade e por ser multiplataforma, saiba mais clicando aqui!</value>
+  </data>
+  <data name="CategoriaLinux" xml:space="preserve">
+    <value>Cursos para aprender a utilizar esse sistema operacional extraindo ao máximo de seus recursos.</value>
+  </data>
+  <data name="CategoriaMobile" xml:space="preserve">
+    <value>Aprenda tudo sobre desenvolvimento de aplicações mobile, seja em Java ou Kotlin.</value>
+  </data>
   <data name="Categorias" xml:space="preserve">
     <value>Categorias</value>
+  </data>
+  <data name="CategoriaSecurity" xml:space="preserve">
+    <value>Segurança digital se tornou um tema de grande importância que deve ser conhecida por todos que desejam entrar no mercado de T.I</value>
+  </data>
+  <data name="CategoriaUX" xml:space="preserve">
+    <value>Se preocupar com a experiência do usuário ao utilizar seu sistema é muito importante, aprenda mais sobre UX Design acessando essa categoria</value>
   </data>
   <data name="CategoryTitle" xml:space="preserve">
     <value>A Devkey conta com um sistema de categorias de curso para melhor entendimento do usuário, com uma breve descrição
@@ -206,6 +227,9 @@
     <value>Com uma metologia moderna, a equipe desenvolveu A Devkey com o intuito de atender o máximo de pessoas possível, através de cursos online.
                                     Contando com algumas tecnológias para melhor aproveitamento da plataforma.</value>
   </data>
+  <data name="OQueDizem" xml:space="preserve">
+    <value>O que nossos alunos dizem</value>
+  </data>
   <data name="Perfil" xml:space="preserve">
     <value>Perfil</value>
   </data>
@@ -242,6 +266,9 @@
   </data>
   <data name="ServicosTitle2" xml:space="preserve">
     <value>Serviços</value>
+  </data>
+  <data name="Sobre" xml:space="preserve">
+    <value>Sobre</value>
   </data>
   <data name="Suporte" xml:space="preserve">
     <value>O nosso suporte, conta com um chat na qual o aluno ou novo usuário pode tirar suas dúvidas sem qualquer restrição.</value>

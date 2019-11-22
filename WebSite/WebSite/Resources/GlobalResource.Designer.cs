@@ -19,7 +19,7 @@ namespace CadastroLogin.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class GlobalResource {
@@ -57,6 +57,15 @@ namespace CadastroLogin.Resources {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bem vindo à DevKey.
+        /// </summary>
+        public static string Bem_vindo {
+            get {
+                return ResourceManager.GetString("Bem-vindo", resourceCulture);
             }
         }
         
@@ -106,6 +115,15 @@ namespace CadastroLogin.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to O Banco de dados é uma ferramente indispensável e utilizada em qualquer aplicação atualmente, seja SQL Server, MySql, entre outras..
+        /// </summary>
+        public static string CategoriaDB {
+            get {
+                return ResourceManager.GetString("CategoriaDB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Tudo o que você precisa saber para dominar o Front-end!.
         /// </summary>
         public static string CategoriaFront {
@@ -115,11 +133,56 @@ namespace CadastroLogin.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Uma das linguagens de programação mais utilizada de todos os tempos, devido a sua escalabilidade e por ser multiplataforma, saiba mais clicando aqui!.
+        /// </summary>
+        public static string CategoriaJava {
+            get {
+                return ResourceManager.GetString("CategoriaJava", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cursos para aprender a utilizar esse sistema operacional extraindo ao máximo de seus recursos..
+        /// </summary>
+        public static string CategoriaLinux {
+            get {
+                return ResourceManager.GetString("CategoriaLinux", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Aprenda tudo sobre desenvolvimento de aplicações mobile, seja em Java ou Kotlin..
+        /// </summary>
+        public static string CategoriaMobile {
+            get {
+                return ResourceManager.GetString("CategoriaMobile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Categorias.
         /// </summary>
         public static string Categorias {
             get {
                 return ResourceManager.GetString("Categorias", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Segurança digital se tornou um tema de grande importância que deve ser conhecida por todos que desejam entrar no mercado de T.I.
+        /// </summary>
+        public static string CategoriaSecurity {
+            get {
+                return ResourceManager.GetString("CategoriaSecurity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Se preocupar com a experiência do usuário ao utilizar seu sistema é muito importante, aprenda mais sobre UX Design acessando essa categoria.
+        /// </summary>
+        public static string CategoriaUX {
+            get {
+                return ResourceManager.GetString("CategoriaUX", resourceCulture);
             }
         }
         
@@ -324,6 +387,15 @@ namespace CadastroLogin.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to O que nossos alunos dizem.
+        /// </summary>
+        public static string OQueDizem {
+            get {
+                return ResourceManager.GetString("OQueDizem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Perfil.
         /// </summary>
         public static string Perfil {
@@ -429,6 +501,15 @@ namespace CadastroLogin.Resources {
         public static string ServicosTitle2 {
             get {
                 return ResourceManager.GetString("ServicosTitle2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sobre.
+        /// </summary>
+        public static string Sobre {
+            get {
+                return ResourceManager.GetString("Sobre", resourceCulture);
             }
         }
         
