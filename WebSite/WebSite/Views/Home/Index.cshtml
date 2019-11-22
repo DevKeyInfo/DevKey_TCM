@@ -29,40 +29,7 @@
 
             <header>
 
-                @*<nav class="navbar navbar-expand-lg navbar-light bg-purpk nav-pills">
-                    <div class="d-flex flex-grow-1">
-                        <span class="w-100 d-lg-none d-block"></span>
-                        <a style="color: rgb(224, 224, 224);" class="navbar-brand d-none d-lg-inline-block h1 mb-0">
-                            <img src="~/image/logo-devkey.png" width="30" height="30" class="d-inline-block align-top" alt="">DEVKEY
-                        </a>
-                        </a>
-                        <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
-                            <img src="~/image/logo-devkey.png" alt="logo">
-                        </a>
-                        <div class="w-100 text-right">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-                        <ul class="navbar-nav ml-auto flex-nowrap">
-                            <li class="nav-item">
-                        <a href="index.html" class="nav-link m-2">HOME</a>
-                    </li>
-                            <li class="nav-item">
-                        <a href="course.html" class="nav-link m-2">CURSOS</a>
-                    </li>
-                            <li class="nav-item">
-                                <a href="~/Authentication/Login" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Entrar</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="~/Authentication/Cadastro" class="nav-link m-2">@CadastroLogin.Resources.GlobalResource.Cadastrese</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>*@
-
+           
                 <!--------------------------BANNER-SECTION---------------------------->
 
                 <section id="banner">
@@ -70,7 +37,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
-                                <p class="promo-title" style="color: rgb(255, 255, 255)">>Bem vindo à DevKey</p>
+                                <p class="promo-title" style="color: rgb(255, 255, 255)">@CadastroLogin.Resources.GlobalResource.Bem_vindo</p>
                                 <p style="color: rgb(255, 255, 255);">
                                     Cursos on-line totalmente gratuitos para você se tornar um programador de sucesso. A chave para o desenvolvimento se encontra aqui!
                                 </p>
@@ -94,9 +61,9 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 mb-5">
-                                <h2>Nossos <span class="color-purple">Serviços</span></h2>
+                                <h2>@CadastroLogin.Resources.GlobalResource.ServicosTitle1 <span class="color-purple">@CadastroLogin.Resources.GlobalResource.ServicosTitle2</span></h2>
                                 <p class="mt-3">
-                                    LA nossa plataforma sempre procura inovar o mercado de ensino, com esse intuito dentre os nossos serviços encontra-se pontos importantíssimos para melhor aproveitamento de nossos alunos.
+                                    @CadastroLogin.Resources.GlobalResource.Servicos                                                                     
                                 </p>
                             </div>
                             <div class="col-lg-3 card-icon mr-auto">
@@ -105,8 +72,8 @@
                                         <!--<i class="icon-screen-desktop m-auto text-primary"></i>-->
                                         <i class="fas fa-tv icon-screen-desktop m-auto text-primary"></i>
                                     </div>
-                                    <h3>Responsivo</h3>
-                                    <p class="lead mb-0">As vídeos aulas podem ser acessadas facilmente de qualquer dispositivo, a qualquer hora.</p>
+                                    <h3>@CadastroLogin.Resources.GlobalResource.Responsivo</h3>
+                                    <p class="lead mb-0">@CadastroLogin.Resources.GlobalResource.ReponsivoTexto</p>
                                 </div>
                             </div>
 
@@ -116,7 +83,8 @@
                                         <i class=""></i>
                                         <i class="fas fa-play-circle icon-screen-desktop m-auto text-primary"></i>
                                     </div>
-                                    <h3>Vídeos</h3>
+                                    <h3>@CadastroLogin.Resources.GlobalResource.VideosTitle</h3>
+                                    <!--PERGUNTAR PARA GABS-->
                                     <p class="lead mb-0">As vídeos aulas podem ser acessadas facilmente de qualquer dispositivo, a qualquer hora.</p>
                                 </div>
                             </div>
@@ -145,22 +113,21 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 mt-5">
-                                <h2><span class="color-purple">Sobre</span> nossa Plataforma</h2>
+                                <h2><span class="color-purple">@CadastroLogin.Resources.GlobalResource.Sobre </span>@CadastroLogin.Resources.GlobalResource.NossaPlataforma</h2>
                             </div>
                             <div class="col-lg-6 text-justify mt-4">
                                 <p>
-                                    Com uma metologia moderna, a equipe desenvolveu A Devkey com o intuito de atender o máximo de pessoas possível, através de cursos online.
-                                    Contando com algumas tecnológias para melhor aproveitamento da plataforma.
+                                    @CadastroLogin.Resources.GlobalResource.NossaPlataformaTexto
                                 </p>
                                 <ul>
-                                    <li class="li-color"><span>Chat online para tirar dúvidas;<span></li>
-                                    <li class="li-color"><span>Perfil do usuário para melhor monitoramento de aulas;<span></li>
-                                    <li class="li-color"><span>Material disponibilizado em PDF;<span></li>
-                                    <li class="li-color"><span>Certificado ao término do curso.<span></li>
+                                    <li class="li-color"><span>@CadastroLogin.Resources.GlobalResource.Chat</span></li>
+                                    <li class="li-color"><span>@CadastroLogin.Resources.GlobalResource.PerfilUsuario</span></li>
+                                    <li class="li-color"><span>@CadastroLogin.Resources.GlobalResource.MaterialPDF</span></li>
+                                    <li class="li-color"><span>@CadastroLogin.Resources.GlobalResource.Certificado</span></li>
                                 </ul>
 
                                 <button type="button" class="btn btn-purple mr-3 mt-5">Ver cursos</button>
-                                <button type="button" class="btn btn-outline-purple mt-5">Saber mais...</button>
+                                <button type="button" class="btn btn-outline-purple mt-5">@CadastroLogin.Resources.GlobalResource.SaberMais</button>
                             </div>
                             <div class="col-lg-6 d-flex justify-content-center mt-1">
                                 <img src="~/image/grafico.png" alt="..." class="img-thumbnail">
@@ -178,10 +145,10 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 mb-5 text-center">
-                                <h2><span class="color-purple">Principais</span> Categorias</h2>
+                                <h2><span class="color-purple">@CadastroLogin.Resources.GlobalResource.Principais </span>@CadastroLogin.Resources.GlobalResource.Categorias</h2>
                                 <p class="mt-3">
-                                    A Devkey conta com um sistema de categorias de curso para melhor entendimento do usuário. Com uma breve descrição
-                                    de cada categoria.
+                                    DevKey have a courses categories system for better user learning, each category has a short description.
+                                    @CadastroLogin.Resources.GlobalResource.CategoryTitle
                                 </p>
                             </div>
 
@@ -198,7 +165,7 @@
                                         </div>
                                         <div class="card-body">
                                             <p class="card-text">
-                                                   Tudo o que você precisa saber para dominar o Front-end!
+                                                   @CadastroLogin.Resources.GlobalResource.CategoriaFront
                                             </p>
 
                                         </div>
@@ -217,7 +184,7 @@
                                         </div>
                                         <div class="card-body">
                                             <p class="card-text">
-                                               Aprenda a programar Back-End e entre no mercado de trabalho!
+                                               @CadastroLogin.Resources.GlobalResource.CategoriaBack
                                             </p>
 
                                         </div>
@@ -236,8 +203,7 @@
                                         </div>
                                         <div class="card-body">
                                             <p class="card-text">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                                Lorem Ipsum has been the industry.
+                                                @CadastroLogin.Resources.GlobalResource.CategoriaMobile
                                             </p>
 
                                         </div>
@@ -257,8 +223,7 @@
                                         </div>
                                         <div class="card-body">
                                             <p class="card-text">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                                Lorem Ipsum has been the industry.
+                                                @CadastroLogin.Resources.GlobalResource.CategoriaLinux
                                             </p>
 
                                         </div>
@@ -278,8 +243,7 @@
                                         </div>
                                         <div class="card-body">
                                             <p class="card-text">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                                Lorem Ipsum has been the industry.
+                                                @CadastroLogin.Resources.GlobalResource.CategoriaUX
                                             </p>
 
                                         </div>
@@ -299,8 +263,7 @@
                                         </div>
                                         <div class="card-body">
                                             <p class="card-text">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                                Lorem Ipsum has been the industry.
+                                                @CadastroLogin.Resources.GlobalResource.CategoriaDB
                                             </p>
 
                                         </div>
@@ -319,8 +282,7 @@
                                         </div>
                                         <div class="card-body">
                                             <p class="card-text">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                                Lorem Ipsum has been the industry.
+                                                @CadastroLogin.Resources.GlobalResource.CategoriaJava
                                             </p>
 
                                         </div>
@@ -339,8 +301,7 @@
                                         </div>
                                         <div class="card-body">
                                             <p class="card-text">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                                Lorem Ipsum has been the industry.
+                                                @CadastroLogin.Resources.GlobalResource.CategoriaSecurity 
                                             </p>
 
                                         </div>
@@ -358,26 +319,26 @@
                 <section class="comments">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-12 mt-5 text-center">
-                                <h2 style="color: #FFF;">O que nossos alunos dizem</h2>
+                            <div class="col-lg-12 mt-5 text-center">What the students talk about DevKey
+                                <h2 style="color: #FFF;">@CadastroLogin.Resources.GlobalResource.OQueDizem</h2>
 
                             </div>
                             <div class="col-lg-4">
                                 <div class="media mt-5 mr-3">
-                                    <img class="mr-3 rounded-circle" src="~/image/avatar.jpg" alt="Imagem de exemplo genérica">
+                                    <img class="mr-3 rounded-circle" src="~/image/avatar.png" alt="Imagem de exemplo genérica">
                                     <div class="media-body">
-                                        <h5 class="mt-1">Alan Carter</h5>
-                                        <p class="mt-2"><span>"A DevKey salvou minha vida.</span> Não tenho tempo nem dinheiro para fazer faculdade. Minha meta é tornar-me um desenvolvedor da web freelancer e, graças à Devkey, estou a um passo disso."</p>
+                                        <h5 class="mt-1">Alan Carter</h5> DevKey saved my life. I don't have any money to go to college. My goal is become a developer that works as freelancer for web systems and thanks to DevKey i'm almost there.
+                                        <p class="mt-2"><span>@CadastroLogin.Resources.GlobalResource.Comentario11</span> @CadastroLogin.Resources.GlobalResource.Comentario12</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-lg-4">
                                 <div class="media mt-5 mr-3">
-                                    <img class="mr-3 rounded-circle" src="~/image/avatar.jpg" alt="Imagem de exemplo genérica">
+                                    <img class="mr-3 rounded-circle" src="~/image/avatar.png" alt="Imagem de exemplo genérica">
                                     <div class="media-body">
-                                        <h5 class="mt-1">Katie Morris</h5>
-                                        <p class="mt-2">"A plataforma é incrível. Além das metodologias do curso serem de alcance pois as aulas saõ totalmente gratuitas, para quem está começando ou quem já está avançado em alguma tecnologia, no fórum de dúvidas sempre algum instrutor te responde em um curto espaço de tempo.<span> Na Devkey, seu conhecimento é prioridade."</span></p>
+                                        <h5 class="mt-1">Katie Morris</h5>The platform is amazing. Besides the methodologies of the courses being on my reach because the classes are totatlly free, for the ones who is begin started or the ones who already know thing about technlogy, the forum of doubts always have a teacher that will respond you in a short time. 
+                                        <p class="mt-2">@CadastroLogin.Resources.GlobalResource.Comentario21<span>@CadastroLogin.Resources.GlobalResource.Comentario22</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -385,10 +346,10 @@
 
                             <div class="col-lg-4">
                                 <div class="media mt-5 mr-3">
-                                    <img class="mr-3 rounded-circle" src="~/image/avatar.jpg" alt="Imagem de exemplo genérica">
+                                    <img class="mr-3 rounded-circle" src="~/image/avatar.png" alt="Imagem de exemplo genérica">
                                     <div class="media-body">
-                                        <h5 class="mt-1">David Williams</h5>
-                                        <p class="mt-2">"Se você não sabe a ordem do que deve aprender e praticar para dominar uma tecnologia, a <span>forma como os cursos estão organizados e estruturados na DevKey ajuda muito.</span>"</p>
+                                        <h5 class="mt-1">David Williams</h5> If you don't know how to start learn about I.T. and dominate it, the way how the courses are organized and structured on the DevKey helps a lot.
+                                        <p class="mt-2">@CadastroLogin.Resources.GlobalResource.Comentario3</p>
                                     </div>
                                 </div>
                             </div>
@@ -411,6 +372,8 @@
                             <div class="col-lg-6 text-justify mt-4">
                                 <h2>Faça agora o seu <span class="color-purple">Cadastro</span></h2>
                                 <p class="mt-4">
+                                    Sign up right now in our platform, being possible to start in any course at any moment and with ilimited acess.
+                                    Counting on help of the highly enable teachers 
                                     Se cadastre agora mesmo na nossa plataforma, podendo começar as aulas de qualquer curso, a qualquer hora com o acesso ilimitado.
                                     Contando com ajuda de professores altamente capacitados e treinados, com a disponibilidade de material em PDF para consulta da matéria.
                                 </p>
