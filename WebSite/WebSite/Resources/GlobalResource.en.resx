@@ -126,6 +126,9 @@
   <data name="CatDestaque" xml:space="preserve">
     <value>Here you will find the featured categories</value>
   </data>
+  <data name="CategoriaFront" xml:space="preserve">
+    <value>All you need to know to dominate the Front-end!</value>
+  </data>
   <data name="Categorias" xml:space="preserve">
     <value>Categories</value>
   </data>
@@ -176,5 +179,14 @@
   </data>
   <data name="Sair" xml:space="preserve">
     <value>Logout</value>
+  </data>
+  <data name="Servicos" xml:space="preserve">
+    <value>Our platform is always looking for innovation in education market, with this intent in our services, you can find some important points to find better performance of our students.</value>
+  </data>
+  <data name="ServicosTitle1" xml:space="preserve">
+    <value>Our</value>
+  </data>
+  <data name="ServicosTitle2" xml:space="preserve">
+    <value>Services</value>
   </data>
 </root>

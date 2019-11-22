@@ -129,8 +129,39 @@
   <data name="CatDestaque" xml:space="preserve">
     <value>Aqui você encontrar nossas principais categorias em destaque!</value>
   </data>
+  <data name="CategoriaBack" xml:space="preserve">
+    <value>Aprenda a programar Back-End e entre no mercado de trabalho!</value>
+  </data>
+  <data name="CategoriaFront" xml:space="preserve">
+    <value>Tudo o que você precisa saber para dominar o Front-end!</value>
+  </data>
   <data name="Categorias" xml:space="preserve">
     <value>Categorias</value>
+  </data>
+  <data name="CategoryTitle" xml:space="preserve">
+    <value>A Devkey conta com um sistema de categorias de curso para melhor entendimento do usuário, com uma breve descrição
+                                    de cada categoria.</value>
+  </data>
+  <data name="Certificado" xml:space="preserve">
+    <value>Certificado ao término do curso.</value>
+  </data>
+  <data name="Chat" xml:space="preserve">
+    <value>Chat online para tirar dúvidas;</value>
+  </data>
+  <data name="Comentario11" xml:space="preserve">
+    <value>A DevKey salvou minha vida.</value>
+  </data>
+  <data name="Comentario12" xml:space="preserve">
+    <value>Não tenho tempo nem dinheiro para fazer faculdade. Minha meta é tornar-me um desenvolvedor da web freelancer e, graças à Devkey, estou a um passo disso.</value>
+  </data>
+  <data name="Comentario21" xml:space="preserve">
+    <value>"A plataforma é incrível. Além das metodologias do curso serem de alcance pois as aulas saõ totalmente gratuitas, para quem está começando ou quem já está avançado em alguma tecnologia, no fórum de dúvidas sempre algum instrutor te responde em um curto espaço de tempo.</value>
+  </data>
+  <data name="Comentario22" xml:space="preserve">
+    <value>Na Devkey, seu conhecimento é prioridade."</value>
+  </data>
+  <data name="Comentario3" xml:space="preserve">
+    <value>Se você não sabe a ordem do que deve aprender e praticar para dominar uma tecnologia, a forma como os cursos estão organizados e estruturados na DevKey ajuda muito.</value>
   </data>
   <data name="Entrar" xml:space="preserve">
     <value>Entrar</value>
@@ -165,8 +196,21 @@
   <data name="ListaUsuarios" xml:space="preserve">
     <value>Lista de Usuários</value>
   </data>
+  <data name="MaterialPDF" xml:space="preserve">
+    <value>Material disponibilizado em PDF;</value>
+  </data>
+  <data name="NossaPlataforma" xml:space="preserve">
+    <value>Nossa Plataforma</value>
+  </data>
+  <data name="NossaPlataformaTexto" xml:space="preserve">
+    <value>Com uma metologia moderna, a equipe desenvolveu A Devkey com o intuito de atender o máximo de pessoas possível, através de cursos online.
+                                    Contando com algumas tecnológias para melhor aproveitamento da plataforma.</value>
+  </data>
   <data name="Perfil" xml:space="preserve">
     <value>Perfil</value>
+  </data>
+  <data name="PerfilUsuario" xml:space="preserve">
+    <value>Perfil do usuário para melhor monitoramento de aulas;</value>
   </data>
   <data name="Plataforma" xml:space="preserve">
     <value>A DevKey surgiu da necessidade de uma plataforma de ensino com qualidade e com preço acessível para todos, nosso objetivo é formar cada vez mais
@@ -178,7 +222,34 @@
   <data name="Principais" xml:space="preserve">
     <value>Principais</value>
   </data>
+  <data name="ReponsivoTexto" xml:space="preserve">
+    <value>As vídeos aulas podem ser acessadas facilmente de qualquer dispositivo, a qualquer hora.</value>
+  </data>
+  <data name="Responsivo" xml:space="preserve">
+    <value>Responsivo</value>
+  </data>
+  <data name="SaberMais" xml:space="preserve">
+    <value>Saber mais...</value>
+  </data>
   <data name="Sair" xml:space="preserve">
     <value>Sair</value>
+  </data>
+  <data name="Servicos" xml:space="preserve">
+    <value>A nossa plataforma sempre procura inovar o mercado de ensino, com esse intuito dentre os nossos serviços encontra-se pontos importantíssimos para melhor aproveitamento de nossos alunos.</value>
+  </data>
+  <data name="ServicosTitle1" xml:space="preserve">
+    <value>Nossos</value>
+  </data>
+  <data name="ServicosTitle2" xml:space="preserve">
+    <value>Serviços</value>
+  </data>
+  <data name="Suporte" xml:space="preserve">
+    <value>O nosso suporte, conta com um chat na qual o aluno ou novo usuário pode tirar suas dúvidas sem qualquer restrição.</value>
+  </data>
+  <data name="SuporteTitle" xml:space="preserve">
+    <value>Suporte</value>
+  </data>
+  <data name="VideosTitle" xml:space="preserve">
+    <value>Vídeos</value>
   </data>
 </root>

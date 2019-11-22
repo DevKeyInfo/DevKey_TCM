@@ -19,7 +19,7 @@ namespace CadastroLogin.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class GlobalResource {
@@ -97,11 +97,102 @@ namespace CadastroLogin.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Aprenda a programar Back-End e entre no mercado de trabalho!.
+        /// </summary>
+        public static string CategoriaBack {
+            get {
+                return ResourceManager.GetString("CategoriaBack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tudo o que você precisa saber para dominar o Front-end!.
+        /// </summary>
+        public static string CategoriaFront {
+            get {
+                return ResourceManager.GetString("CategoriaFront", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Categorias.
         /// </summary>
         public static string Categorias {
             get {
                 return ResourceManager.GetString("Categorias", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A Devkey conta com um sistema de categorias de curso para melhor entendimento do usuário, com uma breve descrição
+        ///                                    de cada categoria..
+        /// </summary>
+        public static string CategoryTitle {
+            get {
+                return ResourceManager.GetString("CategoryTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Certificado ao término do curso..
+        /// </summary>
+        public static string Certificado {
+            get {
+                return ResourceManager.GetString("Certificado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chat online para tirar dúvidas;.
+        /// </summary>
+        public static string Chat {
+            get {
+                return ResourceManager.GetString("Chat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A DevKey salvou minha vida..
+        /// </summary>
+        public static string Comentario11 {
+            get {
+                return ResourceManager.GetString("Comentario11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Não tenho tempo nem dinheiro para fazer faculdade. Minha meta é tornar-me um desenvolvedor da web freelancer e, graças à Devkey, estou a um passo disso..
+        /// </summary>
+        public static string Comentario12 {
+            get {
+                return ResourceManager.GetString("Comentario12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;A plataforma é incrível. Além das metodologias do curso serem de alcance pois as aulas saõ totalmente gratuitas, para quem está começando ou quem já está avançado em alguma tecnologia, no fórum de dúvidas sempre algum instrutor te responde em um curto espaço de tempo..
+        /// </summary>
+        public static string Comentario21 {
+            get {
+                return ResourceManager.GetString("Comentario21", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Na Devkey, seu conhecimento é prioridade.&quot;.
+        /// </summary>
+        public static string Comentario22 {
+            get {
+                return ResourceManager.GetString("Comentario22", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Se você não sabe a ordem do que deve aprender e praticar para dominar uma tecnologia, a forma como os cursos estão organizados e estruturados na DevKey ajuda muito..
+        /// </summary>
+        public static string Comentario3 {
+            get {
+                return ResourceManager.GetString("Comentario3", resourceCulture);
             }
         }
         
@@ -205,11 +296,48 @@ namespace CadastroLogin.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Material disponibilizado em PDF;.
+        /// </summary>
+        public static string MaterialPDF {
+            get {
+                return ResourceManager.GetString("MaterialPDF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nossa Plataforma.
+        /// </summary>
+        public static string NossaPlataforma {
+            get {
+                return ResourceManager.GetString("NossaPlataforma", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Com uma metologia moderna, a equipe desenvolveu A Devkey com o intuito de atender o máximo de pessoas possível, através de cursos online.
+        ///                                    Contando com algumas tecnológias para melhor aproveitamento da plataforma..
+        /// </summary>
+        public static string NossaPlataformaTexto {
+            get {
+                return ResourceManager.GetString("NossaPlataformaTexto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Perfil.
         /// </summary>
         public static string Perfil {
             get {
                 return ResourceManager.GetString("Perfil", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Perfil do usuário para melhor monitoramento de aulas;.
+        /// </summary>
+        public static string PerfilUsuario {
+            get {
+                return ResourceManager.GetString("PerfilUsuario", resourceCulture);
             }
         }
         
@@ -242,11 +370,92 @@ namespace CadastroLogin.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to As vídeos aulas podem ser acessadas facilmente de qualquer dispositivo, a qualquer hora..
+        /// </summary>
+        public static string ReponsivoTexto {
+            get {
+                return ResourceManager.GetString("ReponsivoTexto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Responsivo.
+        /// </summary>
+        public static string Responsivo {
+            get {
+                return ResourceManager.GetString("Responsivo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Saber mais....
+        /// </summary>
+        public static string SaberMais {
+            get {
+                return ResourceManager.GetString("SaberMais", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sair.
         /// </summary>
         public static string Sair {
             get {
                 return ResourceManager.GetString("Sair", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A nossa plataforma sempre procura inovar o mercado de ensino, com esse intuito dentre os nossos serviços encontra-se pontos importantíssimos para melhor aproveitamento de nossos alunos..
+        /// </summary>
+        public static string Servicos {
+            get {
+                return ResourceManager.GetString("Servicos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nossos.
+        /// </summary>
+        public static string ServicosTitle1 {
+            get {
+                return ResourceManager.GetString("ServicosTitle1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Serviços.
+        /// </summary>
+        public static string ServicosTitle2 {
+            get {
+                return ResourceManager.GetString("ServicosTitle2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to O nosso suporte, conta com um chat na qual o aluno ou novo usuário pode tirar suas dúvidas sem qualquer restrição..
+        /// </summary>
+        public static string Suporte {
+            get {
+                return ResourceManager.GetString("Suporte", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Suporte.
+        /// </summary>
+        public static string SuporteTitle {
+            get {
+                return ResourceManager.GetString("SuporteTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vídeos.
+        /// </summary>
+        public static string VideosTitle {
+            get {
+                return ResourceManager.GetString("VideosTitle", resourceCulture);
             }
         }
     }
