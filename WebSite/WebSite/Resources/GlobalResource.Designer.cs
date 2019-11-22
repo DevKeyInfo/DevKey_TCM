@@ -19,7 +19,7 @@ namespace CadastroLogin.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class GlobalResource {
@@ -63,9 +63,18 @@ namespace CadastroLogin.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Bem vindo à DevKey.
         /// </summary>
-        public static string Bem_vindo {
+        public static string BemVindo {
             get {
-                return ResourceManager.GetString("Bem-vindo", resourceCulture);
+                return ResourceManager.GetString("BemVindo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cursos on-line totalmente gratuitos para você se tornar um programador de sucesso. A chave para o desenvolvimento se encontra aqui!.
+        /// </summary>
+        public static string BemVindoDesc {
+            get {
+                return ResourceManager.GetString("BemVindoDesc", resourceCulture);
             }
         }
         
@@ -516,9 +525,9 @@ namespace CadastroLogin.Resources {
         /// <summary>
         ///   Looks up a localized string similar to O nosso suporte, conta com um chat na qual o aluno ou novo usuário pode tirar suas dúvidas sem qualquer restrição..
         /// </summary>
-        public static string Suporte {
+        public static string SuporteTexto {
             get {
-                return ResourceManager.GetString("Suporte", resourceCulture);
+                return ResourceManager.GetString("SuporteTexto", resourceCulture);
             }
         }
         

@@ -9,7 +9,7 @@ using WebSite.Database;
 using WebSite.Utils;
 using System.Security;
 using System.Web.Security;
-
+using CadastroLogin.Models;
 namespace WebSite.Controllers
 {
     public class AuthenticationController : Controller
@@ -109,8 +109,49 @@ namespace WebSite.Controllers
         //Terminar metodo
         public ActionResult Perfil(User user)
         {
+            if (Session["NormalUser"] != null)
+            {
+
+                var Id = int.Parse(Session["NormalUser"].ToString());
+                User NewUser = new User();
+                NewUser.ID = Id;
+
+                var retornaPerfil = new CommandsSQL();
+                var UnicoUsuario = retornaPerfil.ListarID(Id);
+
+                return View(UnicoUsuario);
+            }
+            else
+            {
+                return RedirectToAction("Login", "Authentication");
+            }
+
+        }
+
+        [HttpPost, ActionName("Perfil")]
+        public ActionResult EditarPerfil(User user)
+        {
+            //if (ModelState.IsValid)
+            //{
+                var ID = int.Parse(Session["NormalUser"].ToString());
+                var EditaPerfil = new CommandsSQL();
+                EditaPerfil.EditarUsuario(user, ID); 
+            //}
             return View();
         }
+
+        //Traz os cursos de um determinado usuário
+        public ActionResult PerfilCurso()
+        {
+
+            var ID = int.Parse(Session["NormalUser"].ToString());
+            var PerfilCurso = new CommandsSQL();
+            PerfilCurso.PerfilCursos(ID);
+
+            return View(PerfilCurso);
+        }
+                   
+
 
         public ActionResult Logout(Login login)
         {

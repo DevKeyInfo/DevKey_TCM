@@ -4,9 +4,9 @@ section{
 }
 .box{
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     background-color: rgb(255, 255, 255);
-    margin-top: 8%;
+    margin-top: 13%;
     border-radius: 10px;
 }
 .box-image{
@@ -18,13 +18,13 @@ section{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
 }
 
 .box-image::before{
     content: "";
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     z-index: 0;
     position: absolute;
     top: 0;
@@ -41,7 +41,7 @@ section{
 
 .box-image{
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     margin-left: -1.9rem;
     border-radius: 10px;
 }
@@ -50,7 +50,7 @@ section{
     float: left;
 }
 .form-group{
-    margin-left: 21%;
+    margin-left: 10%;
 }
 .form-control{
     border-radius: 1.2rem;

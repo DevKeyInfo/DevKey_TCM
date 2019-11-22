@@ -312,6 +312,7 @@
     <Content Include="Views\Cursos\Categoria1.cshtml" />
     <Content Include="Views\Cursos\Categoria2.cshtml" />
     <Content Include="Views\Authentication\Perfil.cshtml" />
+    <Content Include="Views\Authentication\PerfilCurso.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

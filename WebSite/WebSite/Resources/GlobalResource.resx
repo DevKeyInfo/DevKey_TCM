@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Bem-vindo" xml:space="preserve">
+  <data name="BemVindo" xml:space="preserve">
     <value>Bem vindo à DevKey</value>
   </data>
   <data name="CadastrarCurso" xml:space="preserve">
@@ -270,13 +270,16 @@
   <data name="Sobre" xml:space="preserve">
     <value>Sobre</value>
   </data>
-  <data name="Suporte" xml:space="preserve">
-    <value>O nosso suporte, conta com um chat na qual o aluno ou novo usuário pode tirar suas dúvidas sem qualquer restrição.</value>
-  </data>
   <data name="SuporteTitle" xml:space="preserve">
     <value>Suporte</value>
   </data>
   <data name="VideosTitle" xml:space="preserve">
     <value>Vídeos</value>
+  </data>
+  <data name="BemVindoDesc" xml:space="preserve">
+    <value>Cursos on-line totalmente gratuitos para você se tornar um programador de sucesso. A chave para o desenvolvimento se encontra aqui!</value>
+  </data>
+  <data name="SuporteTexto" xml:space="preserve">
+    <value>O nosso suporte, conta com um chat na qual o aluno ou novo usuário pode tirar suas dúvidas sem qualquer restrição.</value>
   </data>
 </root>

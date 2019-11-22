@@ -49,6 +49,53 @@ namespace WebSite.Database
             }
         }
 
+        public void EditarUsuario(User user, int ID)
+        { 
+            var StrQuery = "";
+            StrQuery += "UPDATE tb_user SET ";
+            StrQuery += string.Format("name_user = '{0}',", user.Name);
+            StrQuery += string.Format("email_user = '{0}',", user.Email);
+            StrQuery += string.Format("password_user ='{0}' ", user.Password);
+            StrQuery += string.Format("WHERE Id_user = {0}", ID);
+
+
+            using (db = new DBConnection())
+            {
+                db.ExecuteCommand(StrQuery);
+            }
+        }
+
+        public List<Cursos> PerfilCursos(int ID)
+        {
+            using (db = new DBConnection())
+            {
+                var StrQuery = string.Format("select u.name_user, c.nome, cc.desc_cat FROM tb_user u, curso c, Categoria cc, Aluno_Curso "
+                 + "WHERE u.Id_user = {0} AND "
+                 + "u.Id_user = Aluno_Curso.Id_user "
+                 + "AND c.Id_curso = Aluno_Curso.Id_Curso "
+                 + "AND c.Id_Categoria = cc.Id_Categoria", ID);
+                var retorno = db.RetornaComando(StrQuery);
+                return ListaPerfilCurso(retorno);
+            }
+        }
+
+        public List<Cursos> ListaPerfilCurso(SqlDataReader retorno)
+        {
+            var cursos = new List<Cursos>();
+
+            while (retorno.Read())
+            {
+                var TempCurso = new Cursos()
+                {
+                    Nome = retorno["Nome"].ToString(),
+                    //Desc_cur = retorno["Desc_cur"].ToString(),
+                };
+                cursos.Add(TempCurso);
+            }
+            retorno.Close();
+            return cursos;
+        }
+
 
         //Listar usuarios ja registrados no sistema
         public List<User> Listar()
@@ -57,6 +104,16 @@ namespace WebSite.Database
             var strQuery = "SELECT * FROM tb_User;";
             var retorno = db.RetornaComando(strQuery);
             return ListaDeUsuario(retorno);
+        }
+
+        public User ListarID(int Id)
+        {
+            using (db = new DBConnection())
+            {
+                var strQuery = string.Format("SELECT * FROM tb_user WHERE Id_user = {0};", Id);
+                var retorno = db.RetornaComando(strQuery);
+                return ListaDeUsuario(retorno).FirstOrDefault();
+            }
         }
 
         public List<User> ListaDeUsuario(SqlDataReader retorno)
