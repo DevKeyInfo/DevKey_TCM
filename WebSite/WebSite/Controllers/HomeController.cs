@@ -14,14 +14,23 @@ namespace WebSite.Controllers
         {
             return View();
         }
-        //Terminar de configurar Authorize
-        //[Authorize(Roles = "Adminstrador")]
-        public ActionResult ListarUsuarios(User user)
+
+
+        public ActionResult ListarUsuarios()
         {
 
-            var RetornarAlunos = new CommandsSQL();
-            var TodosUsuarios = RetornarAlunos.Listar();
-            return View(TodosUsuarios);
+            if (Session["ADMUser"] != null)
+            {
+                var RetornarAlunos = new CommandsSQL();
+                var TodosUsuarios = RetornarAlunos.Listar();
+                return View(TodosUsuarios);
+            }
+            else 
+            {
+                return RedirectToAction("Login", "Authentication");
+            }
+
+            
         }
 
 

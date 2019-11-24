@@ -441,7 +441,33 @@ namespace WebSite.Database
             return cursos;
         }
 
+        public List<Cursos> MeusCursos(int Id)
+        {
+            using (db = new DBConnection())
+            {
+                var strQuery = string.Format("SELECT * FROM Aluno_Curso WHERE Id_user = {0};", Id);
+                var retorno = db.RetornaComando(strQuery);
+                return RetornaMeusCursos(retorno);
+            }
+        }
 
+        public List<Cursos> RetornaMeusCursos(SqlDataReader retorno)
+        {
+            var cursos = new List<Cursos>();
+
+            while (retorno.Read())
+            {
+                var TempCurso = new Cursos()
+                {
+                    Nome = retorno["Nome"].ToString(),
+                    Desc_cur = retorno["Desc_cur"].ToString(),
+                };
+
+                cursos.Add(TempCurso);
+            }
+            retorno.Close();
+            return cursos;
+        }
 
     }
 }

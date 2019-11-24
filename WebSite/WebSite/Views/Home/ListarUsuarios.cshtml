@@ -7,6 +7,7 @@
 
 
 <!doctype html>
+<html>
 <head>
     <title>Seja bem vindo!</title>
 
@@ -120,7 +121,7 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header card-header-primary">
-                                    <h4 class="card-title ">Lista de usúarios</h4>
+                                    <h4 class="card-title ">Lista de usuários</h4>
 
                                 </div>
                                 <div class="card-body">
@@ -128,50 +129,38 @@
                                         <table class="table">
                                             <thead class=" text-primary">
                                             <th>
-                                                ID
+                                                @Html.DisplayNameFor(model => model.ID)
                                             </th>
-                                            <th>
-                                                Nome
+                                            <th class="text-center">
+                                                @Html.DisplayNameFor(model => model.Name)
                                             </th>
-                                            <th>
-                                                Conta
+                                            <th class="text-center">
+                                                @Html.DisplayNameFor(model => model.Login)
                                             </th>
-                                            <th>
-                                                Tipo
+                                            <th class="text-center">
+                                                @Html.DisplayNameFor(model => model.UserType)
                                             </th>
 
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td>
-                                                        1
-                                                    </td>
-                                                    <td>
-                                                        Gabrielle Torres
-                                                    </td>
-                                                    <td>
-                                                        Gabi
-                                                    </td>
-                                                    <td>
-                                                        Comum
-                                                    </td>
+                                                @foreach (var item in Model)
+                                                {
+                                                    <tr>
+                                                        <td class="text-left">
+                                                            @Html.DisplayFor(modelItem => item.ID)
+                                                        </td>
+                                                        <td class="text-center">
+                                                            @Html.DisplayFor(modelItem => item.Name)
+                                                        </td>
+                                                        <td class="text-center">
+                                                            @Html.DisplayFor(modelItem => item.Login)
+                                                        </td>
 
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        2
-                                                    </td>
-                                                    <td>
-                                                        Gabriel
-                                                    </td>
-                                                    <td>
-                                                        Gab
-                                                    </td>
-                                                    <td>
-                                                        Admin
-                                                    </td>
-
-                                                </tr>
+                                                        <td class="text-center">
+                                                            @Html.DisplayFor(modelItem => item.UserType)
+                                                        </td>
+                                                    </tr>
+                                                }
                                                 <tr>
                                                 </tr>
                                             </tbody>
@@ -180,6 +169,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                         <footer class="footer">
                             <div class="container-fluid">
                                 <nav class="float-left">
@@ -196,56 +186,8 @@
 
                             </div>
                         </footer>
-                    </div>
-                </div>
+                 </div>
+            </div>
 </body>
 
 </html>
-
-
-<table class="table">
-    <tr>
-        <th class="text-left">
-            @Html.DisplayNameFor(model => model.ID)
-        </th>
-        <th class="text-center">
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th class="text-center">
-            @Html.DisplayNameFor(model => model.Login)
-        </th>
-
-        <th class="text-center">
-            <label>Opções</label>
-        </th>
-
-        <th class="text-center">
-            @Html.DisplayNameFor(model => model.UserType)
-        </th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td class="text-left">
-                @Html.DisplayFor(modelItem => item.ID)
-            </td>
-            <td class="text-center">
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td class="text-center">
-                @Html.DisplayFor(modelItem => item.Login)
-            </td>
-
-            <td class="text-center">
-                @Html.ActionLink("Editar", "Editar", new { item.ID }) |
-                @Html.ActionLink("Detalhes", "Detalhes", new { item.ID }) |
-                @Html.ActionLink("Remover", "Deletar", new { item.ID })
-            </td>
-            <td class="text-center">
-                @Html.DisplayFor(modelItem => item.UserType)
-            </td>
-        </tr>
-    }
-
-</table>

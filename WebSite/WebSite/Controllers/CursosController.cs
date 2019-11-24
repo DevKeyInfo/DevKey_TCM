@@ -126,5 +126,26 @@ namespace WebSite.Controllers
 
         }
 
+        public ActionResult MeusCursos()
+        {
+            if (Session["NormalUser"] != null)
+            {
+                int Id = int.Parse(Session["NormalUser"].ToString());
+                var retornaMeuCurso = new CommandsSQL();
+                var MeusCursos = retornaMeuCurso.MeusCursos(Id);
+                return View(MeusCursos);
+            }
+            else if (Session["ADMUser"] != null)
+            {
+                int Id = int.Parse(Session["ADMUser"].ToString());
+                var retornaMeuCurso = new CommandsSQL();
+                var MeusCursos = retornaMeuCurso.MeusCursos(Id);
+                return View(MeusCursos);
+            }
+            else
+            {
+                return RedirectToAction("Login", "Authentication");
+            }
+        }
     }
 }
