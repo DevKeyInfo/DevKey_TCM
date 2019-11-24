@@ -185,7 +185,9 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\course.css" />
     <Content Include="css\global.css" />
+    <Content Include="css\index.css" />
     <Content Include="css\login.css" />
+    <Content Include="css\material-dashboard.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />

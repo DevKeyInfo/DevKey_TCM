@@ -2,10 +2,207 @@
 
 @{
     ViewBag.Title = "Lista de Usuários";
+    Layout = null;
 }
 
-<h2 class="mt-5 text-center">Usuarios cadastrados</h2>
-<br/>
+
+<!doctype html>
+<head>
+    <title>Seja bem vindo!</title>
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+    <link href="~/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper ">
+        <div class="sidebar bg-dark" data-color="purple" data-background-color="white">
+            <img class="avatar-nav" src="~/image/avatar.png">
+
+            <h4 style="color: #fff;" class="text-center">NOME DO USER</h4>
+            <div class="logo">
+
+            </div>
+            <div class="sidebar-wrapper bg-dark">
+                <ul class="nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" style="color: #fff;" href="configuracoes-admin.html">
+                            <i class="fas fa-cog"></i>
+                            <p>Configurações</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item   ">
+                        <a class="nav-link" style="color: #fff;" href="tables-admin.html">
+                            <i class="fas fa-table"></i>
+                            <p>Tabelas</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link" style="color: #fff;" href="addvideo.html">
+                            <i class="fas fa-play-circle"></i>
+                            <p>Seus cursos</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link" style="color: #fff;" href=".html">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <p>SAIR</p>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+
+            <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper">
+                        <a class="navbar-brand" href="">Painel de controle</a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="sr-only">Navbar</span>
+                        <span class="navbar-toggler-icon icon-bar"></span>
+                        <span class="navbar-toggler-icon icon-bar"></span>
+                        <span class="navbar-toggler-icon icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            HOME
+                            <p class="d-lg-none d-md-block">
+
+                            </p>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            SOBRE
+                            <p class="d-lg-none d-md-block">
+
+                            </p>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            CONTATO
+                            <p class="d-lg-none d-md-block">
+
+                            </p>
+                        </a>
+                    </li>
+            </nav>
+            </nav>
+
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header card-header-primary">
+                                    <h4 class="card-title ">Lista de usúarios</h4>
+
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead class=" text-primary">
+                                            <th>
+                                                ID
+                                            </th>
+                                            <th>
+                                                Nome
+                                            </th>
+                                            <th>
+                                                Conta
+                                            </th>
+                                            <th>
+                                                Tipo
+                                            </th>
+
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        1
+                                                    </td>
+                                                    <td>
+                                                        Gabrielle Torres
+                                                    </td>
+                                                    <td>
+                                                        Gabi
+                                                    </td>
+                                                    <td>
+                                                        Comum
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        2
+                                                    </td>
+                                                    <td>
+                                                        Gabriel
+                                                    </td>
+                                                    <td>
+                                                        Gab
+                                                    </td>
+                                                    <td>
+                                                        Admin
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="footer">
+                            <div class="container-fluid">
+                                <nav class="float-left">
+                                    <ul>
+                                        <li>
+
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="copyright float-right">
+
+
+                                </div>
+
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+</body>
+
+</html>
+
+
 <table class="table">
     <tr>
         <th class="text-left">
@@ -27,27 +224,28 @@
         </th>
     </tr>
 
-@foreach (var item in Model) {
-<tr>
-    <td class="text-left">
-        @Html.DisplayFor(modelItem => item.ID)
-    </td>
-    <td class="text-center">
-        @Html.DisplayFor(modelItem => item.Name)
-    </td>
-    <td class="text-center">
-        @Html.DisplayFor(modelItem => item.Login)
-    </td>
-    
-    <td class="text-center">
-        @Html.ActionLink("Editar", "Editar", new { item.ID }) |
-        @Html.ActionLink("Detalhes", "Detalhes", new { item.ID }) |
-        @Html.ActionLink("Remover", "Deletar", new { item.ID })
-    </td>
-    <td class="text-center">
-        @Html.DisplayFor(modelItem => item.UserType)
-    </td>
-</tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td class="text-left">
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Login)
+            </td>
+
+            <td class="text-center">
+                @Html.ActionLink("Editar", "Editar", new { item.ID }) |
+                @Html.ActionLink("Detalhes", "Detalhes", new { item.ID }) |
+                @Html.ActionLink("Remover", "Deletar", new { item.ID })
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.UserType)
+            </td>
+        </tr>
+    }
 
 </table>

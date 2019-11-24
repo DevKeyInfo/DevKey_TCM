@@ -121,6 +121,18 @@ namespace WebSite.Controllers
 
                 return View(UnicoUsuario);
             }
+            else if (Session["ADMUser"] != null)
+            {
+
+                var Id = int.Parse(Session["ADMUser"].ToString());
+                User NewUser = new User();
+                NewUser.ID = Id;
+
+                var retornaPerfil = new CommandsSQL();
+                var UnicoUsuario = retornaPerfil.ListarID(Id);
+
+                return View(UnicoUsuario);
+            }
             else
             {
                 return RedirectToAction("Login", "Authentication");
