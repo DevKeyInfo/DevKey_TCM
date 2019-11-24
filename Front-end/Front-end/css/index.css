@@ -1,5 +1,5 @@
 header{
-    background: url(../image/banner-roxo.jpg);
+    background: url(../image/image.png);
 }
 
 .comments{
@@ -12,14 +12,14 @@ header{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 50vh;
+    height: 55vh;
   
   }
   
   .comments::before{
     content: "";
     width: 100%;
-    height: 50vh;
+    height: 55vh;
     z-index: 0;
     position: absolute;
     top: 0;
@@ -45,11 +45,15 @@ header{
     color: #fff;
 }
 
+.comments span{
+    font-weight: 600;
+    color: #fff;
+}
 
 .register img{
         padding: .15rem;
-        background-color: rgba(255, 255, 255, 0);
-        border: 1px solid #dee2e6;
+        background-color: transparent;
+       
         border-radius: .25rem;
         max-width: 100%;
         height: auto;
