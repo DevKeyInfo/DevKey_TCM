@@ -40,8 +40,8 @@ namespace WebSite.Database
         public void Insert(User user)
         {
             var StrQuery = "";
-            StrQuery += "INSERT INTO tb_User(Name_User, Login_User, Password_User)";
-            StrQuery += string.Format("VALUES('{0}', '{1}', '{2}')", user.Name, user.Login, user.Password);
+            StrQuery += "INSERT INTO tb_User(Name_User, Login_User, email_user, Password_User)";
+            StrQuery += string.Format("VALUES('{0}', '{1}', '{2}', '{3}')", user.Name, user.Login, user.Email, user.Password);
 
             using (db = new DBConnection())
             {

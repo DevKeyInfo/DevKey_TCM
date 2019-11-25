@@ -145,11 +145,32 @@
   <data name="CatDestaque" xml:space="preserve">
     <value>Here you will find the featured categories</value>
   </data>
+  <data name="CategoriaBack" xml:space="preserve">
+    <value>Learn how to be a good back-end developer professional and get a job easily</value>
+  </data>
+  <data name="CategoriaDB" xml:space="preserve">
+    <value>Databases are powerful tools that is used in almost any system, you should learn more right now!</value>
+  </data>
   <data name="CategoriaFront" xml:space="preserve">
     <value>All you need to know to dominate the Front-end!</value>
   </data>
+  <data name="CategoriaJava" xml:space="preserve">
+    <value>Java is the most used language when we are talking about systems, it works in mobile, web and so much more things.</value>
+  </data>
+  <data name="CategoriaLinux" xml:space="preserve">
+    <value>Learn how to use this powerful O.S in a easy way</value>
+  </data>
+  <data name="CategoriaMobile" xml:space="preserve">
+    <value>Learn all about Development for Mobile, Java or Kotlin</value>
+  </data>
   <data name="Categorias" xml:space="preserve">
     <value>Categories</value>
+  </data>
+  <data name="CategoriaSecurity" xml:space="preserve">
+    <value>Digital security became one of the most important things when we are developing a system that will be used for thousands of users.</value>
+  </data>
+  <data name="CategoriaUX" xml:space="preserve">
+    <value>We should worry about User Experience as much we worry about the perfomance of the systems, come and learn more about it!</value>
   </data>
   <data name="CategoryTitle" xml:space="preserve">
     <value>DevKey have a courses categories system for better user learning, each category has a short description.</value>

@@ -43,7 +43,7 @@ namespace WebSite.Controllers
                 User NewUser = new User
                 {
                     Name = user.Name,
-                    //Email = user.Email,
+                    Email = user.Email,
                     Login = user.Login,
                     Password = Hash.GerarHash(user.Password),
                 };
