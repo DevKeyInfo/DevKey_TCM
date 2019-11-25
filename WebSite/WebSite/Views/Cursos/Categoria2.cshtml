@@ -41,27 +41,27 @@
 
     <!--------------------------COURSES-SECTION---------------------------->
     <h2 class="text-center">Lista de <span class="color-purple">Cursos</span></h2>
-                        <p class="mt-3 text-center">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry,Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                        </p>
-                        <div class="card-deck" style="width:100%">
-    @foreach (var item in Model)
-    {
-                            <div class="card" style="display:flex;flex-wrap:wrap; flex-direction:row">
-                                <a href="@Url.Action("Detalhes", "Cursos", new { id=item.Id_Curso })" title="List View" class="links">
-                                    <img alt="List View" src="@Url.Content("~/image/grafico.png")">
-                                    <div class="card-body">
-                                        <h5 class="card-title">@Html.DisplayFor(modelItem => item.Nome)</h5>
-                                        <p class="card-text">@Html.DisplayFor(modelItem => item.Desc_cur)</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Atualizados 3 minutos atrás</small>
-                                    </div>
-                            </div>
+    <p class="mt-3 text-center">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry,Lorem Ipsum is simply dummy text of the printing and typesetting industry
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry
+    </p>
+    <div class="card-deck" style="width:100%">
+        @foreach (var item in Model)
+        {
+            <div class="card" style="display:flex;flex-wrap:wrap; flex-direction:row">
+                <a href="@Url.Action("Detalhes", "Cursos", new { id=item.Id_Curso })" title="List View" class="links">
+                    <img alt="List View" src="@Url.Content("~/image/grafico.png")">
+                    <div class="card-body">
+                        <h5 class="card-title">@Html.DisplayFor(modelItem => item.Nome)</h5>
+                        <p class="card-text">@Html.DisplayFor(modelItem => item.Desc_cur)</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Atualizados 3 minutos atrás</small>
+                    </div>
+            </div>
 
-    }
-                        </div>
+        }
+    </div>
     <br />
     <!-- Footer -->
     <footer class="page-footer font-small unique-color-dark">
@@ -132,16 +132,16 @@
                     <h6 class="text-uppercase font-weight-bold">Produtos</h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <a href="#!">Cursos online</a>
+                        Cursos online
                     </p>
                     <p>
-                        <a href="#!">Acesso ilimitado</a>
+                        Acesso ilimitado
                     </p>
                     <p>
-                        <a href="#!">Certificado</a>
+                        Certificado
                     </p>
                     <p>
-                        <a href="#!">Chat para tirar dúvidas</a>
+                        Chat para tirar dúvidas
                     </p>
 
                 </div>
@@ -149,19 +149,16 @@
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 
                     <!-- Links -->
-                    <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                    <h6 class="text-uppercase font-weight-bold">Links Úteis</h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <a href="#!">Home</a>
+                        <a href="~/Home/Index">Início</a>
                     </p>
                     <p>
-                        <a href="#!">Cursos</a>
+                        <a href="~/Home/Sobre">Sobre</a>
                     </p>
                     <p>
-                        <a href="#!">Sobre</a>
-                    </p>
-                    <p>
-                        <a href="#!">Login</a>
+                        <a href="~/Authentication/Login">Login</a>
                     </p>
 
                 </div>

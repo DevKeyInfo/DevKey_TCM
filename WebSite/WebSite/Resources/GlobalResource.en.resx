@@ -117,8 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BemVindo" xml:space="preserve">
+    <value>Welcome to DevKey</value>
+  </data>
+  <data name="BemVindoDesc" xml:space="preserve">
+    <value>Online courses for free to you become a successul I.T. professional. The Key to development you can find here in DevKey!</value>
+  </data>
   <data name="Cadastrese" xml:space="preserve">
     <value>Sign Up</value>
+  </data>
+  <data name="CadastroTexto" xml:space="preserve">
+    <value>Sign up right now in our platform, being possible to start in any course at any moment and with ilimited acess.
+                                   Counting on help of the highly enable teachers.</value>
   </data>
   <data name="CarrosselCursos" xml:space="preserve">
     <value>Check out our courses!</value>
@@ -131,6 +141,18 @@
   </data>
   <data name="Categorias" xml:space="preserve">
     <value>Categories</value>
+  </data>
+  <data name="CategoryTitle" xml:space="preserve">
+    <value>DevKey have a courses categories system for better user learning, each category has a short description.</value>
+  </data>
+  <data name="Comentario11" xml:space="preserve">
+    <value>DevKey saved my life. I don't have any money to go to college. My goal is become a developer that works as freelancer for web systems and thanks to DevKey i'm almost there.</value>
+  </data>
+  <data name="Comentario21" xml:space="preserve">
+    <value>The platform is amazing. Besides the methodologies of the courses being on my reach because the classes are totatlly free, for the ones who is begin started or the ones who already know thing about technlogy, the forum of doubts always have a teacher that will respond you in a short time.</value>
+  </data>
+  <data name="Comentario3" xml:space="preserve">
+    <value>If you don't know how to start learn about I.T. and dominate it, the way how the courses are organized and structured on the DevKey helps a lot.</value>
   </data>
   <data name="Contato" xml:space="preserve">
     <value>Contact</value>
@@ -168,6 +190,9 @@
   <data name="ListaUsuarios" xml:space="preserve">
     <value>User's List</value>
   </data>
+  <data name="NossaPlataforma" xml:space="preserve">
+    <value>Our Platform</value>
+  </data>
   <data name="Perfil" xml:space="preserve">
     <value>Profile</value>
   </data>
@@ -179,6 +204,12 @@
   </data>
   <data name="Principais" xml:space="preserve">
     <value>Main</value>
+  </data>
+  <data name="Responsivo" xml:space="preserve">
+    <value>Responsive</value>
+  </data>
+  <data name="ResponsivoTexto" xml:space="preserve">
+    <value>The lessons can be acessed easily any time and in any device.</value>
   </data>
   <data name="Sair" xml:space="preserve">
     <value>Logout</value>
@@ -194,5 +225,11 @@
   </data>
   <data name="Sobre" xml:space="preserve">
     <value>About</value>
+  </data>
+  <data name="SuporteTexto" xml:space="preserve">
+    <value>Our support have a chat where the student can ask anything about the courses and get answers in short time.</value>
+  </data>
+  <data name="VideoTexto" xml:space="preserve">
+    <value>Quality lessons for free.</value>
   </data>
 </root>

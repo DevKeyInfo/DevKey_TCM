@@ -246,7 +246,7 @@
   <data name="Principais" xml:space="preserve">
     <value>Principais</value>
   </data>
-  <data name="ReponsivoTexto" xml:space="preserve">
+  <data name="ResponsivoTexto" xml:space="preserve">
     <value>As vídeos aulas podem ser acessadas facilmente de qualquer dispositivo, a qualquer hora.</value>
   </data>
   <data name="Responsivo" xml:space="preserve">
@@ -284,5 +284,12 @@
   </data>
   <data name="Contato" xml:space="preserve">
     <value>Contato</value>
+  </data>
+  <data name="CadastroTexto" xml:space="preserve">
+    <value>Se cadastre agora mesmo na nossa plataforma, podendo começar as aulas de qualquer curso, a qualquer hora com o acesso ilimitado.
+                                    Contando com ajuda de professores altamente capacitados e treinados, com a disponibilidade de material em PDF para consulta da matéria.</value>
+  </data>
+  <data name="VideoTexto" xml:space="preserve">
+    <value>Aulas de qualidade totalmente gratuitas.</value>
   </data>
 </root>

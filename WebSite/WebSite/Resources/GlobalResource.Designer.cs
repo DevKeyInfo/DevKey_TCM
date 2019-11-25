@@ -97,6 +97,16 @@ namespace CadastroLogin.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Se cadastre agora mesmo na nossa plataforma, podendo começar as aulas de qualquer curso, a qualquer hora com o acesso ilimitado.
+        ///                                    Contando com ajuda de professores altamente capacitados e treinados, com a disponibilidade de material em PDF para consulta da matéria..
+        /// </summary>
+        public static string CadastroTexto {
+            get {
+                return ResourceManager.GetString("CadastroTexto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Confira nossos cursos!.
         /// </summary>
         public static string CarrosselCursos {
@@ -460,20 +470,20 @@ namespace CadastroLogin.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to As vídeos aulas podem ser acessadas facilmente de qualquer dispositivo, a qualquer hora..
-        /// </summary>
-        public static string ReponsivoTexto {
-            get {
-                return ResourceManager.GetString("ReponsivoTexto", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Responsivo.
         /// </summary>
         public static string Responsivo {
             get {
                 return ResourceManager.GetString("Responsivo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to As vídeos aulas podem ser acessadas facilmente de qualquer dispositivo, a qualquer hora..
+        /// </summary>
+        public static string ResponsivoTexto {
+            get {
+                return ResourceManager.GetString("ResponsivoTexto", resourceCulture);
             }
         }
         
@@ -555,6 +565,15 @@ namespace CadastroLogin.Resources {
         public static string VideosTitle {
             get {
                 return ResourceManager.GetString("VideosTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Aulas de qualidade totalmente gratuitas..
+        /// </summary>
+        public static string VideoTexto {
+            get {
+                return ResourceManager.GetString("VideoTexto", resourceCulture);
             }
         }
     }
