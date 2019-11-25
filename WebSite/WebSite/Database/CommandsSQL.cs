@@ -449,7 +449,7 @@ namespace WebSite.Database
                     + "FROM curso c "
                     + "INNER JOIN Aluno_Curso ac ON c.Id_curso = ac.Id_Curso "
                     + "INNER JOIN tb_user u ON u.Id_user = ac.Id_user "
-                    + "WHERE u.Id_user = 24", Id);
+                    + "WHERE u.Id_user = {0}", Id);
                 var retorno = db.RetornaComando(strQuery);
                 return RetornaMeusCursos(retorno);
             }

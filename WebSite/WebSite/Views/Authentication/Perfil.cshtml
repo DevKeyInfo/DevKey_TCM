@@ -175,7 +175,10 @@
                                         </a>
                                     </div>
                                     <div class="card-body">
-                                        <h4 class="card-title">Alec Thompson</h4>
+                                        @if (Session["NormalUser"] != null)
+                                        {
+                                            <h4 style="color: rgb(68, 68, 68);" class="text-center">@Session["NomeUser"]</h4>
+                                        }
                                         <a href="" class="btn btn-primary btn-round">Alterar foto</a>
                                     </div>
                                 </div>
@@ -377,7 +380,10 @@ else if (Session["ADMUser"] != null)
                                      </a>
                                  </div>
                                  <div class="card-body">
-                                     <h4 class="card-title">Nome do user</h4>
+                                     @if (Session["ADMUser"] != null)
+                                     {
+                                        <h4 style="color: rgb(68, 68, 68);" class="text-center">@Session["NomeUser"]</h4>
+                                     }
                                      <a href="" class="btn btn-primary btn-round">Alterar foto</a>
                                  </div>
                              </div>
