@@ -10,7 +10,7 @@
 <html>
 <head>
     <title>Seja bem vindo!</title>
-
+    <link rel="icon" href="~/image/logo-devkey.png">
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -29,37 +29,39 @@
         <div class="sidebar bg-dark" data-color="purple" data-background-color="white">
             <img class="avatar-nav" src="~/image/avatar.png">
 
-            <h4 style="color: #fff;" class="text-center">NOME DO USER</h4>
+            @if (Session["ADMUser"] != null)
+            {
+                <h4 style="color: rgb(255, 255, 255);" class="text-center">@Session["NomeUser"]</h4>
+            }
             <div class="logo">
 
             </div>
             <div class="sidebar-wrapper bg-dark">
                 <ul class="nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" style="color: #fff;" href="configuracoes-admin.html">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="~/Authentication/Perfil">
                             <i class="fas fa-cog"></i>
-                            <p>Configurações</p>
+                            <p>Perfil</p>
                         </a>
                     </li>
-
-                    <li class="nav-item   ">
-                        <a class="nav-link" style="color: #fff;" href="tables-admin.html">
+                    <li class="nav-item active">
+                        <a class="nav-link" style="color: #fff;" href="~/Home/ListarUsuarios">
                             <i class="fas fa-table"></i>
-                            <p>Tabelas</p>
+                            <p>Lista de usuários</p>
                         </a>
                     </li>
 
                     <li class="nav-item ">
-                        <a class="nav-link" style="color: #fff;" href="addvideo.html">
+                        <a class="nav-link" style="color: #fff;" href="~/Cursos/MeusCursos">
                             <i class="fas fa-play-circle"></i>
-                            <p>Seus cursos</p>
+                            <p>Meus cursos</p>
                         </a>
                     </li>
 
                     <li class="nav-item ">
-                        <a class="nav-link" style="color: #fff;" href=".html">
+                        <a class="nav-link" style="color: #fff;" href="~/Authentication/Logout">
                             <i class="fas fa-sign-out-alt"></i>
-                            <p>SAIR</p>
+                            <p>Sair</p>
                         </a>
                     </li>
 
@@ -85,8 +87,8 @@
 
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="">
-                            HOME
+                        <a class="nav-link" href="~/Home/Index">
+                            Início
                             <p class="d-lg-none d-md-block">
 
                             </p>
@@ -95,8 +97,8 @@
 
 
                     <li class="nav-item">
-                        <a class="nav-link" href="">
-                            SOBRE
+                        <a class="nav-link" href="~/Home/Sobre">
+                            Sobre
                             <p class="d-lg-none d-md-block">
 
                             </p>
@@ -105,8 +107,8 @@
 
 
                     <li class="nav-item">
-                        <a class="nav-link" href="">
-                            CONTATO
+                        <a class="nav-link" href="~/Home/Contato">
+                            Contato
                             <p class="d-lg-none d-md-block">
 
                             </p>

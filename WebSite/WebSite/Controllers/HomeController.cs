@@ -29,8 +29,17 @@ namespace WebSite.Controllers
             {
                 return RedirectToAction("Login", "Authentication");
             }
+           
+        }
 
-            
+        public ActionResult Sobre()
+        {
+            return View();
+        }
+
+        public ActionResult Contato()
+        {
+            return View();
         }
 
 

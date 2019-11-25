@@ -2,12 +2,6 @@
     ViewBag.Title = "Home Page";
 }
      
-        @*@if (TempData["Cadastro"] != null)
-        {
-            <h6 class="text-success pt-1">
-                @TempData["Cadastro"]
-            </h6>
-        }*@
 
         <html>
         <head>
@@ -42,20 +36,15 @@
                                     @CadastroLogin.Resources.GlobalResource.BemVindoDesc
                                 </p>
                             </div>
-                            <div class="col-md-6 text-center">
+                            @*<div class="col-md-6 text-center">
                                 <img src="~/image/grafico.png" class="img-fluid">
-                            </div>
+                            </div>*@
                         </div>
                     </div>
 
                     <!-- <img src="~/image/banner.jpg">-->
             </header>
-                @if (TempData["Boas-vindas"] != null)
-                {
-                    <h6 class="text-success pt-1">
-                        @TempData["Boas-vindas"]
-                    </h6>
-                }
+
             <main>
                 <section class="features-icons bg-light text-center">
                     <div class="container">

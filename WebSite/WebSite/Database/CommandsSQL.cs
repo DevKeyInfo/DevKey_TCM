@@ -55,7 +55,7 @@ namespace WebSite.Database
             StrQuery += "UPDATE tb_user SET ";
             StrQuery += string.Format("name_user = '{0}',", user.Name);
             StrQuery += string.Format("email_user = '{0}',", user.Email);
-            StrQuery += string.Format("password_user ='{0}' ", user.Password);
+            StrQuery += string.Format("password_user ='{0}' ", Hash.GerarHash(user.Password));
             StrQuery += string.Format("WHERE Id_user = {0}", ID);
 
 
@@ -445,7 +445,11 @@ namespace WebSite.Database
         {
             using (db = new DBConnection())
             {
-                var strQuery = string.Format("SELECT * FROM Aluno_Curso WHERE Id_user = {0};", Id);
+                var strQuery = string.Format("SELECT c.Nome, c.desc_cur "
+                    + "FROM curso c "
+                    + "INNER JOIN Aluno_Curso ac ON c.Id_curso = ac.Id_Curso "
+                    + "INNER JOIN tb_user u ON u.Id_user = ac.Id_user "
+                    + "WHERE u.Id_user = 24", Id);
                 var retorno = db.RetornaComando(strQuery);
                 return RetornaMeusCursos(retorno);
             }

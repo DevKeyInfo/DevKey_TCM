@@ -19,7 +19,7 @@ namespace CadastroLogin.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class GlobalResource {
@@ -265,6 +265,15 @@ namespace CadastroLogin.Resources {
         public static string Comentario3 {
             get {
                 return ResourceManager.GetString("Comentario3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contato.
+        /// </summary>
+        public static string Contato {
+            get {
+                return ResourceManager.GetString("Contato", resourceCulture);
             }
         }
         

@@ -90,6 +90,7 @@ namespace WebSite.Controllers
             {
                 FormsAuthentication.SetAuthCookie(login.Id.ToString(), false);
                 Session["NormalUser"] = login.Id;
+                Session["NomeUser"] = login.Name;
                 TempData["Boas-Vindas"] = "Seja bem-vindo(a), " + login.Name + "!";
 
             }
@@ -98,16 +99,17 @@ namespace WebSite.Controllers
             {
                 FormsAuthentication.SetAuthCookie(login.Id.ToString(), false);
                 Session["AdmUser"] = login.Id;
+                Session["NomeUser"] = login.Name;
                 TempData["Boas-Vindas"] = "Seja bem-vindo(a), " + login.Name + "!";
             }
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Perfil", "Authentication");
 
         }
 
 
         //Terminar metodo
-        public ActionResult Perfil(User user)
+        public ActionResult Perfil()
         {
             if (Session["NormalUser"] != null)
             {
@@ -143,13 +145,24 @@ namespace WebSite.Controllers
         [HttpPost, ActionName("Perfil")]
         public ActionResult EditarPerfil(User user)
         {
-            //if (ModelState.IsValid)
-            //{
+
+            if(Session["NormalUser"] != null) { 
                 var ID = int.Parse(Session["NormalUser"].ToString());
                 var EditaPerfil = new CommandsSQL();
                 EditaPerfil.EditarUsuario(user, ID); 
-            //}
             return View();
+            }
+            else if (Session["ADMUser"] != null)
+            {
+                var ID = int.Parse(Session["ADMUser"].ToString());
+                var EditaPerfil = new CommandsSQL();
+                EditaPerfil.EditarUsuario(user, ID);
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Login", "Authentication");
+            }
         }
 
         //Traz os cursos de um determinado usuário

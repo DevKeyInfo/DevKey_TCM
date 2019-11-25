@@ -282,4 +282,7 @@
   <data name="SuporteTexto" xml:space="preserve">
     <value>O nosso suporte, conta com um chat na qual o aluno ou novo usuário pode tirar suas dúvidas sem qualquer restrição.</value>
   </data>
+  <data name="Contato" xml:space="preserve">
+    <value>Contato</value>
+  </data>
 </root>

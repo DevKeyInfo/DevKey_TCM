@@ -43,24 +43,19 @@
                         @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Ingles, "Change", "Linguagem", new { LanguageAbbreviation = "en" }, null)
                     </li>
                     <li class="nav-item">
+                        <a href="~/Home/Sobre" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Home/Contato" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Contato</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="~/Authentication/Perfil" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Perfil</a>
                     </li>
-                    @*<li class="nav-item">
-                <a href="~/Home/Perfil" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Perfil</a>
-            </li>*@
                     <li class="nav-item">
                         <a href="~/Authentication/Logout" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Sair</a>
                     </li>
-                    @*<li>
-                <a href="@Url.Action("Change", "Linguagem", new { LanguageAbbreviation = "pt" }, null)">
-                    <img src="@Url.Content("~/image/BR-icon.png")">
-                </a>
-            </li>
-            <li>
-                <a href="@Url.Action("Change", "Linguagem", new { LanguageAbbreviation = "en" })" title="List View" class="links">
-                    <img alt="List View" src="@Url.Content("~/image/USA-Icon.png")">
-                </a>
-            </li>*@
+
+
 
                 }
                 @if (Session["AdmUser"] != null)
@@ -70,6 +65,12 @@
                     </li>
                     <li class="nav-item nav-link m-3 active-1">
                         @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Ingles, "Change", "Linguagem", new { LanguageAbbreviation = "en" }, null)
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Home/Sobre" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Home/Contato" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Contato</a>
                     </li>
                     <li class="nav-item">
                         <a href="~/Home/ListarUsuarios" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.ListaUsuarios</a>
@@ -93,6 +94,12 @@
                     </li>
                     <li class="nav-item nav-link m-3 active-1">
                         @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Ingles, "Change", "Linguagem", new { LanguageAbbreviation = "en" }, null)
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Home/Sobre" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Home/Contato" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Contato</a>
                     </li>
                     <li class="nav-item">
                         <a href="~/Authentication/Cadastro" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Cadastrese</a>
