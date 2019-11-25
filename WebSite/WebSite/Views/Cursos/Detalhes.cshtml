@@ -1,136 +1,380 @@
 ﻿@model IEnumerable<CadastroLogin.Models.Cursos>
 
-@{
-    ViewBag.Title = "Detalhes";
+@{ 
+Layout = null;
 }
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cursos online, matricule-se já!</title>
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/global.css">
+    <link rel="stylesheet" href="~/css/index.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/image/favicon.png">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+          crossorigin="anonymous">
 
-
-<form class="form-group">
-    @foreach (var item in Model)
-    {
-
-
-        <div class="text-center">
-            <br />
-            <h1>@Html.DisplayFor(modelItem => item.Nome)</h1>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-purple nav-pills" style="background-color:#8E44AD !important;">
+        <div class="d-flex flex-grow-1">
+            <span class="w-100 d-lg-none d-block"></span>
+            <a class="navbar-brand d-none d-lg-inline-block h1 mb-0" href="~/Home/Index">
+                <img src="~/image/logo-devkey.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            </a>
+            <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="~/Home/Index">
+                <img src="~/image/logo-devkey.png" alt="logo">
+            </a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </div>
-        <div>
-            <h3>@Html.DisplayNameFor(model => model.Aula1)</h3>
-            <hr />
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                @if (Session["NormalUser"] != null)
+                {
+                    <li class="nav-item nav-link m-3 active-1">
+                        @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Portugues, "Change", "Linguagem", new { LanguageAbbreviation = "pt" }, null)
+                    </li>
+                    <li class="nav-item nav-link m-3 active-1">
+                        @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Ingles, "Change", "Linguagem", new { LanguageAbbreviation = "en" }, null)
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Home/Sobre" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Home/Contato" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Authentication/Perfil" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Authentication/Logout" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Sair</a>
+                    </li>
+
+
+
+                }
+                @if (Session["AdmUser"] != null)
+                {
+                    <li class="nav-item nav-link m-3 active-1">
+                        @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Portugues, "Change", "Linguagem", new { LanguageAbbreviation = "pt" }, null)
+                    </li>
+                    <li class="nav-item nav-link m-3 active-1">
+                        @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Ingles, "Change", "Linguagem", new { LanguageAbbreviation = "en" }, null)
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Home/Sobre" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Home/Contato" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Home/ListarUsuarios" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.ListaUsuarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Cursos/CadastrarCurso" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.CadastrarCurso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Authentication/Perfil" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Authentication/Logout" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Sair</a>
+                    </li>
+                }
+
+                @if (Session["NormalUser"] == null && Session["AdmUser"] == null)
+                {
+
+                    <li class="nav-item nav-link m-3 active-1">
+                        @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Portugues, "Change", "Linguagem", new { LanguageAbbreviation = "pt" }, null)
+                    </li>
+                    <li class="nav-item nav-link m-3 active-1">
+                        @Html.ActionLink(@CadastroLogin.Resources.GlobalResource.Ingles, "Change", "Linguagem", new { LanguageAbbreviation = "en" }, null)
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Home/Sobre" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Home/Contato" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Authentication/Cadastro" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Cadastrese</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/Authentication/Login" class="nav-link m-2 active-1">@CadastroLogin.Resources.GlobalResource.Entrar</a>
+                    </li>
+
+                }
+            </ul>
+        </div>
+    </nav>
+    <br/><br /><br />
+    <form class="form-group">
+        @foreach (var item in Model)
+        {
+
+
+            <div class="text-center">
+                <br />
+                <h1>@Html.DisplayFor(modelItem => item.Nome)</h1>
+            </div>
+            <div>
+                <h3>@Html.DisplayNameFor(model => model.Aula1)</h3>
+                <hr />
+                <div class="container">
+                    <iframe width="800" height="500" src="@item.Aula1"></iframe>
+                </div>
+            </div>
+
+            if (item.Aula2 != null)
+            {
+                <br />
+                <div class="ml-3">
+                    <h3>@Html.DisplayNameFor(model => model.Aula2)</h3>
+                </div>
+                <hr />
+                <div class="container">
+                    <iframe style="border:none" width="800" height="500" src="@item.Aula2"></iframe>
+                </div>
+
+            }
+
+            if (item.Aula3 != null)
+            {
+                <br />
+                <div class="ml-3">
+                    <h3>@Html.DisplayNameFor(model => model.Aula3)</h3>
+                </div>
+                <hr />
+                <div class="container">
+                    <iframe style="border:none" width="800" height="500" src="@item.Aula3"></iframe>
+                </div>
+            }
+
+            if (item.Aula4 != null)
+            {
+                <br />
+                <div class="ml-3">
+                    <h3>@Html.DisplayNameFor(model => model.Aula4)</h3>
+                </div>
+                <hr />
+                <div class="container">
+                    <iframe style="border:none" width="800" height="500" src="@item.Aula4"></iframe>
+                </div>
+            }
+
+            if (item.Aula5 != null)
+            {
+                <br />
+                <div class="ml-3">
+                    <h3>@Html.DisplayNameFor(model => model.Aula5)</h3>
+                </div>
+                <hr />
+                <div class="container">
+                    <iframe style="border:none" width="800" height="500" src="@item.Aula5"></iframe>
+                </div>
+            }
+
+            if (item.Aula6 != null)
+            {
+                <br />
+                <div class="ml-3">
+                    <h3>@Html.DisplayNameFor(model => model.Aula6)</h3>
+                </div>
+                <hr />
+                <div class="container">
+                    <iframe style="border:none" width="800" height="500" src="@item.Aula6"></iframe>
+                </div>
+            }
+
+            if (item.Aula7 != null)
+            {
+                <br />
+                <div class="ml-3">
+                    <h3>@Html.DisplayNameFor(model => model.Aula7)</h3>
+                </div>
+                <hr />
+                <div class="container">
+                    <iframe style="border:none" width="800" height="500" src="@item.Aula7"></iframe>
+                </div>
+            }
+
+            if (item.Aula8 != null)
+            {
+                <br />
+                <div class="ml-3">
+                    <h3>@Html.DisplayNameFor(model => model.Aula8)</h3>
+                </div>
+                <hr />
+                <div class="container">
+                    <iframe style="border:none" width="800" height="500" src="@item.Aula8"></iframe>
+                </div>
+            }
+
+            if (item.Aula9 != null)
+            {
+                <br />
+                <div class="ml-3">
+                    <h3>@Html.DisplayNameFor(model => model.Aula9)</h3>
+                </div>
+                <hr />
+                <div class="container">
+                    <iframe style="border:none" width="800" height="500" src="@item.Aula9"></iframe>
+                </div>
+            }
+
+            if (item.Aula10 != null)
+            {
+                <br />
+                <div class="ml-3">
+                    <h3>@Html.DisplayNameFor(model => model.Aula10)</h3>
+                </div>
+                <hr />
+                <div class="container">
+                    <iframe style="border:none" width="800" height="500" src="@item.Aula10"></iframe>
+                </div>
+            }
+
+        }
+
+    </form>
+    <footer class="page-footer font-small unique-color-dark">
+
+        <div style="background-color: #6351ce;">
             <div class="container">
-                <iframe width="1000" height="600" src="@item.Aula1"></iframe>
+
+
+                <div class="row py-4 d-flex align-items-center">
+
+
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0">Conecte-se conosco nas redes sociais!</h6>
+                    </div>
+
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f white-text mr-4"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram white-text"> </i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
             </div>
         </div>
 
-        if (item.Aula2 != null)
-        {
-            <br />
-            <div class="ml-3">
-                <h3>@Html.DisplayNameFor(model => model.Aula2)</h3>
-            </div>
-            <hr />
-            <div class="container">
-                <iframe style="border:none" width="1000" height="600" src="@item.Aula2"></iframe>
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+
+
+            <div class="row mt-3">
+
+
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+
+                    <h6 class="text-uppercase font-weight-bold">DevKey</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        Cursos on-line totalmente gratuitos para você se tornar um programador de sucesso. A chave para o desenvolvimento se encontra aqui!
+                    </p>
+
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Produtos</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        Cursos online
+                    </p>
+                    <p>
+                        Acesso ilimitado
+                    </p>
+                    <p>
+                        Certificado
+                    </p>
+                    <p>
+                        Chat para tirar dúvidas
+                    </p>
+
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Links Úteis</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="~/Home/Index">Início</a>
+                    </p>
+                    <p>
+                        <a href="~/Home/Sobre">Sobre</a>
+                    </p>
+                    <p>
+                        <a href="~/Authentication/Login">Login</a>
+                    </p>
+
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Contato</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"></i>R.Guaipá, 678 - Vila Leopoldina
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i>developmentinfo@gmail.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> +55 11 3699-2270
+                    </p>
+                    <p>
+                        <i class="fas fa-print mr-3"></i>+55 11 3699-2270
+                    </p>
+
+                </div>
+
+
             </div>
 
-        }
 
-        if (item.Aula3 != null)
-        {
-            <br />
-            <div class="ml-3">
-                <h3>@Html.DisplayNameFor(model => model.Aula3)</h3>
-            </div>
-            <hr />
-            <div class="container">
-                <iframe style="border:none" width="1000" height="600" src="@item.Aula3"></iframe>
-            </div>
-        }
+        </div>
+        <!-- Footer Links -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            <p>© 2019 Copyright:DevKey - Todos os direitos reservados</p>
 
-        if (item.Aula4 != null)
-        {
-            <br />
-            <div class="ml-3">
-                <h3>@Html.DisplayNameFor(model => model.Aula4)</h3>
-            </div>
-            <hr />
-            <div class="container">
-                <iframe style="border:none" width="1000" height="600" src="@item.Aula4"></iframe>
-            </div>
-        }
+        </div>
+        <!-- Copyright -->
 
-        if (item.Aula5 != null)
-        {
-            <br />
-            <div class="ml-3">
-                <h3>@Html.DisplayNameFor(model => model.Aula5)</h3>
-            </div>
-            <hr />
-            <div class="container">
-                <iframe style="border:none" width="1000" height="600" src="@item.Aula5"></iframe>
-            </div>
-        }
-
-        if (item.Aula6 != null)
-        {
-            <br />
-            <div class="ml-3">
-                <h3>@Html.DisplayNameFor(model => model.Aula6)</h3>
-            </div>
-            <hr />
-            <div class="container">
-                <iframe style="border:none" width="1000" height="600" src="@item.Aula6"></iframe>
-            </div>
-        }
-
-        if (item.Aula7 != null)
-        {
-            <br />
-            <div class="ml-3">
-                <h3>@Html.DisplayNameFor(model => model.Aula7)</h3>
-            </div>
-            <hr />
-            <div class="container">
-                <iframe style="border:none" width="1000" height="600" src="@item.Aula7"></iframe>
-            </div>
-        }
-
-        if (item.Aula8 != null)
-        {
-            <br />
-            <div class="ml-3">
-                <h3>@Html.DisplayNameFor(model => model.Aula8)</h3>
-            </div>
-            <hr />
-            <div class="container">
-                <iframe style="border:none" width="1000" height="600" src="@item.Aula8"></iframe>
-            </div>
-        }
-
-        if (item.Aula9 != null)
-        {
-            <br />
-            <div class="ml-3">
-                <h3>@Html.DisplayNameFor(model => model.Aula9)</h3>
-            </div>
-            <hr />
-            <div class="container">
-                <iframe style="border:none" width="1000" height="600" src="@item.Aula9"></iframe>
-            </div>
-        }
-
-        if (item.Aula10 != null)
-        {
-            <br />
-            <div class="ml-3">
-                <h3>@Html.DisplayNameFor(model => model.Aula10)</h3>
-            </div>
-            <hr />
-            <div class="container">
-                <iframe style="border:none" width="1000" height="600" src="@item.Aula10"></iframe>
-            </div>
-        }
-
-    }
-
-</form>
+    </footer>
+</body>
+</html>

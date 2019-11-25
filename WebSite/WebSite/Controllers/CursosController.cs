@@ -75,38 +75,71 @@ namespace WebSite.Controllers
 
         public ActionResult Detalhes(int Id)
         {
-            if(Session["NormalUser"] == null)
+            if(Session["NormalUser"] != null)
             {
-                return RedirectToAction("Login", "Authentication");
-            }
+                //return RedirectToAction("Login", "Authentication");
 
-            var metodoCurso = new CommandsSQL();
-            metodoCurso.ListadId(Id);
+                var metodoCurso = new CommandsSQL();
+                metodoCurso.ListadId(Id);
 
-            AlunoCurso alunoCurso2 = new AlunoCurso
-               {
-                 id_user = Convert.ToInt32(Session["NormalUser"].ToString()),
-                 id_curso = Id,
-               };
-            //Verifica se o usuário já é inscrito no curso
-            var retorno = metodoCurso.ValidaCadastroCurso(alunoCurso2);
-            //Retorna tela do curso
-            var curso = metodoCurso.DetalheCurso(Id);
-            if (retorno == null)
-            {
-                AlunoCurso IdentificacaoLogin = new AlunoCurso
+                AlunoCurso alunoCurso2 = new AlunoCurso
+                   {
+                     id_user = Convert.ToInt32(Session["NormalUser"].ToString()),
+                     id_curso = Id,
+                   };
+                //Verifica se o usuário já é inscrito no curso
+                var retorno = metodoCurso.ValidaCadastroCurso(alunoCurso2);
+                //Retorna tela do curso
+                var curso = metodoCurso.DetalheCurso(Id);
+                if (retorno == null)
                 {
-                    id_user = Convert.ToInt32(Session["NormalUser"].ToString()),
+                    AlunoCurso IdentificacaoLogin = new AlunoCurso
+                    {
+                        id_user = Convert.ToInt32(Session["NormalUser"].ToString()),
+                        id_curso = Id,
+                    };
+
+                    metodoCurso.CursoAluno(IdentificacaoLogin);
+                    return View(curso);
+                }
+                else
+                {
+                    return View(curso);
+                }
+            }
+            else if (Session["ADMUser"] != null)
+            {
+                var metodoCurso = new CommandsSQL();
+                metodoCurso.ListadId(Id);
+
+                AlunoCurso alunoCurso2 = new AlunoCurso
+                {
+                    id_user = Convert.ToInt32(Session["ADMUser"].ToString()),
                     id_curso = Id,
                 };
+                //Verifica se o usuário já é inscrito no curso
+                var retorno = metodoCurso.ValidaCadastroCurso(alunoCurso2);
+                //Retorna tela do curso
+                var curso = metodoCurso.DetalheCurso(Id);
+                if (retorno == null)
+                {
+                    AlunoCurso IdentificacaoLogin = new AlunoCurso
+                    {
+                        id_user = Convert.ToInt32(Session["ADMUser"].ToString()),
+                        id_curso = Id,
+                    };
 
-                metodoCurso.CursoAluno(IdentificacaoLogin);
-                return View(curso);
+                    metodoCurso.CursoAluno(IdentificacaoLogin);
+                    return View(curso);
+                }
+                else
+                {
+                    return View(curso);
+                }
             }
-            else
-            {
-                return View(curso);
-            }
+
+            return RedirectToAction("Login", "Authentication");
+
             
         }
 
