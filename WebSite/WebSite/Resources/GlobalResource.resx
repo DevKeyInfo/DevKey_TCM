@@ -292,4 +292,31 @@
   <data name="VideoTexto" xml:space="preserve">
     <value>Aulas de qualidade totalmente gratuitas.</value>
   </data>
+  <data name="AcessoIlimitado" xml:space="preserve">
+    <value>Acesso Ilimitado</value>
+  </data>
+  <data name="CadastreAgora" xml:space="preserve">
+    <value>Faça agora o seu</value>
+  </data>
+  <data name="CadastreAgora2" xml:space="preserve">
+    <value>Cadastro</value>
+  </data>
+  <data name="Certificado2" xml:space="preserve">
+    <value>Certificado</value>
+  </data>
+  <data name="CursosOnline" xml:space="preserve">
+    <value>Cursos Online</value>
+  </data>
+  <data name="LinksUteis" xml:space="preserve">
+    <value>Links Úteis</value>
+  </data>
+  <data name="Produtos" xml:space="preserve">
+    <value>Produtos</value>
+  </data>
+  <data name="RedeSocial" xml:space="preserve">
+    <value>Conecte-se conosco nas redes sociais!</value>
+  </data>
+  <data name="VerCursos" xml:space="preserve">
+    <value>Ver Cursos</value>
+  </data>
 </root>

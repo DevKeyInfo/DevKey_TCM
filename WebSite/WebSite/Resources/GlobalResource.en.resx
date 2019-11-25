@@ -117,11 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AcessoIlimitado" xml:space="preserve">
+    <value>Unlimited Acess</value>
+  </data>
   <data name="BemVindo" xml:space="preserve">
     <value>Welcome to DevKey</value>
   </data>
   <data name="BemVindoDesc" xml:space="preserve">
     <value>Online courses for free to you become a successul I.T. professional. The Key to development you can find here in DevKey!</value>
+  </data>
+  <data name="CadastreAgora" xml:space="preserve">
+    <value>Sign up</value>
+  </data>
+  <data name="CadastreAgora2" xml:space="preserve">
+    <value>Now</value>
   </data>
   <data name="Cadastrese" xml:space="preserve">
     <value>Sign Up</value>
@@ -145,6 +154,15 @@
   <data name="CategoryTitle" xml:space="preserve">
     <value>DevKey have a courses categories system for better user learning, each category has a short description.</value>
   </data>
+  <data name="Certificado" xml:space="preserve">
+    <value>In the end of a course you can have a certification;</value>
+  </data>
+  <data name="Certificado2" xml:space="preserve">
+    <value>Certification</value>
+  </data>
+  <data name="Chat" xml:space="preserve">
+    <value>Online chat for your doubts;</value>
+  </data>
   <data name="Comentario11" xml:space="preserve">
     <value>DevKey saved my life. I don't have any money to go to college. My goal is become a developer that works as freelancer for web systems and thanks to DevKey i'm almost there.</value>
   </data>
@@ -156,6 +174,9 @@
   </data>
   <data name="Contato" xml:space="preserve">
     <value>Contact</value>
+  </data>
+  <data name="CursosOnline" xml:space="preserve">
+    <value>Online Courses</value>
   </data>
   <data name="Entrar" xml:space="preserve">
     <value>Sign In</value>
@@ -184,17 +205,32 @@
   <data name="Linguagem" xml:space="preserve">
     <value>Language</value>
   </data>
+  <data name="LinksUteis" xml:space="preserve">
+    <value>Useful Links</value>
+  </data>
   <data name="ListaCat1" xml:space="preserve">
     <value>List of courses</value>
   </data>
   <data name="ListaUsuarios" xml:space="preserve">
     <value>User's List</value>
   </data>
+  <data name="MaterialPDF" xml:space="preserve">
+    <value>Material of classes available in PDF;</value>
+  </data>
   <data name="NossaPlataforma" xml:space="preserve">
     <value>Our Platform</value>
   </data>
+  <data name="NossaPlataformaTexto" xml:space="preserve">
+    <value>Using a modern methodology, we developed the DevKey searching for teach the all the people that we can reach in a platform for online courses. Counting on some technologys to get a better performance in our platform. </value>
+  </data>
+  <data name="OQueDizem" xml:space="preserve">
+    <value>What the students say about DevKey</value>
+  </data>
   <data name="Perfil" xml:space="preserve">
     <value>Profile</value>
+  </data>
+  <data name="PerfilUsuario" xml:space="preserve">
+    <value>User profile available for a better monitoring of classes;</value>
   </data>
   <data name="Plataforma" xml:space="preserve">
     <value>DevKey came from the need of a good online plataform with a small price and capable to teach anyone, our principal objective is to prepare professionals qualified to get in any kind of job related with I.T. </value>
@@ -205,11 +241,20 @@
   <data name="Principais" xml:space="preserve">
     <value>Main</value>
   </data>
+  <data name="Produtos" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="RedeSocial" xml:space="preserve">
+    <value>Connect to us in our social medias!</value>
+  </data>
   <data name="Responsivo" xml:space="preserve">
     <value>Responsive</value>
   </data>
   <data name="ResponsivoTexto" xml:space="preserve">
     <value>The lessons can be acessed easily any time and in any device.</value>
+  </data>
+  <data name="SaberMais" xml:space="preserve">
+    <value>More...</value>
   </data>
   <data name="Sair" xml:space="preserve">
     <value>Logout</value>
@@ -228,6 +273,9 @@
   </data>
   <data name="SuporteTexto" xml:space="preserve">
     <value>Our support have a chat where the student can ask anything about the courses and get answers in short time.</value>
+  </data>
+  <data name="VerCursos" xml:space="preserve">
+    <value>Check out courses</value>
   </data>
   <data name="VideoTexto" xml:space="preserve">
     <value>Quality lessons for free.</value>

@@ -19,7 +19,7 @@ namespace CadastroLogin.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class GlobalResource {
@@ -61,6 +61,15 @@ namespace CadastroLogin.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Acesso Ilimitado.
+        /// </summary>
+        public static string AcessoIlimitado {
+            get {
+                return ResourceManager.GetString("AcessoIlimitado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bem vindo à DevKey.
         /// </summary>
         public static string BemVindo {
@@ -84,6 +93,24 @@ namespace CadastroLogin.Resources {
         public static string CadastrarCurso {
             get {
                 return ResourceManager.GetString("CadastrarCurso", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Faça agora o seu.
+        /// </summary>
+        public static string CadastreAgora {
+            get {
+                return ResourceManager.GetString("CadastreAgora", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cadastro.
+        /// </summary>
+        public static string CadastreAgora2 {
+            get {
+                return ResourceManager.GetString("CadastreAgora2", resourceCulture);
             }
         }
         
@@ -225,6 +252,15 @@ namespace CadastroLogin.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Certificado.
+        /// </summary>
+        public static string Certificado2 {
+            get {
+                return ResourceManager.GetString("Certificado2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Chat online para tirar dúvidas;.
         /// </summary>
         public static string Chat {
@@ -284,6 +320,15 @@ namespace CadastroLogin.Resources {
         public static string Contato {
             get {
                 return ResourceManager.GetString("Contato", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cursos Online.
+        /// </summary>
+        public static string CursosOnline {
+            get {
+                return ResourceManager.GetString("CursosOnline", resourceCulture);
             }
         }
         
@@ -365,6 +410,15 @@ namespace CadastroLogin.Resources {
         public static string Linguagem {
             get {
                 return ResourceManager.GetString("Linguagem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Links Úteis.
+        /// </summary>
+        public static string LinksUteis {
+            get {
+                return ResourceManager.GetString("LinksUteis", resourceCulture);
             }
         }
         
@@ -470,6 +524,24 @@ namespace CadastroLogin.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Produtos.
+        /// </summary>
+        public static string Produtos {
+            get {
+                return ResourceManager.GetString("Produtos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Conecte-se conosco nas redes sociais!.
+        /// </summary>
+        public static string RedeSocial {
+            get {
+                return ResourceManager.GetString("RedeSocial", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Responsivo.
         /// </summary>
         public static string Responsivo {
@@ -556,6 +628,15 @@ namespace CadastroLogin.Resources {
         public static string SuporteTitle {
             get {
                 return ResourceManager.GetString("SuporteTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ver Cursos.
+        /// </summary>
+        public static string VerCursos {
+            get {
+                return ResourceManager.GetString("VerCursos", resourceCulture);
             }
         }
         
